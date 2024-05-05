@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.fish": {
+      "states": {
+        "default": {
+          "animations": ["spawn"],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "catch": "query.property('universal:animation_state') == 1"
+            },
+            {
+              "despawn": "query.property('universal:animation_state') == 2"
+            }
+          ]
+        },
+        "idle": {
+          "animations": ["idle", "biting"],
+          "transitions": [
+            {
+              "catch": "query.property('universal:animation_state') == 1"
+            },
+            {
+              "despawn": "query.property('universal:animation_state') == 2"
+            }
+          ]
+        },
+        "catch": {
+          "animations": ["catch"],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "despawn": "query.property('universal:animation_state') == 2"
+            }
+          ]
+        },
+        "despawn": {
+          "animations": ["despawn"],
+          "transitions": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:gadget_projectile_tumbleweed",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/gadget/tumbleweed"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.tumbleweed"
+            },
+            "animations": {
+                "spawn": "animation.universal.gadget.tumbleweed.spawn",
+                "idle": "animation.universal.gadget.tumbleweed.idle",
+                "idle_bounce": "animation.universal.gadget.tumbleweed.idle.bounce"
+            },
+            "scripts": {
+                "animate": ["spawn", "idle", "idle_bounce"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

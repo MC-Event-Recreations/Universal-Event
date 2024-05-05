@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.target_rotation": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "from_left": "query.property('universal:animation_rotation') == 1"
+            },
+            {
+              "from_right": "query.property('universal:animation_rotation') == 2"
+            },
+            {
+              "from_top": "query.property('universal:animation_rotation') == 3"
+            }
+          ]
+        },
+        "from_right": {
+          "animations": ["from_right"],
+          "transitions": []
+        },
+        "from_left": {
+          "animations": ["from_left"],
+          "transitions": []
+        },
+        "from_top": {
+          "animations": ["from_top"],
+          "transitions": []
+        }
+      }
+    }
+  }
+}

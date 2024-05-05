@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:powerup",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "health": "textures/entity/swamp_stomp/health",
+                "jump_boost": "textures/entity/swamp_stomp/jump_boost",
+                "speed": "textures/entity/swamp_stomp/speed",
+                "mudball": "textures/entity/swamp_stomp/mudball"
+            },
+            "geometry": {
+                "default": "geometry.universal.swampstomp.powerup"
+            },
+            "animations": {
+                "facecamera": "animation.universal.powerup"
+            },
+            "scripts": {
+                "animate": ["facecamera"]
+            },
+            "render_controllers": ["controller.render.universal.swamp_stomp.powerup"]
+        }
+    }
+}

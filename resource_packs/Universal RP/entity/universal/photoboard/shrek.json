@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:photoboard_shrek",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/photoboard/shrek"
+            },
+            "geometry": {
+                "default": "geometry.universal.photoboard.shrek"
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tram_tour_robber",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/tram_tour/robber"
+            },
+            "geometry": {
+                "default": "geometry.universal.tram_tour.robber"
+            },
+            "animations": {
+                "floss": "animation.universal.tram_tour.robber.floss"
+            },
+            "scripts": {
+                "animate": ["floss"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

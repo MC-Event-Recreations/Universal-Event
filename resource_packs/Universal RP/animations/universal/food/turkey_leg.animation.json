@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.universal.food.turkey.leg.third": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [52.18473, -10.66642, 26.31511],
+					"position": [0.25, 22.64838, -2.47402],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.universal.food.turkey.leg.first": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [49.3881, -24.12796, -186.30168],
+					"position": [-1.50746, 24.39421, 7.52663]
+				}
+			}
+		}
+	}
+}

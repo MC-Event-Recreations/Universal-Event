@@ -1,0 +1,123 @@
+{
+    "resource_pack_name": "Live Event Assets",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "universal:activity_leave": {
+            "textures": "textures/items/activity_leave"
+        },
+        "universal:queue_leave": {
+            "textures": "textures/items/queue_leave"
+        },
+        "universal:quick_travel_map": {
+            "textures": "textures/items/quick_travel_map"
+        },
+        "universal:shot_list": {
+            "textures": "textures/items/shot_list"
+        },
+        "universal:briefcase": {
+            "textures": "textures/items/bank_heist/briefcase"
+        },
+        "universal:cash": {
+            "textures": "textures/items/bank_heist/cash"
+        },
+        "universal:diamond": {
+            "textures": "textures/items/bank_heist/diamond"
+        },
+        "universal:gold_bar": {
+            "textures": "textures/items/bank_heist/gold_bar"
+        },
+        "universal:jewellery": {
+            "textures": "textures/items/bank_heist/jewellery"
+        },
+        "universal:ruby": {
+            "textures": "textures/items/bank_heist/ruby"
+        },
+        "universal:churro_sprinkles": {
+            "textures": "textures/items/food/churro_sprinkles"
+        },
+        "universal:churro": {
+            "textures": "textures/items/food/churro"
+        },
+        "universal:corndog_mustard": {
+            "textures": "textures/items/food/corndog_mustard"
+        },
+        "universal:corndog": {
+            "textures": "textures/items/food/corndog"
+        },
+        "universal:donut": {
+            "textures": "textures/items/food/donut"
+        },
+        "universal:hotdog": {
+            "textures": "textures/items/food/hotdog"
+        },
+        "universal:milkshake": {
+            "textures": "textures/items/food/milkshake"
+        },
+        "universal:pretzel": {
+            "textures": "textures/items/food/pretzel"
+        },
+        "universal:turkey_leg": {
+            "textures": "textures/items/food/turkey_leg"
+        },
+        "universal:fish_vacuum": {
+            "textures": "textures/items/fishing_frenzy/fish_vacuum"
+        },
+        "universal:mudball": {
+            "textures": "textures/items/swamp_stomp/mudball"
+        },
+        "universal:battery_charged": {
+            "textures": "textures/items/director_says/battery_charged"
+        },
+        "universal:battery_depleted": {
+            "textures": "textures/items/director_says/battery_depleted"
+        },
+        "universal:gadget_confetti": {
+            "textures": "textures/items/gadget/confetti_gadget_item"
+        },
+        "universal:gadget_fire": {
+            "textures": "textures/items/gadget/fire_gadget_item"
+        },
+        "universal:gadget_snow": {
+            "textures": "textures/items/gadget/snow_gadget_item"
+        },
+        "universal:gadget_tumbleweed": {
+            "textures": "textures/items/gadget/tumbleweed_gadget_item"
+        },
+        "universal:camera": {
+            "textures": "textures/items/director_says/camera_item"
+        },
+        "universal:fire_extinguisher": {
+            "textures": "textures/items/director_says/fire_extinguisher_item"
+        },
+        "universal:hat_cowboy": {
+            "textures": "textures/items/hat/cowboy"
+        },
+        "universal:hat_mobster": {
+            "textures": "textures/items/hat/mobster"
+        },
+        "universal:hat_safari": {
+            "textures": "textures/items/hat/safari"
+        },
+        "universal:hat_soda": {
+            "textures": "textures/items/hat/soda"
+        },
+        "universal:hat_top_hat": {
+            "textures": "textures/items/hat/top_hat"
+        },
+        "universal:hat_unicorn": {
+            "textures": "textures/items/hat/unicorn"
+        },
+        "universal:plush_fiona": {
+            "textures": "textures/items/plush/fiona"
+        },
+        "universal:plush_jaws": {
+            "textures": "textures/items/plush/jaws"
+        },
+        "universal:plush_puss": {
+            "textures": "textures/items/plush/puss"
+        },
+        "universal:plush_shrek": {
+            "textures": "textures/items/plush/shrek"
+        }
+    }
+}

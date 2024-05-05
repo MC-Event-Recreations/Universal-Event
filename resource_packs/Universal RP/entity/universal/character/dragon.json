@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:character_dragon",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/character/dragon"
+            },
+            "geometry": {
+                "default": "geometry.universal.character.dragon"
+            },
+            "animations": {
+                "idle_eyes": "animation.universal.character.dragon.idle.eyes",
+                "sit_pose": "animation.universal.character.dragon.sit.pose",
+                "sit_idle": "animation.universal.character.dragon.sit.idle",
+                "sit_idle_head": "animation.universal.character.dragon.sit.idle.head"
+            },
+            "scripts": {
+                "animate": ["idle_eyes", "sit_pose", "sit_idle", "sit_idle_head"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tram_tour_subway",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/tram_tour/subway"
+            },
+            "geometry": {
+                "default": "geometry.universal.tram_tour.subway"
+            },
+            "particle_effects": {
+                "subway_dust": "universal:tram_tour_subway_dust",
+                "sparks_4s": "universal:tram_tour_sparks_4s",
+                "subway_dust_more": "universal:tram_tour_subway_dust_more",
+                "dust_poof": "universal:tram_tour_dust_poof",
+                "sparks_interm": "universal:tram_tour_sparks_interm",
+                "rubble_burst": "universal:tram_tour_rubble_burst",
+                "smoke_burst": "universal:tram_tour_smoke_burst",
+                "steam_burst": "universal:tram_tour_steam_burst",
+                "explosion": "universal:tram_tour_explosion"
+            },
+            "animations": {
+                "controller": "controller.animation.universal.tram_tour.activated.waiting",
+                "activated": "animation.universal.tram_tour.subway",
+                "waiting": "animation.universal.tram_tour.subway.pre"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

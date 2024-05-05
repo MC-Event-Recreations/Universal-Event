@@ -1,0 +1,24 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:globe",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/globe"
+            },
+            "geometry": {
+                "default": "geometry.universal.globe"
+            },
+            "animations": {
+                "rotate": "animation.universal.globe"
+            },
+            "scripts": {
+                "animate": ["rotate"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

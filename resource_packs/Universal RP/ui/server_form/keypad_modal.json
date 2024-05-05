@@ -1,0 +1,271 @@
+{
+    "namespace": "keypad_modal",
+    "main_panel@common_modal_ui.main_panel": {
+        "$bottom_content": "keypad_modal.button_panel",
+        "$title_texture": "textures/ui/universal/red_cell",
+        "$modal_size": [120, "100%"]
+    },
+    "button_panel": {
+        "type": "panel",
+        "anchor_to": "top_middle",
+        "anchor_from": "top_middle",
+        "offset": [0, 8],
+        "size": ["100% - 16px", "100%c"],
+        "controls": [
+            {
+                "content@keypad_modal.button_stack_panel": {}
+            }
+        ]
+    },
+    "button_stack_panel": {
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "size": ["100%", "100%c"],
+        "controls": [
+            {
+                "code@keypad_modal.code_panel": {}
+            },
+            // Spacer
+            {
+                "spacer": {
+                    "type": "panel",
+                    "size": ["100%", 2]
+                }
+            },
+            {
+                "content@keypad_modal.keypad_button_renderer": {}
+            }
+        ]
+    },
+    "code_panel": {
+        "type": "panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "size": ["100%", 25],
+        "controls": [
+            {
+                "code_background": {
+                    "size": ["100% - 2px", "100%"],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "layer": 10,
+                    "type": "image",
+                    "texture": "textures/ui/universal/slightly_darker_green_cell",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "code": {
+                                "type": "label",
+                                "text": "#form_text",
+                                "line_padding": 2,
+                                "color": [0.32, 1, 0.28],
+                                "font_size": "normal",
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "text_alignment": "center",
+                                "offset": [0, 0],
+                                "size": ["default", "default"],
+                                "layer": 6,
+                                "shadow": false,
+                                "bindings": [
+                                    {
+                                        "binding_name": "#form_text",
+                                        "binding_type": "global"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Render the buttons
+    "keypad_button_renderer": {
+        "type": "grid",
+        "size": ["100% + 1px", "100%c"], // extra pixel because the padding for the buttons
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "grid_item_template": "keypad_modal.keypad_button_entry",
+        "grid_rescaling_type": "horizontal",
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#maximum_grid_items"
+            }
+        ]
+    },
+    // Our keypad button
+    "keypad_button_entry": {
+        "type": "panel",
+        "$flag_content": "§m§a",
+        "size": ["33%", "100%x"],
+        "controls": [
+            {
+                "button@common.button": {
+                    "size": ["100%", "100%"],
+                    "layer": 1,
+                    "$pressed_button_name": "button.form_button_click",
+                    "default_focus_precedence": 1,
+                    "controls": [
+                        {
+                            "default@keypad_modal.button_list_entry_inside": {
+                                "$state": "default"
+                            }
+                        },
+                        {
+                            "hover@keypad_modal.button_list_entry_inside": {
+                                "$state": "hover"
+                            }
+                        },
+                        {
+                            "pressed@keypad_modal.button_list_entry_inside": {
+                                "$state": "pressed"
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_type": "collection_details",
+                            "binding_collection_name": "form_buttons"
+                        },
+                        {
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(not (#form_button_text = ''))",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Inside the button, displays the text
+    "button_list_entry_inside": {
+        "type": "panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "$color|default": "white",
+        "size": ["100% - 1px", "100% - 1px"],
+        "offset": [0, 0],
+        // Change color on hover
+        "variables": [
+            {
+                "requires": "($state = 'hover')",
+                "$color": [0.7, 0.7, 0.7]
+            }
+        ],
+        "controls": [
+            // Gray Button
+            {
+                "gray_button": {
+                    "size": ["100%", "100%"],
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/universal/light_gray_cell",
+                    "color": "$color",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "button_inside@keypad_modal.button_inside": {}
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "((#form_button_text - $flag_content) = #form_button_text)",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            },
+            // Green Button
+            {
+                "green_button": {
+                    "size": ["100%", "100%"],
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/universal/green_button",
+                    "color": "$color",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "button_inside@keypad_modal.button_inside": {}
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(not ((#form_button_text - $flag_content) = #form_button_text))",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "button_inside": {
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "size": ["100% - 4px", "100% - 4px"],
+        "controls": [
+            {
+                "button_label@keypad_modal.button_label": {
+                    "size": ["100%", "100%"]
+                }
+            }
+        ]
+    },
+    "button_label": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "controls": [
+            {
+                "button_label_text": {
+                    "type": "label",
+                    "font_type": "MinecraftTen",
+                    "text": "#form_button_text",
+                    "line_padding": 1,
+                    "color": "white",
+                    "font_scale_factor": 1,
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "text_alignment": "center",
+                    "offset": [0, -1],
+                    "size": ["100% - 12px", "default"],
+                    "layer": 5,
+                    "shadow": false,
+                    "bindings": [
+                        {
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons",
+                            "binding_condition": "none",
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

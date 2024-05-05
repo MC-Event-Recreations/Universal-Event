@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "hive:gadget_confetti_burst",
+			"basic_render_parameters": {
+				"material": "particles_alpha",
+				"texture": "textures/particle/particles"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": "math.random(20,25)"
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 2
+			},
+			"minecraft:emitter_shape_point": {},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 2
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "variable.particle_random_3*360",
+				"rotation_rate": "variable.particle_random_2*40"
+			},
+			"minecraft:particle_initial_speed": "math.random(4,5.2)",
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [0, -4, 0],
+				"linear_drag_coefficient": 2,
+				"rotation_acceleration": "variable.particle_random_3*260"
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["(1-(variable.particle_age/variable.particle_lifetime))*0.6", "(1-(variable.particle_age/variable.particle_lifetime))*0.3"],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 128,
+					"texture_height": 128,
+					"uv": [0, 0],
+					"uv_size": [8, 8]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": ["variable.particle_random_1 < 0.125 ? 0.33 : (variable.particle_random_1 < 0.25 ? 0.3 : (variable.particle_random_1 < 0.375 ? 0.67 : (variable.particle_random_1 < 0.5 ? 0.95 : (variable.particle_random_1 < 0.625 ? 0.86 : (variable.particle_random_1 < 0.75 ? 0.97 : (variable.particle_random_1 < 0.875 ? 1 : 0.53))))))", "variable.particle_random_1 < 0.125 ? 0.79 : (variable.particle_random_1 < 0.25 ? 0.52 : (variable.particle_random_1 < 0.375 ? 0.27 : (variable.particle_random_1 < 0.5 ? 0.41 : (variable.particle_random_1 < 0.625 ? 0.26 : (variable.particle_random_1 < 0.75 ? 0.65 : (variable.particle_random_1 < 0.875 ? 0.88 : 0.95))))))", "variable.particle_random_1 < 0.125 ? 0.91 : (variable.particle_random_1 < 0.25 ? 0.93 : (variable.particle_random_1 < 0.375 ? 0.86 : (variable.particle_random_1 < 0.5 ? 0.91 : (variable.particle_random_1 < 0.625 ? 0.27 : (variable.particle_random_1 < 0.75 ? 0.19 : (variable.particle_random_1 < 0.875 ? 0.31 : 0.32))))))", 1]
+			}
+		}
+	}
+}

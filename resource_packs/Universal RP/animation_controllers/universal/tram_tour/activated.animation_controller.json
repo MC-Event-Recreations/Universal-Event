@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.universal.tram_tour.activated": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "activated": "query.property('universal:activated')"
+                        }
+                    ]
+                },
+                "activated": {
+                    "animations": ["activated"],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.universal.tram_tour.activated.waiting": {
+            "states": {
+                "default": {
+                    "animations": ["waiting"],
+                    "transitions": [
+                        {
+                            "activated": "query.property('universal:activated')"
+                        }
+                    ]
+                },
+                "activated": {
+                    "animations": ["activated"],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

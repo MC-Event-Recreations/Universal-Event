@@ -1,0 +1,47 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "universal:fire_extinguisher",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/director_says/fire_extinguisher"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.fireextinguisher"
+            },
+            "sound_effects": {
+                "use_loop": "sound.universal.minigame.fishing_frenzy.fire_extinguisher.loop"
+            },
+            "animations": {
+                "first_person": "animation.universal.director_says.fire_extinguisher.first",
+                "third_person": "animation.universal.director_says.fire_extinguisher.third",
+                "use": "animation.universal.director_says.fire_extinguisher.use",
+                "stop": "animation.universal.director_says.fire_extinguisher.use.stop",
+                "sound": "animation.universal.fishing_frenzy.fish_vacuum.sound",
+
+                "controller": "controller.animation.universal.director_says.fire_extinguisher"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.using_first = context.is_first_person && query.main_hand_item_use_duration > 0;"
+                ],
+                "animate": [
+                    {
+                        "first_person": "context.is_first_person == 1.0"
+                    },
+                    {
+                        "third_person": "context.is_first_person == 0.0"
+                    },
+                    {
+                        "sound": "variable.using_first"
+                    },
+                    "controller"
+                ]
+            },
+            "render_controllers": ["controller.render.universal.fishing_frenzy.fish_vacuum"]
+        }
+    }
+}

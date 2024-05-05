@@ -1,0 +1,49 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tram_tour_tram",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/tram_tour/tram"
+            },
+            "geometry": {
+                "default": "geometry.universal.tram_tour.tram"
+            },
+            "sound_effects": {
+                "driving": "sound.universal.tram_tour.tram.driving.loop"
+            },
+            "animations": {
+                "controller_door": "controller.animation.universal.tram_tour.tram.doors",
+
+                "idle": "animation.universal.tram_tour.tram.idle",
+                "wheel": "animation.universal.tram_tour.tram.wheel",
+                "pose": "animation.universal.tram_tour.tram.pose",
+                "door_open": "animation.universal.tram_tour.tram.door.open",
+                "door_open_hold": "animation.universal.tram_tour.tram.door.open.hold",
+                "door_close": "animation.universal.tram_tour.tram.door.close",
+                "event_mount": "animation.universal.tram_tour.tram.event.mount",
+                "scene_subway": "animation.universal.tram_tour.tram.scene.subway",
+                "scene_jaws": "animation.universal.tram_tour.tram.scene.jaws",
+                "driver_welcome": "animation.universal.tram_tour.tram.driver.welcome",
+                "driver_speak_1": "animation.universal.tram_tour.tram.driver.speak_1",
+                "driver_speak_2": "animation.universal.tram_tour.tram.driver.speak_2",
+                "driver_speak_3": "animation.universal.tram_tour.tram.driver.speak_3",
+
+                "sound_driving": "animation.universal.tram_tour.tram.sound.driving"
+            },
+            "scripts": {
+                "animate": [
+                    "controller_door",
+                    "idle",
+                    "wheel",
+                    "pose",
+                    { "sound_driving": "query.modified_move_speed > 0.05 && query.distance_from_camera < 5" }
+                ]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

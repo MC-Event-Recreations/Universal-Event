@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:character_donkey",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/character/donkey"
+            },
+            "geometry": {
+                "default": "geometry.universal.character.donkey"
+            },
+            "animations": {
+                "sit_pose": "animation.universal.character.donkey.sit.pose",
+                "sit_idle": "animation.universal.character.donkey.sit.idle",
+                "sit_idle_head": "animation.universal.character.donkey.sit.idle.head",
+                "steam_idle": "animation.universal.character.donkey.steam.idle"
+            },
+            "scripts": {
+                "animate": ["sit_pose", "sit_idle", "sit_idle_head", "steam_idle"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

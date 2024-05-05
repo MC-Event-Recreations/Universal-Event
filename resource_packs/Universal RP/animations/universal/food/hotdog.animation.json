@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.universal.food.hotdog.third": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [-12.72299, -6.91245, 1.3946],
+					"position": [0.25, 22.10984, -5.3625],
+					"scale": 0.6
+				},
+				"donut": {
+					"position": [0.47967, 0.05792, -0.1287]
+				}
+			}
+		},
+		"animation.universal.food.hotdog.first": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [116.55375, -19.48214, -198.80904],
+					"position": [-3.85517, 23.55682, 2.51541]
+				}
+			}
+		}
+	}
+}

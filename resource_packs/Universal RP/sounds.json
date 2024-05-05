@@ -1,0 +1,12 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "universal:tram_tour_tram": {
+                "events": {
+                    "step": ""
+                },
+                "volume": 0
+            }
+        }
+    }
+}

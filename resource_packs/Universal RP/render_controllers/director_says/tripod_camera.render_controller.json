@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.universal.director_says.tripod_camera": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.camera_off",
+            "Texture.camera_on"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.property('universal:camera_state')]" ]
+    }
+  }
+}

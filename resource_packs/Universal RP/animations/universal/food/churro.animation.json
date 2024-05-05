@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.universal.food.churro.third": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [52.18473, -10.66642, 26.31511],
+					"position": [0.25, 18.25, -3]
+				}
+			}
+		},
+		"animation.universal.food.churro.first": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [45.72113, 14.60559, -146.31465],
+					"position": [-4.2031, 22.33793, 1.16225]
+				}
+			}
+		}
+	}
+}

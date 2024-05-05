@@ -1,0 +1,68 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.hive.block.universal.graffiti",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 8,
+        "visible_bounds_height": 5.5,
+        "visible_bounds_offset": [
+          0,
+          2.25,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            -53
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                0,
+                -7.5
+              ],
+              "size": [
+                16,
+                16,
+                0
+              ],
+              "uv": {
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -1,
+                1,
+                -7
+              ],
+              "size": [
+                1,
+                1,
+                2
+              ],
+              "uv": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

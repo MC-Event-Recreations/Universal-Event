@@ -1,0 +1,30 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.universal.bank_heist.escape_van": {
+            "geometry": "Geometry.default",
+            "materials": [
+                { "*": "Material.default" },
+                { "window": "Material.window" },
+                { "window2": "Material.window" },
+                { "window3": "Material.window" },
+                { "window4": "Material.window" }
+            ],
+            "part_visibility": [
+                { "*": true },
+                { "dufflebag1": "query.property('universal:loot_quantity') >= 1" },
+                { "dufflebag2": "query.property('universal:loot_quantity') >= 2" },
+                { "dufflebag3": "query.property('universal:loot_quantity') >= 3" },
+                { "dufflebag4": "query.property('universal:loot_quantity') >= 4" },
+                { "dufflebag5": "query.property('universal:loot_quantity') >= 5" },
+                { "dufflebag6": "query.property('universal:loot_quantity') >= 6" },
+                { "dufflebag7": "query.property('universal:loot_quantity') >= 7" },
+                { "dufflebag8": "query.property('universal:loot_quantity') >= 8" },
+                { "dufflebag9": "query.property('universal:loot_quantity') >= 9" },
+                { "dufflebag10": "query.property('universal:loot_quantity') >= 10" },
+                { "dufflebag11": "query.property('universal:loot_quantity') >= 11" }
+            ],
+            "textures": ["texture.default"]
+        }
+    }
+}

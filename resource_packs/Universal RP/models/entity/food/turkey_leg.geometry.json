@@ -1,0 +1,58 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.universal.food.turkey.leg",
+                "texture_width": 12,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [0, 0.75, 0]
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0],
+                    "binding": "q.item_slot_to_bone_name(c.item_slot)",
+                    "cubes": [
+                        {
+                            "origin": [-3, 5, -3],
+                            "size": [6, 10, 6],
+                            "uv": {
+                                "north": { "uv": [0, 0], "uv_size": [6, 10] },
+                                "east": { "uv": [6, 0], "uv_size": [-6, 10] },
+                                "south": { "uv": [0, 0], "uv_size": [6, 10] },
+                                "west": { "uv": [6, 0], "uv_size": [-6, 10] },
+                                "up": { "uv": [6, 0], "uv_size": [6, 6] },
+                                "down": { "uv": [6, 12], "uv_size": [6, -6] }
+                            }
+                        },
+                        {
+                            "origin": [-1.5, -1, -1.5],
+                            "size": [3, 6, 3],
+                            "uv": {
+                                "north": { "uv": [0, 10], "uv_size": [3, 6] },
+                                "east": { "uv": [3, 10], "uv_size": [-3, 6] },
+                                "south": { "uv": [0, 10], "uv_size": [3, 6] },
+                                "west": { "uv": [3, 10], "uv_size": [-3, 6] },
+                                "down": { "uv": [3, 13], "uv_size": [3, -3] }
+                            }
+                        },
+                        {
+                            "origin": [-1.5, 2, -1.5],
+                            "size": [3, 3, 3],
+                            "inflate": 0.4,
+                            "uv": {
+                                "north": { "uv": [3, 13], "uv_size": [3, 3] },
+                                "east": { "uv": [6, 13], "uv_size": [-3, 3] },
+                                "south": { "uv": [3, 13], "uv_size": [3, 3] },
+                                "west": { "uv": [6, 13], "uv_size": [-3, 3] }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

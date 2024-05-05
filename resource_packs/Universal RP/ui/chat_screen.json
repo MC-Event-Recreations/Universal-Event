@@ -1,0 +1,21 @@
+{
+    // Hide messages from the floating action panel
+    // also retain the chat_visible property
+    "messages_text": {
+        "$flag_floating_action": "§m§a",
+        "visible": false,
+        "bindings": [
+            {
+                "binding_name": "#text"
+            },
+            {
+                "binding_name": "#chat_visible"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "((((#text - $flag_floating_action) = #text) or (not ((#text - '§h§i§v§e') = #text))) and (#chat_visible))",
+                "target_property_name": "#visible"
+            }
+        ]
+    }
+}

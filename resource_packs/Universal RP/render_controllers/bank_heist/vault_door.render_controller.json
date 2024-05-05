@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.universal.bank_heist.vault_door": {
+      "geometry": "Geometry.default",
+      "materials": [
+        { "*": "Material.default" },
+        { "orangeCube": "Material.window" }
+      ],
+      "part_visibility" : [
+        { "*": true },
+        { "TNT1": "query.property('universal:tnt_quantity') >= 1" },
+        { "TNT2": "query.property('universal:tnt_quantity') >= 2" },
+        { "TNT3": "query.property('universal:tnt_quantity') >= 3" },
+        { "TNT4": "query.property('universal:tnt_quantity') >= 4" },
+        { "TNT5": "query.property('universal:tnt_quantity') >= 5" },
+        { "TNT6": "query.property('universal:tnt_quantity') >= 6" },
+        { "TNT7": "query.property('universal:tnt_quantity') >= 7" },
+        { "TNT8": "query.property('universal:tnt_quantity') >= 8" },
+        { "TNT9": "query.property('universal:tnt_quantity') >= 9" },
+        { "TNT10": "query.property('universal:tnt_quantity') >= 10" }
+      ],
+      "textures": [ "texture.default" ]
+    }
+  }
+}

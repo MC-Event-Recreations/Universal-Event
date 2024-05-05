@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:laser_beam",
+            "materials": {
+                "default": "entity_emissive"
+            },
+            "textures": {
+                "default": "textures/entity/bank_heist/laser_beam"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.laser.beam"
+            },
+            "animations": {
+                "controller": "controller.animation.laser_beam",
+                "idle": "animation.universal.laser.idle",
+                "off": "animation.universal.laser.L2R.off",
+                "on": "animation.universal.laser.R2L.on"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

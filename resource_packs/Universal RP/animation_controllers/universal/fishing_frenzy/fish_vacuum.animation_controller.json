@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.universal.fishing.frenzy.fish.vacuum": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "active": "query.main_hand_item_use_duration > 0"
+                        }
+                    ]
+                },
+                "active": {
+                    "animations": ["idle", "use"],
+                    "transitions": [
+                        {
+                            "stop": "query.main_hand_item_use_duration <= 0"
+                        }
+                    ]
+                },
+                "stop": {
+                    "animations": ["stop"],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        },
+                        {
+                            "active": "query.main_hand_item_use_duration > 0"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

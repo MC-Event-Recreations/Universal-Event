@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:outer_door",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/bank_heist/outer_door"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.bank.door"
+            },
+            "animations": {
+                "controller": "controller.animation.door",
+                "unlock": "animation.universal.bank.allydoor.open",
+                "unlock_hold": "animation.universal.bank.allydoor.open.hold"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

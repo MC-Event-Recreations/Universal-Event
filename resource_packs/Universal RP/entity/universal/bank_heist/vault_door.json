@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:vault_door",
+            "materials": {
+                "default": "entity_alphatest",
+                "window": "slime_outer"
+            },
+            "textures": {
+                "default": "textures/entity/bank_heist/vault_door"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.vault.door"
+            },
+            "animations": {
+                "controller": "controller.animation.door",
+                "unlock": "animation.hive.universal.vault.door.unlock",
+                "unlock_hold": "animation.hive.universal.vault.door.unlock.hold"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.universal.bank_heist.vault_door"]
+        }
+    }
+}

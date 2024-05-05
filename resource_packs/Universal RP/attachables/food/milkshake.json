@@ -1,0 +1,36 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "universal:milkshake",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/food/milkshake"
+            },
+            "geometry": {
+                "default": "geometry.universal.food.milkshake"
+            },
+            "animations": {
+                "first_person": "animation.universal.food.milkshake.first",
+                "third_person": "animation.universal.food.milkshake.third",
+                "use": "animation.universal.item.generic.use"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "first_person": "context.is_first_person == 1.0"
+                    },
+                    {
+                        "third_person": "context.is_first_person == 0.0"
+                    },
+                    {
+                        "use": "query.main_hand_item_use_duration > 0.0f && context.is_first_person"
+                    }
+                ]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

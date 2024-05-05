@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:falling",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/director_says/big_anvil"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.biganvil"
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

@@ -1,0 +1,533 @@
+{
+    // Screen movement animations
+    "screen_exit_animation_push_offset": {
+        "anim_type": "offset",
+        "easing": "out_cubic",
+        "duration": "$transition_time_push",
+        "from": [0, 0],
+        "to": [0, "-25%"],
+        "play_event": "screen.exit_push",
+        "end_event": "screen.exit_end"
+    },
+
+    "screen_exit_animation_pop_offset": {
+        "anim_type": "offset",
+        "easing": "out_cubic",
+        "duration": "$transition_time_pop",
+        "from": [0, 0],
+        "to": [0, "25%"],
+        "play_event": "screen.exit_pop",
+        "end_event": "screen.exit_end"
+    },
+
+    "screen_entrance_animation_push_offset": {
+        "anim_type": "offset",
+        "easing": "out_cubic",
+        "duration": "$transition_time_push",
+        "from": [0, "25%"],
+        "to": [0, 0],
+        "play_event": "screen.entrance_push",
+        "end_event": "screen.entrance_end"
+    },
+
+    "screen_entrance_animation_pop_offset": {
+        "anim_type": "offset",
+        "easing": "out_cubic",
+        "duration": "$transition_time_pop",
+        "from": [0, "-25%"],
+        "to": [0, 0],
+        "play_event": "screen.entrance_pop",
+        "end_event": "screen.entrance_end"
+    },
+    // NPC Screen override
+    "npc_screen": {
+        "$screen_content": "npc_interact.npc_screen_contents_switcher",
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_exit",
+                "to_button_id": "button.menu_continue",
+                "mapping_type": "global"
+            }
+        ],
+        "$screen_animations": [
+            "@npc_interact.screen_exit_animation_push_offset",
+            "@npc_interact.screen_exit_animation_pop_offset",
+            "@npc_interact.screen_entrance_animation_push_offset",
+            "@npc_interact.screen_entrance_animation_pop_offset",
+            "@common.screen_exit_animation_push_fade",
+            "@common.screen_exit_animation_pop_fade",
+            "@common.screen_entrance_animation_push_fade",
+            "@common.screen_entrance_animation_pop_fade"
+        ],
+        "$background_animations": [
+            "@common.screen_exit_animation_push_alpha",
+            "@common.screen_exit_animation_pop_alpha",
+            "@common.screen_entrance_animation_push_alpha",
+            "@common.screen_entrance_animation_pop_alpha"
+        ]
+    },
+    // Switch the based on context
+    "npc_screen_contents_switcher": {
+        "type": "panel",
+        "$flag_button_selector": "§m§a",
+        "$flag_unused": "§m§b",
+        "size": ["100%", "100%"],
+        "controls": [
+            // Original
+            {
+                "normal@npc_interact.npc_screen_contents": {
+                    "enabled": false,
+                    "visible": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#title_text",
+                            "binding_name_override": "#title_text"
+                        },
+                        {
+                            "source_property_name": "((((#title_text - $flag_button_selector) = #title_text) and ((#title_text - $flag_unused) = #title_text)) or (not ((#text - '§h§i§v§e') = #text)))",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        },
+                        {
+                            "source_property_name": "((((#title_text - $flag_button_selector) = #title_text) and ((#title_text - $flag_unused) = #title_text)) or (not ((#text - '§h§i§v§e') = #text)))",
+                            "binding_type": "view",
+                            "target_property_name": "#enabled"
+                        }
+                    ]
+                }
+            },
+            // Custom NPC Button Selector
+            {
+                "npc_button_selector@npc_interact.npc_button_selector": {
+                    "enabled": false,
+                    "visible": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#title_text",
+                            "binding_name_override": "#title_text"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_button_selector) = #title_text)) and ((#text - '§h§i§v§e') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_button_selector) = #title_text)) and ((#text - '§h§i§v§e') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#enabled"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "npc_button_selector": {
+        "type": "panel",
+        "controls": [
+            {
+                "title": {
+                    "size": ["100%cm + 20px", "100%cm + 10px"],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "offset": [0, 30],
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/universal/dark_gray_cell",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "title_label": {
+                                "type": "label",
+                                "font_type": "MinecraftTen",
+                                "text": "#title_text",
+                                "line_padding": 1,
+                                "color": "white",
+                                "font_scale_factor": 1,
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "text_alignment": "center",
+                                "size": ["default", "default"],
+                                "offset": [0.5, -1.5],
+                                "layer": 5,
+                                "shadow": false,
+                                "bindings": [
+                                    {
+                                        "binding_type": "global",
+                                        "binding_condition": "none",
+                                        "binding_name": "#title_text",
+                                        "binding_name_override": "#title_text"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title_label_shadow": {
+                                "type": "label",
+                                "font_type": "MinecraftTen",
+                                "text": "#title_text",
+                                "line_padding": 1,
+                                "color": "black",
+                                "font_scale_factor": 1,
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "text_alignment": "center",
+                                "size": ["default", "default"],
+                                "offset": [1, -0.5],
+                                "alpha": 0.4,
+                                "layer": 4,
+                                "shadow": false,
+                                "bindings": [
+                                    {
+                                        "binding_type": "global",
+                                        "binding_condition": "none",
+                                        "binding_name": "#title_text",
+                                        "binding_name_override": "#title_text"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "custom_close_button@npc_interact.custom_close_button": {}
+            },
+            {
+                "actions": {
+                    "type": "stack_panel",
+                    "size": ["100%", "100%c"],
+                    "anchor_from": "bottom_middle",
+                    "anchor_to": "bottom_middle",
+                    "offset": [0, -20],
+                    "controls": [
+                        {
+                            "center_subtitle": {
+                                "type": "panel",
+                                "size": ["100%", "100%c"],
+                                "controls": [
+                                    {
+                                        "subtitle@npc_interact.subtitle": {}
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "spacer": {
+                                "type": "panel",
+                                "size": ["100%", 10]
+                            }
+                        },
+                        {
+                            "center_actions": {
+                                "type": "panel",
+                                "size": ["100%", "100%c"],
+                                "controls": [
+                                    {
+                                        "actions": {
+                                            "type": "grid",
+                                            "size": [300, 50],
+                                            "grid_item_template": "npc_interact.button_entry",
+                                            "grid_dimension_binding": "#student_button_grid_dimensions",
+                                            "collection_name": "student_buttons_collection",
+                                            "bindings": [
+                                                {
+                                                    "binding_name": "#student_button_grid_dimensions"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            // Gradient background
+            {
+                "gradient_bg": {
+                    "size": ["120%", "60%"],
+                    "offset":[0, "20%"],
+                    "type": "custom",
+                    "anchor_from": "bottom_middle",
+                    "anchor_to": "bottom_middle",
+                    "renderer": "gradient_renderer",
+                    "color1": [0, 0, 0, 0],
+                    "color2": [0, 0, 0, 0.90],
+                    "variables": [
+                        {
+                            "requires": "$is_holographic",
+                            "visible": false
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "subtitle": {
+        "type": "panel",
+        "size": ["40%", "100%cm"],
+        "anchor_from": "bottom_middle",
+        "anchor_to": "bottom_middle",
+        "controls": [
+            {
+                "text": {
+                    "type": "label",
+                    "text": "#dialogtext",
+                    "line_padding": 1,
+                    "color": "white",
+                    "font_scale_factor": 1,
+                    "text_alignment": "center",
+                    "size": ["100%", "default"],
+                    "layer": 5,
+                    "shadow": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#dialogtext",
+                            "binding_name_override": "#dialogtext"
+                        }
+                    ]
+                }
+            },
+            {
+                "shadow": {
+                    "type": "label",
+                    "text": "#dialogtext",
+                    "line_padding": 1,
+                    "color": "black",
+                    "font_scale_factor": 1,
+                    "text_alignment": "center",
+                    "size": ["100%", "default"],
+                    "offset": [0.5, 0.5],
+                    "layer": 4,
+                    "alpha": 0.4,
+                    "shadow": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#dialogtext",
+                            "binding_name_override": "#dialogtext"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Button list entry (allows it to be clickable and nests the inside)
+    "button_entry": {
+        "type": "panel",
+        "$flag_content": "§m§a",
+        "size": ["33% - 1px", "50% - 2px"],
+        "controls": [
+            {
+                "button@common.button": {
+                    "size": ["100%", "100%"],
+                    "layer": 1,
+                    "$pressed_button_name": "button.student_button",
+                    "default_focus_precedence": 1,
+                    "controls": [
+                        {
+                            "default@npc_interact.button_list_entry_inside": {
+                                "$state": "default"
+                            }
+                        },
+                        {
+                            "hover@npc_interact.button_list_entry_inside": {
+                                "$state": "hover"
+                            }
+                        },
+                        {
+                            "pressed@npc_interact.button_list_entry_inside": {
+                                "$state": "pressed"
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_type": "collection_details",
+                            "binding_collection_name": "student_buttons_collection",
+                            "binding_collection_prefix": "student_buttons"
+                        },
+                        {
+                            "binding_name": "#is_command_button",
+                            "binding_type": "collection",
+                            "binding_name_override": "#visible",
+                            "binding_collection_name": "student_buttons_collection"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Inside the button, displays the image & the text below it
+    "button_list_entry_inside": {
+        "type": "stack_panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "orientation": "vertical",
+        "$color|default": "white",
+        "size": ["100%", "100%"],
+        // Change color on hover
+        "variables": [
+            {
+                "requires": "($state = 'hover')",
+                "$color": [0.8, 0.8, 0.8]
+            }
+        ],
+        "controls": [
+            // Button
+            {
+                "button": {
+                    "size": ["100%", "100%"],
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/universal/slightly_darker_gray_cell",
+                    "color": "$color",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "button_label": {
+                                "type": "label",
+                                "font_type": "MinecraftTen",
+                                "text": "#student_button_text",
+                                "line_padding": 1,
+                                "color": "white",
+                                "font_scale_factor": 1,
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "text_alignment": "center",
+                                "offset": [0, -1.5],
+                                "size": ["default", "default"],
+                                "layer": 5,
+                                "shadow": false,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "student_buttons_collection",
+                                        "binding_condition": "none",
+                                        "binding_name": "#student_button_text",
+                                        "binding_name_override": "#student_button_text"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "button_label_shadow": {
+                                "type": "label",
+                                "font_type": "MinecraftTen",
+                                "text": "#student_button_text",
+                                "line_padding": 1,
+                                "color": "black",
+                                "font_scale_factor": 1,
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "text_alignment": "center",
+                                "offset": [0.5, -1],
+                                "size": ["default", "default"],
+                                "alpha": 0.4,
+                                "layer": 4,
+                                "shadow": false,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "student_buttons_collection",
+                                        "binding_condition": "none",
+                                        "binding_name": "#student_button_text",
+                                        "binding_name_override": "#student_button_text"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "custom_close_button@common.close_button": {
+        "$default_button_alpha": 1,
+        "$close_button_to_button_id": "button.exit_student",
+        "$close_button_panel_size": [20, 20],
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "offset": [-10, 10],
+        "layer": 6,
+        "controls": [
+            {
+                "default": {
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "color": "black",
+                    "keep_ratio": false,
+                    "size": ["100%c", "100%c"],
+                    "alpha": 0.6,
+                    "controls": [
+                        {
+                            "close@common.close_button_panel": {
+                                "$close_button_texture": "textures/ui/universal/close_button_default"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "hover": {
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "keep_ratio": false,
+                    "size": ["100%c", "100%c"],
+                    "alpha": 0.7,
+                    "controls": [
+                        {
+                            "close@common.close_button_panel": {
+                                "$close_button_texture": "textures/ui/universal/close_button_default"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "pressed": {
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "keep_ratio": false,
+                    "size": ["100%c", "100%c"],
+                    "alpha": 0.8,
+                    "controls": [
+                        {
+                            "close@common.close_button_panel": {
+                                "$close_button_texture": "textures/ui/universal/close_button_default"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_select",
+                "to_button_id": "$close_button_to_button_id",
+                "mapping_type": "pressed"
+            },
+            {
+                "from_button_id": "button.menu_ok",
+                "to_button_id": "$close_button_to_button_id",
+                "mapping_type": "focused"
+            },
+            {
+                // Catch ESC here too
+                "from_button_id": "button.menu_cancel",
+                "to_button_id": "$close_button_to_button_id",
+                "mapping_type": "global"
+            }
+        ]
+    }
+}

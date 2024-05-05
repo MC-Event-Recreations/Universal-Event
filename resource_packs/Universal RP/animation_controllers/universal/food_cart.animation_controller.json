@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.universal.food_cart": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "pause": "variable.random_chance = math.random_integer(0, 2); return false;"
+                        },
+                        {
+                            "fidget": "variable.random_chance == 0"
+                        },
+                        {
+                            "fidget2": "variable.random_chance == 1"
+                        }
+                    ]
+                },
+                "fidget": {
+                    "animations": ["fidget"],
+                    "transitions": [
+                        {
+                            "pause": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "fidget2": {
+                    "animations": ["fidget2"],
+                    "transitions": [
+                        {
+                            "pause": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "pause": {
+                    "animations": ["fidget_pause"],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:director_chair",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/director_says/directors_chair"
+            },
+            "geometry": {
+                "default": "geometry.universal.directors_chair"
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

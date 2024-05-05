@@ -1,0 +1,57 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.universal.character.fiona": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "pause": "variable.random_chance = math.random_integer(0, 2); return false;"
+                        },
+                        {
+                            "fidget": "variable.random_chance == 0"
+                        },
+                        {
+                            "sing": "variable.random_chance == 1"
+                        },
+                        {
+                            "look_around": "variable.random_chance == 2"
+                        }
+                    ]
+                },
+                "fidget": {
+                    "animations": ["fidget"],
+                    "transitions": [
+                        {
+                            "pause": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "sing": {
+                    "animations": ["sing"],
+                    "transitions": [
+                        {
+                            "pause": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "look_around": {
+                    "animations": ["look_around"],
+                    "transitions": [
+                        {
+                            "pause": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "pause": {
+                    "animations": ["pause"],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

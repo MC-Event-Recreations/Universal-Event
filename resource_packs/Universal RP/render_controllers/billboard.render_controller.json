@@ -1,0 +1,21 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.universal.billboard": {
+            "arrays": {
+                "textures": {
+                    "Array.textures": [
+                        "Texture.graphic_dragons",
+                        "Texture.graphic_toothless_wings_tail",
+                        "Texture.graphic_toothless_hat",
+                        "Texture.graphic_stormfly_wings_tail",
+                        "Texture.graphic_stormfly_hat"
+                    ]
+                }
+            },
+            "materials": [{ "*": "Material.default" }],
+            "geometry": "Geometry.graphic",
+            "textures": ["Array.textures[query.property('universal:billboard_graphic')]"]
+        }
+    }
+}

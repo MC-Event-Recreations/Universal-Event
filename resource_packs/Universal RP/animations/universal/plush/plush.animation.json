@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.universal.plush.first": {
+			"loop": true,
+			"bones": {
+				"plush": {
+					"rotation": [-298.10102, -46.12711, -558.82302],
+					"position": [0.19224, 26.84924, 3.6168]
+				}
+			}
+		},
+		"animation.universal.plush.third": {
+			"loop": true,
+			"bones": {
+				"plush": {
+					"rotation": [15, 0, 0],
+					"position": [0, 19.57734, -4.21046],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.universal.plush.first.puss": {
+			"loop": true,
+			"bones": {
+				"plush": {
+					"rotation": [-298.10102, -46.12711, -558.82302],
+					"position": [-1.43149, 25.42118, 1.30939]
+				}
+			}
+		},
+		"animation.universal.plush.first.jaws": {
+			"loop": true,
+			"bones": {
+				"plush": {
+					"rotation": [-361.45681, 91.95981, -497.9935],
+					"position": [-2.07235, 24.81959, 0.83253]
+				}
+			}
+		}
+	}
+}

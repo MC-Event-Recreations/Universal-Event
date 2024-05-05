@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tram_tour_shrek_windmill",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/tram_tour/shrek_windmill"
+            },
+            "geometry": {
+                "default": "geometry.universal.tram_tour.shrek_windmill"
+            },
+            "animations": {
+                "controller": "controller.animation.universal.tram_tour.shrek_swamp.hold",
+                "pose": "animation.universal.tram_tour.shrek_windmill.pose",
+                "play": "animation.universal.tram_tour.shrek_windmill.play",
+                "hold": "animation.universal.tram_tour.shrek_windmill.play.hold",
+                "wiggles": "animation.universal.tram_tour.shrek_windmill.wiggles",
+                "z": "animation.universal.tram_tour.shrek_windmill.z"
+            },
+            "scripts": {
+                "animate": ["pose", "z", "controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

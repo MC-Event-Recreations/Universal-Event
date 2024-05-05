@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:jaws_crane",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/jaws_crane"
+            },
+            "geometry": {
+                "default": "geometry.universal.jaws_crane"
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

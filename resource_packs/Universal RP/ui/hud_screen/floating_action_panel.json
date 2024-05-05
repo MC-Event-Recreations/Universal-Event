@@ -1,0 +1,158 @@
+{
+    "namespace": "hive_hud",
+    "floating_action_panel": {
+        "type": "panel",
+        "anchor_from": "bottom_middle",
+        "anchor_to": "bottom_middle",
+        "offset": [0, -100],
+        "size": ["100%", "100%c"],
+        "max_size": ["100%", "100%"],
+        "controls": [
+            {
+                "floating_actions": {
+                    "type": "stack_panel",
+                    "factory": {
+                        "name": "chat_item_factory",
+                        "max_children_size": 50,
+                        "control_ids": {
+                            "chat_item": "chat_item@hive_hud.floating_action_check"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    // Floating action check
+    "floating_action_check": {
+        "$flag_floating_action": "§m§a",
+        "type": "panel",
+        "size": ["100%", "100%c"],
+        "controls": [
+            {
+                "floating_action@floating_action": {
+                    // Only show the floating action if it was triggered by the correct chat event
+                    "bindings": [
+                        {
+                            "binding_name": "#chat_text",
+                            "binding_name_override": "#text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "chat_text_grid",
+                            "binding_condition": "once"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "((not ((#text - $flag_floating_action) = #text)) and ((#text - '§h§i§v§e') = #text))",
+                            "target_property_name": "#visible",
+                            "binding_condition": "once"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(not ((#text - $flag_floating_action) = #text))",
+                            "target_property_name": "#enabled",
+                            "binding_condition": "once"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "anim_floating_action_offset_in": {
+        "anim_type": "offset",
+        "easing": "linear",
+        "duration": 0.5,
+        "from": [0, 15],
+        "to": [0, 0],
+        "next": "@hive_hud.anim_floating_action_offset_wait"
+    },
+    "anim_floating_action_offset_wait": {
+        "anim_type": "wait",
+        "duration": 0,
+        "next": "@hive_hud.anim_floating_action_offset_out"
+    },
+    "anim_floating_action_offset_out": {
+        "anim_type": "offset",
+        "easing": "linear",
+        "duration": 1,
+        "from": [0, 0],
+        "to": [0, -30]
+    },
+    "anim_floating_action_alpha_in": {
+        "anim_type": "alpha",
+        "easing": "linear",
+        "duration": 0.25,
+        "from": 0,
+        "to": 1,
+        "next": "@hive_hud.anim_floating_action_alpha_wait"
+    },
+    "anim_floating_action_alpha_wait": {
+        "anim_type": "wait",
+        "duration": 0.5,
+        "next": "@hive_hud.anim_floating_action_alpha_out"
+    },
+    "anim_floating_action_alpha_out": {
+        "anim_type": "alpha",
+        "easing": "linear",
+        "duration": 0.25,
+        "from": 1.0,
+        "to": 0
+    },
+    "anim_floating_action_size_in": {
+        "anim_type": "size",
+        "easing": "linear",
+        "duration": 0.5,
+        "from": [150, 0],
+        "to": [150, 15],
+        "next": "@hive_hud.anim_floating_action_size_wait"
+    },
+    "anim_floating_action_size_wait": {
+        "anim_type": "wait",
+        "duration": 1,
+        "next": "@hive_hud.anim_floating_action_size_out"
+    },
+    "anim_floating_action_size_out": {
+        "anim_type": "size",
+        "easing": "linear",
+        "duration": 0,
+        "from": [150, 15],
+        "to": [150, 0],
+        "destroy_at_end": "chat_grid_item"
+    },
+    "floating_action": {
+        "type": "stack_panel",
+        "size": "@hive_hud.anim_floating_action_size_in",
+        "offset": "@hive_hud.anim_floating_action_offset_in",
+        "alpha": "@hive_hud.anim_floating_action_alpha_in",
+        "propagate_alpha": true,
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "layer": 50, // Above chat
+        "orientation": "vertical",
+        "controls": [
+            {
+                "text": {
+                    "type": "label",
+                    "size": [150, 15],
+                    "font_type": "MinecraftTen",
+                    "text": "#text",
+                    "line_padding": 0,
+                    "offset": [-0.5, -1],
+                    "shadow": true,
+                    "layer": 52,
+                    "font_scale_factor": 1.5,
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "text_alignment": "center",
+                    "bindings": [
+                        {
+                            "binding_name": "#chat_text",
+                            "binding_name_override": "#text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "chat_text_grid",
+                            "binding_condition": "once"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

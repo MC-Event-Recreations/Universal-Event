@@ -1,0 +1,24 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:gadget_projectile_fire",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/npc/hologram"
+            },
+            "geometry": {
+                "default": "geometry.universal.gadget.particle"
+            },
+            "animations": {
+                "projectile": "animation.universal.gadget.projectile"
+            },
+            "particle_effects": {
+                "particle": "hive:gadget_fire_spark"
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:security_door",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/bank_heist/security_door"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.security.door"
+            },
+            "animations": {
+                "controller": "controller.animation.door",
+                "unlock": "animation.universal.security.door.unlock",
+                "unlock_hold": "animation.universal.security.door.unlock.hold"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

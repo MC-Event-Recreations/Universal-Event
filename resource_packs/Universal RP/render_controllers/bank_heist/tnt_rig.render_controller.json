@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.universal.director_says.tnt_rig": {
+      "arrays": {
+        "materials": {
+          "Array.mats": [
+            "Material.unprimed",
+            "Material.primed"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Array.mats[query.property('universal:primed_state')]" } ],
+      "textures": [ "Texture.default" ]
+    }
+  }
+}

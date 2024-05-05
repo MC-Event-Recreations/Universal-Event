@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.door": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "unlock": "query.property('universal:animation_state') == 1"
+            }
+          ]
+        },
+        "unlock": {
+          "animations": ["unlock"],
+          "transitions": [
+            {
+              "unlock_hold": "query.any_animation_finished"
+            }
+          ]
+        },
+        "unlock_hold": {
+          "animations": ["unlock_hold"],
+          "transitions": [
+            {
+              "default": "query.property('universal:animation_state') == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

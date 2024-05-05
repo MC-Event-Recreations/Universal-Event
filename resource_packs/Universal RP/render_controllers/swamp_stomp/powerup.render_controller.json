@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.universal.swamp_stomp.powerup": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.health",
+            "Texture.jump_boost",
+            "Texture.speed",
+            "Texture.mudball"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.property('universal:powerup_type')]" ]
+    }
+  }
+}

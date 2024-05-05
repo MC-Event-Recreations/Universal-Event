@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.laser_beam": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "off": "query.property('universal:animation_state') == 1"
+            }
+          ]
+        },
+        "off": {
+          "animations": ["off"],
+          "transitions": [
+            {
+              "reset": "query.property('universal:animation_state') == 0"
+            }
+          ]
+        },
+        "reset": {
+          "animations": ["on"],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

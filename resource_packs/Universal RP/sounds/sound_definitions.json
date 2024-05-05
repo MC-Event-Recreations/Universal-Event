@@ -1,0 +1,723 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        // Music
+        "music.universal.western": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "music/universal/western_loop",
+                    "stream": true
+                }
+            ]
+        },
+        "music.universal.fairytale": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "music/universal/fairytale_1",
+                    "stream": true
+                },
+                {
+                    "name": "music/universal/fairytale_2",
+                    "stream": true
+                },
+                {
+                    "name": "music/universal/fairytale_3",
+                    "stream": true
+                }
+            ]
+        },
+        "music.universal.themepark": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "music/universal/themepark_1",
+                    "stream": true
+                },
+                {
+                    "name": "music/universal/themepark_2",
+                    "stream": true
+                },
+                {
+                    "name": "music/universal/themepark_3",
+                    "stream": true
+                },
+                {
+                    "name": "music/universal/themepark_4",
+                    "stream": true
+                },
+                {
+                    "name": "music/universal/themepark_5",
+                    "stream": true
+                }
+            ]
+        },
+
+        // Tram Tour
+        "sound.universal.tram_tour.scene.jaws": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/scene_jaws",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.scene.subway": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/scene_subway",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.studio_doors.close": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/tram_tour/studio_doors_close"]
+        },
+        "sound.universal.tram_tour.studio_doors.open": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/tram_tour/studio_doors_open"]
+        },
+        "sound.universal.tram_tour.shrek_entrance.close": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/tram_tour/shrek_entrance_close"]
+        },
+        "sound.universal.tram_tour.shrek_entrance.open": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/tram_tour/shrek_entrance_open"]
+        },
+        "sound.universal.tram_tour.tram.doors.open": {
+            "category": "music",
+            "sounds": ["sounds/universal/tram_tour/tram_doors_open"]
+        },
+        "sound.universal.tram_tour.tram.doors.close": {
+            "category": "music",
+            "sounds": ["sounds/universal/tram_tour/tram_doors_close"]
+        },
+        "sound.universal.tram_tour.tram.driving.loop": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_driving_loop",
+                    "volume": 0.1
+                }
+            ]
+        },
+        "sound.universal.tram_tour.tram.driving.slow_down": {
+            "category": "music",
+            "sounds": ["sounds/universal/tram_tour/tram_driving_slow_down"]
+        },
+        "sound.universal.tram_tour.tram.driving.speed_up": {
+            "category": "music",
+            "sounds": ["sounds/universal/tram_tour/tram_driving_speed_up"]
+        },
+        "sound.universal.tram_tour.tram.driving.stop": {
+            "category": "music",
+            "sounds": ["sounds/universal/tram_tour/tram_driving_stop"]
+        },
+        "sound.universal.tram_tour.elevator.down": {
+            "category": "music",
+            "sounds": ["sounds/universal/tram_tour/elevator_down"]
+        },
+        "sound.universal.tram_tour.elevator.up": {
+            "category": "music",
+            "sounds": ["sounds/universal/tram_tour/elevator_up"]
+        },
+        "sound.universal.tram_tour.shrek.narration.1": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_01",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.shrek.narration.2": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_02",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.shrek.narration.3": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_03",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.shrek.narration.4": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_04",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.shrek.narration.5": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_05",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.shrek.narration.6": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_06",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.shrek.narration.7": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_07",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.shrek.narration.8": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_08",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.shrek.narration.9": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_09",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.shrek.narration.10": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/shrek_narration_10",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.1": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_01",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.2": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_02",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.3": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_03",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.4": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_04",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.5": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_05",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.6": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_06",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.7": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_07",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.8": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_08",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.9": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_09",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.10": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_10",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.11": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_11",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.12": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_12",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.13": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_13",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.14": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_14",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.15": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_15",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.16": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_16",
+                    "stream": true
+                }
+            ]
+        },
+        "sound.universal.tram_tour.narration.17": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/tram_tour/tram_tour_narration_17",
+                    "stream": true
+                }
+            ]
+        },
+
+        // Achievement
+        "sound.universal.achievement.unlock": {
+            "category": "music",
+            "sounds": ["sounds/universal/achievement/achievement_unlocked"]
+        },
+        "sound.universal.achievement.unlock.all": {
+            "category": "music",
+            "sounds": ["sounds/universal/achievement/achievement_unlocked_all"]
+        },
+
+        // Golden Clapper
+        "sound.universal.golden.clapper.collect": {
+            "category": "music",
+            "sounds": ["sounds/universal/clapper/golden_clapper_collect"]
+        },
+        "sound.universal.golden.clapper.collect.all": {
+            "category": "music",
+            "sounds": ["sounds/universal/clapper/golden_clapper_collect_all"]
+        },
+
+        // Tickets
+        "sound.universal.tickets.gained": {
+            "category": "music",
+            "sounds": ["sounds/universal/minigame/tickets_gain"]
+        },
+
+        // Scene
+        "sound.universal.scene.building": {
+            "category": "music",
+            "sounds": ["sounds/universal/scene/director_chair_building"]
+        },
+        "sound.universal.scene.focus": {
+            "category": "music",
+            "sounds": ["sounds/universal/scene/director_chair_focus"]
+        },
+        "sound.universal.scene.unfocus": {
+            "category": "music",
+            "sounds": ["sounds/universal/scene/director_chair_unfocus"]
+        },
+
+        // Director Says Minigame
+        "sound.universal.minigame.director_says.score.positive": {
+            "category": "music",
+            "sounds": ["sounds/universal/director_says/minigame_director_positive"]
+        },
+        "sound.universal.minigame.director_says.score.negative": {
+            "category": "music",
+            "sounds": ["sounds/universal/director_says/minigame_director_negative"]
+        },
+        "sound.universal.minigame.director_says.anvil": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/director_says/minigame_director_anvil"]
+        },
+        "sound.universal.minigame.director_says.camera": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/director_says/minigame_director_camera"]
+        },
+        "sound.universal.minigame.director_says.fire_extinguisher.start": {
+            "category": "music",
+            "sounds": ["sounds/universal/director_says/fire_extinguisher_start"]
+        },
+        "sound.universal.minigame.fishing_frenzy.fire_extinguisher.loop": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/director_says/fire_extinguisher_loop",
+                    "volume": 0.18
+                }
+            ]
+        },
+        "sound.universal.minigame.director_says.fire_extinguisher.stop": {
+            "category": "music",
+            "sounds": ["sounds/universal/director_says/minigame_fishing_tool_stop"]
+        },
+
+        // Bank Heist Minigame
+        "sound.universal.minigame.bank_heist.deposit.unlock.a": {
+            "category": "music",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_deposit_unlock_01"]
+        },
+        "sound.universal.minigame.bank_heist.deposit.unlock.b": {
+            "category": "music",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_deposit_unlock_02"]
+        },
+        "sound.universal.minigame.bank_heist.money.collect.a": {
+            "category": "music",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_money_collect_01"]
+        },
+        "sound.universal.minigame.bank_heist.money.collect.b": {
+            "category": "music",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_money_collect_02"]
+        },
+        "sound.universal.minigame.bank_heist.money.collect.c": {
+            "category": "music",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_money_collect_03"]
+        },
+        "sound.universal.minigame.bank_heist.money.collect.d": {
+            "category": "music",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_money_collect_04"]
+        },
+
+        "sound.universal.minigame.van.door.open": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_van_doors_open"]
+        },
+
+        "sound.universal.minigame.bank_heist.deposit.open": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_deposit_open"]
+        },
+
+        "sound.universal.minigame.bank_heist.door.open": {
+            "category": "music",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_allydoor_open_01"]
+        },
+        "sound.universal.minigame.bank_heist.vault.door.open": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_vault_open"]
+        },
+        "sound.universal.minigame.bank_heist.security.door.open": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_security_door_open"]
+        },
+
+        "sound.universal.minigame.bank_heist.cabinet.open": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_cabinet_open"]
+        },
+        "sound.universal.minigame.bank_heist.computer.on": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_computer_on"]
+        },
+
+        "sound.universal.minigame.bank_heist.code.correct": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_code_correct"]
+        },
+        "sound.universal.minigame.bank_heist.code.digit": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_code_digit"]
+        },
+        "sound.universal.minigame.bank_heist.code.wrong": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/bank_heist/minigame_bank_code_wrong"]
+        },
+
+        // Target Practice Minigame
+        "sound.universal.minigame.target_practice.point.basic": {
+            "category": "music",
+            "sounds": ["sounds/universal/target_practice/minigame_range_target_point_basic"]
+        },
+        "sound.universal.minigame.target_practice.target.hit.a": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/target_practice/minigame_range_target_hit_twang_01"]
+        },
+        "sound.universal.minigame.target_practice.target.hit.b": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/target_practice/minigame_range_target_hit_twang_01"]
+        },
+        "sound.universal.minigame.target_practice.target.hit.c": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/target_practice/minigame_range_target_hit_twang_01"]
+        },
+        "sound.universal.minigame.target_practice.target.reset.a": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/target_practice/minigame_range_target_reset_01"]
+        },
+        "sound.universal.minigame.target_practice.target.reset.b": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/target_practice/minigame_range_target_reset_02"]
+        },
+        "sound.universal.minigame.target_practice.target.reset.c": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/target_practice/minigame_range_target_reset_03"]
+        },
+
+        // Gadget
+        "sound.universal.gadget.charge": {
+            "category": "music",
+            "sounds": ["sounds/universal/gadget/gadget_charge"]
+        },
+        "sound.universal.gadget.fire": {
+            "category": "music",
+            "sounds": ["sounds/universal/gadget/gadget_fire"]
+        },
+
+        // Fishing Frenzy Minigame
+        "sound.universal.minigame.fishing_frenzy.vacuum.start": {
+            "category": "music",
+            "sounds": ["sounds/universal/fishing_frenzy/minigame_fishing_tool_start"]
+        },
+        "sound.universal.minigame.fishing_frenzy.vacuum.loop": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/universal/fishing_frenzy/minigame_fishing_tool_loop",
+                    "volume": 0.18
+                }
+            ]
+        },
+        "sound.universal.minigame.fishing_frenzy.vacuum.stop": {
+            "category": "music",
+            "sounds": ["sounds/universal/fishing_frenzy/minigame_fishing_tool_stop"]
+        },
+
+        "sound.universal.minigame.fishing_frenzy.fish.chomp": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/fishing_frenzy/minigame_fishing_fish_chomp"]
+        },
+        "sound.universal.minigame.fishing_frenzy.fish.lure": {
+            "category": "music",
+            "sounds": ["sounds/universal/fishing_frenzy/minigame_fishing_fish_lure"]
+        },
+        "sound.universal.minigame.fishing_frenzy.fish.score": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/fishing_frenzy/minigame_fishing_fish_score"]
+        },
+        "sound.universal.minigame.fishing_frenzy.fish.spawn": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/fishing_frenzy/minigame_fishing_fish_spawn"]
+        },
+
+        // Interactables
+        "sound.universal.interactable.fire_hydrant": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/interactable/interactable_fire_hydrant"]
+        },
+        "sound.universal.interactable.mailbox": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/interactable/interactable_mailbox"]
+        },
+        "sound.universal.interactable.meter": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/interactable/interactable_meter"]
+        },
+        "sound.universal.interactable.trash_can": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/interactable/interactable_trash_can"]
+        },
+
+        // Minigame
+        "sound.universal.minigame.generic.collect.rare": {
+            "category": "neutral",
+            "sounds": ["sounds/universal/minigame/minigame_collect_rare_01"]
+        },
+
+        "sound.universal.minigame.generic.collect.rare.ui": {
+            "category": "music",
+            "sounds": ["sounds/universal/minigame/minigame_collect_rare_01"]
+        },
+
+        "sound.universal.minigame.generic.results.position.first": {
+            "category": "music",
+            "sounds": ["sounds/universal/minigame/minigame_global_place_first"]
+        },
+        "sound.universal.minigame.generic.results.position.other": {
+            "category": "music",
+            "sounds": ["sounds/universal/minigame/minigame_global_place_other"]
+        },
+
+        "sound.universal.minigame.start": {
+            "category": "music",
+            "sounds": ["sounds/universal/minigame/minigame_global_start"]
+        },
+
+        // UI
+        "universal.ui.joined": {
+            "category": "music",
+            "sounds": ["sounds/universal/ui/joined"]
+        },
+        "universal.ui.purchase": {
+            "category": "music",
+            "sounds": ["sounds/universal/ui/purchase"]
+        },
+        "universal.ui.teleport": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/mob/endermen/portal",
+                    "load_on_low_memory": true
+                },
+                "sounds/mob/endermen/portal2"
+            ]
+        },
+        // Parkour
+        "universal.parkour.finish": {
+            "category": "music",
+            "sounds": ["sounds/universal/parkour/finish"]
+        },
+        "universal.minigame.finish.countdown": {
+            "category": "music",
+            "sounds": ["sounds/universal/minigame/finish_countdown"]
+        },
+        "earth.minigame.join.queue": {
+            "category": "music",
+            "sounds": ["sounds/earth/minigame_join_queue"]
+        },
+        "earth.parkour.checkpoint.1": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_checkpoint_1"]
+        },
+        "earth.parkour.checkpoint.2": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_checkpoint_2"]
+        },
+        "earth.parkour.checkpoint.3": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_checkpoint_3"]
+        },
+        "earth.parkour.checkpoint.4": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_checkpoint_4"]
+        },
+        "earth.parkour.checkpoint.5": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_checkpoint_5"]
+        },
+        "earth.parkour.fall.1": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_fall_1"]
+        },
+        "earth.parkour.fall.2": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_fall_2"]
+        },
+        "earth.parkour.fall.3": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_fall_3"]
+        },
+        "earth.parkour.fall.4": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_fall_4"]
+        },
+        "earth.parkour.fall.5": {
+            "category": "music",
+            "sounds": ["sounds/earth/parkour_fall_5"]
+        },
+
+        // Remove cave sounds
+        "ambient.cave": {
+            "category": "ambient",
+            "sounds": [
+                {
+                    "name": "sounds/cave/cave1",
+                    "stream": true,
+                    "volume": 0.0
+                }
+            ]
+        }
+    }
+}

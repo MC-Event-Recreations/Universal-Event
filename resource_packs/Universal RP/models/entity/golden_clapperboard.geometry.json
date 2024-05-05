@@ -1,0 +1,61 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.universal.golden_clapperboard",
+                "texture_width": 28,
+                "texture_height": 21,
+                "visible_bounds_width": 3,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [0, 0.75, 0]
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0]
+                },
+                {
+                    "name": "mass",
+                    "parent": "root",
+                    "pivot": [0, 5, 0],
+                    "cubes": [
+                        {
+                            "origin": [-7, 0, -2],
+                            "size": [14, 9, 4],
+                            "uv": {
+                                "north": { "uv": [0, 0], "uv_size": [14, 9] },
+                                "east": { "uv": [14, 8], "uv_size": [4, 9] },
+                                "south": { "uv": [14, 0], "uv_size": [-14, 9] },
+                                "west": { "uv": [18, 8], "uv_size": [4, 9] },
+                                "up": { "uv": [14, 0], "uv_size": [14, 4] },
+                                "down": { "uv": [14, 8], "uv_size": [14, -4] }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "clapperboardTop",
+                    "parent": "mass",
+                    "pivot": [-7, 9, 0],
+                    "rotation": [0, 0, -15],
+                    "cubes": [
+                        {
+                            "origin": [-7, 9, -2],
+                            "size": [14, 4, 4],
+                            "uv": {
+                                "north": { "uv": [0, 17], "uv_size": [14, 4] },
+                                "east": { "uv": [14, 17], "uv_size": [4, 4] },
+                                "south": { "uv": [14, 17], "uv_size": [-14, 4] },
+                                "west": { "uv": [18, 17], "uv_size": [4, 4] },
+                                "up": { "uv": [0, 13], "uv_size": [14, 4] },
+                                "down": { "uv": [0, 13], "uv_size": [14, -4] }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

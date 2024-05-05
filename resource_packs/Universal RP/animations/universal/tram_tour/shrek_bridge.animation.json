@@ -1,0 +1,322 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.universal.tram_tour.shrek_bridge.z": {
+            "loop": "hold_on_last_frame",
+            "bones": {
+                "dragon": {
+                    "scale": [1, 1, 0.0375]
+                },
+                "rightEye": {
+                    "position": [-1, 0, 0]
+                },
+                "rightPupil": {
+                    "position": [-1, 0, 0]
+                },
+                "shrek": {
+                    "scale": [1, 1, 0.05]
+                },
+                "fiona": {
+                    "scale": [0.05, 1, 1]
+                }
+            }
+        },
+        "animation.universal.tram_tour.shrek_bridge.pose": {
+            "loop": "hold_on_last_frame",
+            "bones": {
+                "dragon": {
+                    "rotation": [0, 0, -125],
+                    "position": [-100, -20.825, -15.5],
+                    "scale": [0.8, 0.8, 1.125]
+                },
+                "rightWing": {
+                    "rotation": [-21.07059, 0.8098, -121.62895],
+                    "position": [-6.75, -1.25, 0],
+                    "scale": 0
+                },
+                "leftWing": {
+                    "rotation": [115.61977, -23.39896, 9.06159],
+                    "position": [2, -3, -6],
+                    "scale": 0.9
+                },
+                "neck": {
+                    "rotation": [44.08994, -20.71501, 18.50097],
+                    "position": [0, 0.75, 1],
+                    "scale": [1, 1, 1.9]
+                },
+                "head": {
+                    "rotation": [143.44738, -28.87283, 9.82896],
+                    "position": [-1.25, -14.75, -5.5]
+                },
+                "rightPupil": {
+                    "position": [0, -0.5, -1.75],
+                    "scale": [1, 0.75, 0.75]
+                },
+                "rightFin": {
+                    "rotation": [-15, 0, 0],
+                    "position": [0, 0, 1.25]
+                },
+                "bottomMouth": {
+                    "rotation": [50, 0, 0]
+                },
+                "frontRightLeg": {
+                    "rotation": [17.77234, 10.62881, 13.6327],
+                    "position": [-8, -6, 5],
+                    "scale": 0.8
+                },
+                "frontRightFoot": {
+                    "rotation": [25, 0, 0],
+                    "position": [0, 1, 0]
+                },
+                "frontLeftLeg": {
+                    "rotation": [4.51816, 4.75113, -11.57518],
+                    "position": [3.5, -11, 10.25],
+                    "scale": 0.6
+                },
+                "frontLeftFoot": {
+                    "rotation": [25, 0, 0],
+                    "position": [0, 1, 0]
+                },
+                "body2": {
+                    "rotation": [-37.5, 0, 0]
+                },
+                "backRightLeg": {
+                    "rotation": [32.72348, -6.3202, -4.04618],
+                    "position": [-3, -3, 12.75],
+                    "scale": 0.8
+                },
+                "backRightLeg2": {
+                    "rotation": [7.5, 0, 0]
+                },
+                "backRightFoot": {
+                    "rotation": [25, 0, 0],
+                    "position": [0, 2, 0]
+                },
+                "backLeftLeg": {
+                    "rotation": [22.5, 0, 0],
+                    "position": [-7, -4.25, 12],
+                    "scale": 0.6
+                },
+                "backLeftLeg2": {
+                    "rotation": [7.5, 0, 0]
+                },
+                "backLeftFoot": {
+                    "rotation": [25, 0, 0],
+                    "position": [0, 2, 0]
+                },
+                "tail": {
+                    "rotation": [-27.47766, 1.15408, 2.21783]
+                },
+                "tail2": {
+                    "rotation": [-20, 0, 0]
+                },
+                "tail3": {
+                    "rotation": [-10, 0, 0]
+                },
+                "shrek": {
+                    "rotation": [0, 0, -25],
+                    "position": [44, -36, 0],
+                    "scale": 0.75
+                },
+                "rightLeg": {
+                    "rotation": [0, 7.5, 22.5],
+                    "position": [-1, 1.5, 7],
+                    "scale": [1, 1.2, 1]
+                },
+                "leftLeg": {
+                    "rotation": [-9.71985, -77.13731, -340.75199],
+                    "position": [5.29278, 7.73261, -4.15989]
+                },
+                "head2": {
+                    "rotation": [-14.71593, 9.43899, 19.47143],
+                    "position": [-2.5, 1.75, -7.5]
+                },
+                "rightEyebrow": {
+                    "rotation": [0, 0, 7.5],
+                    "position": [0.19126, -0.50414, -0.10247]
+                },
+                "leftEyebrow": {
+                    "rotation": [0, 0, -7.5],
+                    "position": [0.05874, -0.50414, -0.35247],
+                    "scale": [1.1, 1, 1]
+                },
+                "rightEar": {
+                    "position": [-1.39787, 0.04061, -1.00168]
+                },
+                "leftEar": {
+                    "position": [0.17881, 1.70131, -0.18056]
+                },
+                "rightArm": {
+                    "rotation": [-5, -22.5, 27.5],
+                    "position": [0, -3, 4],
+                    "scale": [1, 1.2, 1]
+                },
+                "leftArm": {
+                    "rotation": [0, 0, -110],
+                    "position": [0, 3, 0]
+                },
+                "donkey": {
+                    "rotation": [0, 0, -180],
+                    "position": [-98.57519, 13.71788, -5.73409],
+                    "scale": 0.8
+                },
+                "frontRightLeg3": {
+                    "rotation": [-172.64737, -3.11527, -366.27798],
+                    "position": [-9, 18.75, 20.25],
+                    "scale": 0.9
+                },
+                "frontLeftLeg3": {
+                    "rotation": [-182.64737, -3.11527, -358.77798],
+                    "position": [1, 19.75, 7.25]
+                },
+                "backRightLeg3": {
+                    "scale": [1, 1.4, 1]
+                },
+                "backLeftLeg3": {
+                    "rotation": [-172.64737, -3.11527, -358.77798],
+                    "position": [0, 2.75, -4.75]
+                },
+                "body4": {
+                    "rotation": [-90, 0, 0],
+                    "position": [0.13291, -5.99752, -0.10984]
+                },
+                "neck2": {
+                    "rotation": [72.5, 0, -15],
+                    "position": [-2.74428, -4.24076, -3.15658]
+                },
+                "bottomMouth2": {
+                    "rotation": [47.5, 0, 0]
+                },
+                "rightEar2": {
+                    "position": [-2.25, 0, 0],
+                    "scale": [1, 1.3, 1]
+                },
+                "leftEar2": {
+                    "scale": [1, 1.2, 1]
+                },
+                "rightEyebrow2": {
+                    "rotation": [0, 0, -12.5],
+                    "position": [0, 1.75, 0]
+                },
+                "leftEyebrow2": {
+                    "rotation": [0, 0, 17.5],
+                    "position": [0, 1.75, 0]
+                },
+                "rightPupil2": {
+                    "position": [0, 0, -0.5]
+                },
+                "leftPupil2": {
+                    "position": [0, 0, -0.5]
+                },
+                "tail4": {
+                    "rotation": [55.37593, 84.45867, -27.83769],
+                    "position": [1.75, -4.5, 1.75]
+                },
+                "fiona": {
+                    "rotation": [0, -90, 0],
+                    "position": [72.25, -16.25, -6],
+                    "scale": 0.8
+                },
+                "rightLeg2": {
+                    "rotation": [-2.68314, 6.67273, 8.36796],
+                    "position": [2, 4.5, 0]
+                },
+                "leftLeg2": {
+                    "rotation": [10, 0, 0],
+                    "position": [0, 1, 3],
+                    "scale": 1
+                },
+                "body5": {
+                    "rotation": [7.5, 25, 0],
+                    "position": [0, 0, 0.75]
+                },
+                "head4": {
+                    "rotation": [-198.67471, 59.15115, -182.14452]
+                },
+                "rightEyebrow3": {
+                    "position": [0.4, -0.25, -0.5]
+                },
+                "leftEyebrow3": {
+                    "position": [0.4, -0.25, -0.5]
+                },
+                "rightArm2": {
+                    "rotation": [-102.5, 0, 0],
+                    "position": [0, 1.25, 0]
+                },
+                "leftArm2": {
+                    "rotation": [-95, 0, 0],
+                    "position": [0, 3.75, -5]
+                },
+                "z": {
+                    "rotation": [0, -75, 0]
+                },
+                "z3": {
+                    "rotation": [0, 17.5, 0],
+                    "position": [-2, 0, 0]
+                },
+                "skirt": {
+                    "rotation": [-16.3753, 67.98751, -9.52276],
+                    "position": [-0.75, 4, -2.75],
+                    "scale": 0.9
+                },
+                "v": {
+                    "rotation": [0, 7.5, 0]
+                },
+                "mouth": {
+                    "rotation": [10, 0, 0],
+                    "position": [0, -1, 0]
+                },
+                "nose": {
+                    "scale": [0.7, 1, 1]
+                },
+                "bone": {
+                    "scale": [1, 0.8, 0.8]
+                },
+                "chain": {
+                    "rotation": [0, 0, 125],
+                    "position": [45, 0, 0],
+                    "scale": [0.4, 0.5, 1]
+                }
+            }
+        },
+        "animation.universal.tram_tour.shrek_bridge.play": {
+            "loop": "hold_on_last_frame",
+            "animation_length": 25,
+            "bones": {
+                "dragon": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "0.92": [0, 0, -0.3],
+                        "1.84": [0, 0, -0.91],
+                        "3.44": [0, 0, -3.23],
+                        "6.16": [0, 0, -8.72],
+                        "8.36": [0, 0, -11.9],
+                        "11.0": [0, 0, -15.09],
+                        "12.4": [0, 0, -16.61],
+                        "13.72": [0, 0, -17.78],
+                        "14.76": [0, 0, -18.53],
+                        "15.6": [0, 0, -18.9],
+                        "16.88": [0, 0, -19.25]
+                    }
+                },
+                "rightArm": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "4.76": [0, 0, "math.cos(query.anim_time * 60) * 10"],
+                        "14.76": [0, 0, "math.cos(query.anim_time * 60) * 10"],
+                        "19.16": [0, 0, 0]
+                    }
+                },
+                "rightPupil2": {
+                    "position": [0, 1, 0]
+                },
+                "leftPupil2": {
+                    "position": [0, 1, 0]
+                },
+                "chain": {
+                    "position": [0, 0, 0]
+                }
+            }
+        }
+    }
+}

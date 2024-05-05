@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:fish_object",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "golden_duck": "textures/entity/fishing_frenzy/golden_duck",
+                "old_boot": "textures/entity/fishing_frenzy/old_boot",
+                "barrel_tnt": "textures/entity/fishing_frenzy/barrel_tnt"
+            },
+            "geometry": {
+                "golden_duck": "geometry.universal.golden_duck",
+                "old_boot": "geometry.universal.old_boot",
+                "barrel_tnt": "geometry.universal.barrel_tnt"
+            },
+            "animations": {
+                "controller": "controller.animation.fish_object",
+                "idle": "animation.universal.fishing.object.idle",
+                "spawn": "animation.universal.fishing.object.spawn",
+                "despawn": "animation.universal.fishing.object.despawn",
+                "explode": "animation.universal.fishing.object.explode"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.universal.fishing_frenzy.fish_object"]
+        }
+    }
+}

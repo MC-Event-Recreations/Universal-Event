@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.universal.food.milkshake.third": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [33.68811, 1.67976, 7.40904],
+					"position": [0.25, 19.49178, -2.66349],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.universal.food.milkshake.first": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [49.3881, -24.12796, -186.30168],
+					"position": [-1.50746, 24.39421, 7.52663]
+				}
+			}
+		}
+	}
+}

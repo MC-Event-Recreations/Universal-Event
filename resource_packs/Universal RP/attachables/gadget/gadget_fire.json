@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "universal:gadget_fire",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/gadget/fire_gadget"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.firegadget"
+            },
+            "animations": {
+                "first_person": "animation.universal.gadget.fire.first",
+                "third_person": "animation.universal.gadget.fire.third",
+                "use": "animation.universal.gadget.fire.charge_up",
+                "fire": "animation.universal.gadget.fire.use",
+
+                "controller": "controller.animation.universal.gadget.gadget_firable"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.using_first = context.is_first_person && query.main_hand_item_use_duration > 0;"
+                ],
+                "animate": [
+                    {
+                        "first_person": "context.is_first_person == 1.0"
+                    },
+                    {
+                        "third_person": "context.is_first_person == 0.0"
+                    },
+                    "controller"
+                ]
+            },
+            "render_controllers": ["controller.render.universal.fishing_frenzy.fish_vacuum"]
+        }
+    }
+}

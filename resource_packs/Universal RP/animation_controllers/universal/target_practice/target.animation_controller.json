@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.target": {
+      "states": {
+        "default": {
+          "animations": ["reset"],
+          "transitions": [
+            {
+              "hit": "query.property('universal:animation_state') == 1"
+            }
+          ]
+        },
+        "hit": {
+          "animations": ["hit"],
+          "transitions": [
+            {
+              "hit_hold": "query.any_animation_finished"
+            }
+          ]
+        },
+        "hit_hold": {
+          "animations": ["hit_hold"],
+          "transitions": [
+            {
+              "default": "query.property('universal:animation_state') == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

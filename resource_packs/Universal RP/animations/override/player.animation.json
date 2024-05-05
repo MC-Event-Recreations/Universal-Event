@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.player.riding.legs": {
+            "loop": true,
+            "anim_time_update": "v.shrunk = q.property('universal:tram_shrink') && !q.is_local_player && query.distance_from_camera <= 2.5; return 0;",
+            "bones": {
+                "root": {
+                    "scale": "v.shrunk ? 0.35 : 1.0",
+                    "position": [0, "v.shrunk ? 7.0 : 0", 0]
+                },
+                "leftleg": { "rotation": ["-72.0 - this", "-18.0 - this", "-this"] },
+                "rightleg": { "rotation": ["-72.0 - this", "18.0 - this", "-this"] }
+            }
+        }
+    }
+}

@@ -1,0 +1,305 @@
+{
+    "namespace": "single_image_modal",
+    "main_panel@common_modal_ui.main_panel": {
+        "$close_button": false,
+        "$top_content": "single_image_modal.main_image",
+        "$bottom_content": "single_image_modal.button_renderer",
+        "$modal_size": [170, "100%"]
+    },
+    // Render the main image
+    "main_image": {
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "size": ["100% - 20px", "100%c"],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "factory": {
+            "name": "button_list_factory",
+            "control_name": "single_image_modal.image_and_content_entry"
+        },
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#collection_length"
+            }
+        ]
+    },
+    // Render the image + text
+    "image_and_content_entry": {
+        "type": "panel",
+        "size": ["100%", "100%cm"],
+        "$flag_content": "§m§a",
+        "controls": [
+            {
+                "image_and_content_wrapper@single_image_modal.image_and_content_wrapper": {}
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name": "#form_button_text",
+                "binding_name_override": "#form_button_text",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(not ((#form_button_text - $flag_content) = #form_button_text))",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    // Inside the button, displays the image & the text below it
+    "image_and_content_wrapper": {
+        "type": "panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "size": ["100%", "100%c"],
+        "$color|default": "black",
+        "controls": [
+            {
+                "image_and_content": {
+                    "size": ["100%", "100%c"],
+                    "type": "stack_panel",
+                    "orientation": "vertical",
+                    "controls": [
+                        {
+                            "center_icon": {
+                                "type": "panel",
+                                "anchor_from": "top_left",
+                                "anchor_to": "top_left",
+                                "size": ["100%", "100%c + 2px"],
+                                "controls": [
+                                    {
+                                        "icon": {
+                                            "size": ["50px", "50px"],
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "layer": 2,
+                                            "type": "image",
+                                            "keep_ratio": true,
+                                            "bilinear": true,
+                                            "bindings": [
+                                                {
+                                                    "binding_name": "#form_button_texture",
+                                                    "binding_name_override": "#texture",
+                                                    "binding_type": "collection",
+                                                    "binding_collection_name": "form_buttons"
+                                                },
+                                                {
+                                                    "binding_name": "#form_button_texture_file_system",
+                                                    "binding_name_override": "#texture_file_system",
+                                                    "binding_type": "collection",
+                                                    "binding_collection_name": "form_buttons"
+                                                },
+                                                {
+                                                    "binding_type": "view",
+                                                    "source_property_name": "(not ((#texture = '') or (#texture = 'loading')))",
+                                                    "target_property_name": "#visible"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "middle_spacing": {
+                                "type": "panel",
+                                "size": [1, 3]
+                            }
+                        },
+                        {
+                            "content": {
+                                "type": "label",
+                                "text": "#form_button_text",
+                                "line_padding": 2,
+                                "color": "black",
+                                "font_scale_factor": 1,
+                                "anchor_from": "top_left",
+                                "anchor_to": "top_left",
+                                "text_alignment": "center",
+                                "size": ["100%", "default"],
+                                "layer": 5,
+                                "shadow": false,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "form_buttons",
+                                        "binding_condition": "none",
+                                        "binding_name": "#form_button_text",
+                                        "binding_name_override": "#form_button_text"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Render the buttons
+    "button_renderer": {
+        "type": "stack_panel",
+        "orientation": "horizontal",
+        "size": ["100%c", "100%c"],
+        "offset": [0, 1],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "factory": {
+            "name": "button_list_factory",
+            "control_name": "single_image_modal.button_entry"
+        },
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#collection_length"
+            }
+        ]
+    },
+    // Button list entry (allows it to be clickable and nests the inside)
+    "button_entry": {
+        "type": "panel",
+        "$flag_content": "§m§a",
+        "size": ["100%c", "100%c"],
+        "controls": [
+            {
+                "button@common.button": {
+                    "size": ["100%c", "100%c"],
+                    "layer": 1,
+                    "$pressed_button_name": "button.form_button_click",
+                    "default_focus_precedence": 1,
+                    "controls": [
+                        {
+                            "default@single_image_modal.button_list_entry_inside": {
+                                "$state": "default"
+                            }
+                        },
+                        {
+                            "hover@single_image_modal.button_list_entry_inside": {
+                                "$state": "hover"
+                            }
+                        },
+                        {
+                            "pressed@single_image_modal.button_list_entry_inside": {
+                                "$state": "pressed"
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_type": "collection_details",
+                            "binding_collection_name": "form_buttons"
+                        }
+                    ]
+                }
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name": "#form_button_text",
+                "binding_name_override": "#form_button_text",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "((#form_button_text - $flag_content) = #form_button_text)",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    // Inside the button, displays the image & the text below it
+    "button_list_entry_inside": {
+        "type": "stack_panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "orientation": "vertical",
+        "$color|default": "white",
+        "size": ["100%c", "100%c"],
+        // Change color on hover
+        "variables": [
+            {
+                "requires": "($state = 'hover')",
+                "$color": [0.7, 0.7, 0.7]
+            }
+        ],
+        "controls": [
+            // Button
+            {
+                "button": {
+                    "size": ["100%cm + 42px", "100%cm + 3px"],
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/universal/green_button",
+                    "color": "$color",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "button_label": {
+                                "type": "label",
+                                "font_type": "MinecraftTen",
+                                "text": "#form_button_text",
+                                "line_padding": 1,
+                                "color": "white",
+                                "font_scale_factor": 1.5,
+                                "anchor_from": "top_middle",
+                                "anchor_to": "top_middle",
+                                "text_alignment": "center",
+                                "offset": [0, -1],
+                                "size": ["default", "default"],
+                                "layer": 5,
+                                "shadow": false,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "form_buttons",
+                                        "binding_condition": "none",
+                                        "binding_name": "#form_button_text",
+                                        "binding_name_override": "#form_button_text"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "button_label_shadow": {
+                                "type": "label",
+                                "font_type": "MinecraftTen",
+                                "text": "#form_button_text",
+                                "line_padding": 1,
+                                "color": "black",
+                                "font_scale_factor": 1.5,
+                                "anchor_from": "top_middle",
+                                "anchor_to": "top_middle",
+                                "text_alignment": "center",
+                                "offset": [0.5, -0],
+                                "size": ["default", "default"],
+                                "alpha": 0.4,
+                                "layer": 4,
+                                "shadow": false,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "form_buttons",
+                                        "binding_condition": "none",
+                                        "binding_name": "#form_button_text",
+                                        "binding_name_override": "#form_button_text"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

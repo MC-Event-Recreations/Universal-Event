@@ -1,0 +1,67 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.universal.fishing.object.idle": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, "math.cos(query.anim_time * 20) * 7", "((math.cos((query.anim_time + 0.4) * 117.5) * 2.5))"],
+					"position": ["math.cos(query.anim_time * 30) * 1", "((math.cos((query.anim_time + 4.1) * 137.5) * 0.5))", 0]
+				}
+			}
+		},
+		"animation.universal.fishing.object.spawn": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.4,
+			"bones": {
+				"body": {
+					"scale": {
+						"0.0": [0.2, 0, 0],
+						"0.12": [1, 1, 1],
+						"0.2": [0.9667, 0.9583, 0.9583],
+						"0.28": [0.9889, 0.9861, 0.9861],
+						"0.32": [0.9963, 0.9954, 0.9954],
+						"0.4": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.universal.fishing.object.despawn": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.2,
+			"bones": {
+				"body": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.04": [0.9667, 0.9667, 0.9667],
+						"0.08": [0.9, 0.9, 0.9],
+						"0.16": [0.6, 0.6, 0.6],
+						"0.2": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.universal.fishing.object.explode": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.28,
+			"bones": {
+				"root": {
+					"position": {
+						"0.08": [0, 0, 0],
+						"0.24": ["math.cos(query.anim_time * 3300) * 0.75", "math.cos(query.anim_time * 3000) * 0.75", 0],
+						"0.28": [0, 0, 0]
+					}
+				},
+				"body": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.08": [0.9, 0.7, 0.9],
+						"0.2": [1.1525, 0.6, 1.125],
+						"0.24": [1.46, 1.3075, 1.3825],
+						"0.28": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

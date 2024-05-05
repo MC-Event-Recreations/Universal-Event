@@ -1,0 +1,132 @@
+{
+    "namespace": "hive_hud",
+    "hud_text_fader_factory": {
+        "type": "panel",
+        "factory": {
+            "name": "hud_actionbar_text_factory",
+            "control_ids": {
+                // Use our custom component
+                "hud_actionbar_text": "hud_actionbar_text@hive_hud.hud_special_actionbar"
+            }
+        }
+    },
+    // Dynamically switch the actionbar based on value
+    "hud_special_actionbar": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        // Only show when our prefix is present
+        "controls": [
+            {
+                "hud_text_fader_check": {
+                    "type": "panel",
+                    "$text": "$actionbar_text",
+                    "visible": "(($text > '§h§i§r') and ($text < '§h§i§s'))",
+                    "size": ["100%", "100%"],
+                    "controls": [
+                        {
+                            "fader@hive_hud.hud_text_fader": {}
+                        }
+                    ]
+                }
+            },
+            {
+                "hud_large_text_fader_check": {
+                    "type": "panel",
+                    "$text": "$actionbar_text",
+                    "visible": "(($text > '§h§j§r') and ($text < '§h§j§s'))",
+                    "size": ["100%", "100%"],
+                    "controls": [
+                        {
+                            "fader@hive_hud.hud_large_text_fader": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Current in animation is instant
+    "anim_text_fader_in": {
+        "anim_type": "alpha",
+        "easing": "linear",
+        "duration": 0.5,
+        "from": 0,
+        "to": 1,
+        "next": "@hive_hud.anim_text_fader_hold"
+    },
+    // Hold the screen for half a second
+    "anim_text_fader_hold": {
+        "anim_type": "wait",
+        "duration": 1,
+        "next": "@hive_hud.anim_text_fader_out"
+    },
+    // Fade out in the last second
+    "anim_text_fader_out": {
+        "anim_type": "alpha",
+        "easing": "linear",
+        "duration": 2,
+        "from": 1,
+        "to": 0
+    },
+    // Our custom title which fades for 3s
+    "hud_text_fader": {
+        "type": "panel",
+        "propagate_alpha": true,
+        "size": ["100%", "100%"],
+        "anims": ["@hive_hud.anim_text_fader_in"],
+        "layer": 1000, // Above everything
+        "controls": [
+            {
+                "title": {
+                    "offset": [0, -25],
+                    "type": "label",
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "shadow": true,
+                    "layer": 2000, // Above everything
+                    "text": "$actionbar_text",
+                    "localize": false,
+                    "text_alignment": "center",
+                    "font_scale_factor": 3.0
+                }
+            }
+        ]
+    },
+    // Our custom title which fades for 3s
+    "hud_large_text_fader": {
+        "type": "panel",
+        "propagate_alpha": true,
+        "size": ["100%", "100%"],
+        "anims": ["@hive_hud.anim_text_fader_in"],
+        "layer": 1000, // Above everything
+        "controls": [
+            {
+                "title": {
+                    "offset": [0, -25],
+                    "type": "label",
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "layer": 2000,
+                    "text": "$actionbar_text",
+                    "localize": false,
+                    "font_scale_factor": 6,
+                    "font_type": "MinecraftTen"
+                }
+            },
+            {
+                "title_shadow": {
+                    "offset": [2, -23],
+                    "type": "label",
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "layer": 1900,
+                    "color": "black",
+                    "text": "$actionbar_text",
+                    "localize": false,
+                    "font_scale_factor": 6,
+                    "font_type": "MinecraftTen",
+                    "alpha": 0.2
+                }
+            }
+        ]
+    }
+}

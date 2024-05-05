@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tram_tour_shrek_wedding",
+            "materials": {
+                "default": "entity_alphatest",
+                "blend": "slime_outer"
+            },
+            "textures": {
+                "default": "textures/entity/tram_tour/shrek_wedding"
+            },
+            "geometry": {
+                "default": "geometry.universal.tram_tour.shrek_wedding"
+            },
+            "animations": {
+                "controller": "controller.animation.universal.tram_tour.shrek_swamp.hold",
+                "hold": "animation.universal.tram_tour.shrek_wedding.play.hold",
+                "play": "animation.universal.tram_tour.shrek_wedding.play",
+                "wiggles": "animation.universal.tram_tour.shrek_wedding.wiggles",
+                "z": "animation.universal.tram_tour.shrek_wedding.z"
+            },
+            "scripts": {
+                "animate": ["z", "controller"]
+            },
+            "render_controllers": ["controller.render.universal.tram_tour.shrek_wedding"]
+        }
+    }
+}

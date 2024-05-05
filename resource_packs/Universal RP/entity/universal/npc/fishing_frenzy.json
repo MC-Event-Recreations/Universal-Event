@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:npc_fishing_frenzy",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/npc/fishing_frenzy"
+            },
+            "geometry": {
+                "default": "geometry.universal.npc.fishing_frenzy"
+            },
+            "animations": {
+                "pose": "animation.universal.npc.fishing_frenzy.pose",
+                "idle": "animation.universal.npc.fishing_frenzy.idle",
+                "idle_face": "animation.universal.npc.fishing_frenzy.idle.face",
+                "fire": "animation.universal.npc.fishing_frenzy.fire"
+            },
+            "scripts": {
+                "animate": ["pose", "idle", "idle_face", "fire"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

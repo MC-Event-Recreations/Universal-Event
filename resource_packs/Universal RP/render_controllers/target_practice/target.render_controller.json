@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.universal.target_practice.target": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.target",
+            "Texture.target_gold"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.property('universal:variant_id')]" ]
+    }
+  }
+}

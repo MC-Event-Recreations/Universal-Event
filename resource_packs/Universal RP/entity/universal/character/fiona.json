@@ -1,0 +1,30 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:character_fiona",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/character/fiona"
+            },
+            "geometry": {
+                "default": "geometry.universal.character.fiona"
+            },
+            "animations": {
+                "controller": "controller.animation.universal.character.fiona",
+                "idle": "animation.universal.character.fiona.idle",
+                "head_idle": "animation.universal.character.fiona.head.idle",
+                "fidget": "animation.universal.character.fiona.fidget",
+                "sing": "animation.universal.character.fiona.sing",
+                "look_around": "animation.universal.character.fiona.look.around",
+                "pause": "animation.universal.food_cart.fidget.pause"
+            },
+            "scripts": {
+                "animate": ["idle", "head_idle", "controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

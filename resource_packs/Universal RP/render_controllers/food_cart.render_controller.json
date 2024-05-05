@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.universal.food_cart": {
+            "materials": [{ "*": "Material.default" }, { "glass*": "Material.blend" }],
+            "geometry": "Geometry.default",
+            "textures": ["Texture.default"]
+        }
+    }
+}

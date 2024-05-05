@@ -1,0 +1,71 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.universal.laser.idle": {
+			"loop": true,
+			"bones": {
+				"left": {
+					"scale": [1, "math.lerp(0.9, 1.0, (math.cos(query.anim_time * 2600) * 0.2 + 0.5));", 1]
+				}
+			}
+		},
+		"animation.universal.laser.R2L.on": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.32,
+			"bones": {
+				"left": {
+					"scale": {
+						"0.0": [0, 1, 1],
+						"0.12": [0.03, 1, 1],
+						"0.24": [0.3533, 1, 1],
+						"0.32": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.universal.laser.R2L.off": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.32,
+			"bones": {
+				"right": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.08": [0.7844, 1, 1],
+						"0.12": [0.3533, 1, 1],
+						"0.24": [0.03, 1, 1],
+						"0.32": [0, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.universal.laser.L2R.on": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.32,
+			"bones": {
+				"right": {
+					"scale": {
+						"0.0": [0, 1, 1],
+						"0.12": [0.03, 1, 1],
+						"0.24": [0.3533, 1, 1],
+						"0.32": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.universal.laser.L2R.off": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.32,
+			"bones": {
+				"left": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.08": [0.7844, 1, 1],
+						"0.12": [0.3533, 1, 1],
+						"0.24": [0.03, 1, 1],
+						"0.32": [0, 1, 1]
+					}
+				}
+			}
+		}
+	}
+}

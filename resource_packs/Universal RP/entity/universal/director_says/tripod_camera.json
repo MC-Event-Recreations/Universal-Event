@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tripod_camera",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "camera_off": "textures/entity/director_says/tripod_camera_off",
+                "camera_on": "textures/entity/director_says/tripod_camera_on"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.tripodcamera"
+            },
+            "render_controllers": ["controller.render.universal.director_says.tripod_camera"]
+        }
+    }
+}

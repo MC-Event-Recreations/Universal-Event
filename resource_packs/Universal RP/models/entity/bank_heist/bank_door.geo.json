@@ -1,0 +1,125 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.hive.universal.bank.door",
+				"texture_width": 36,
+				"texture_height": 76,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "rightDoor",
+					"pivot": [-24, 0, -3],
+					"cubes": [
+						{
+							"origin": [-24, 0, -3],
+							"size": [24, 64, 6],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [24, 64]},
+								"east": {"uv": [24, 0], "uv_size": [6, 64]},
+								"south": {"uv": [24, 0], "uv_size": [-24, 64]},
+								"west": {"uv": [30, 0], "uv_size": [6, 64]},
+								"up": {"uv": [0, 64], "uv_size": [24, 6]},
+								"down": {"uv": [0, 76], "uv_size": [24, -6]}
+							}
+						}
+					]
+				},
+				{
+					"name": "rightDoorHandle",
+					"parent": "rightDoor",
+					"pivot": [-3, 23, -4.5],
+					"cubes": [
+						{
+							"origin": [-5, 21, -6],
+							"size": [4, 4, 3],
+							"uv": {
+								"north": {"uv": [24, 64], "uv_size": [4, 4]},
+								"east": {"uv": [28, 64], "uv_size": [3, 4]},
+								"west": {"uv": [31, 64], "uv_size": [-3, 4]},
+								"up": {"uv": [24, 68], "uv_size": [4, 3]},
+								"down": {"uv": [24, 74], "uv_size": [4, -3]}
+							}
+						}
+					]
+				},
+				{
+					"name": "rightDoorHandle2",
+					"parent": "rightDoor",
+					"pivot": [-3, 23, 4.5],
+					"cubes": [
+						{
+							"origin": [-5, 21, 3],
+							"size": [4, 4, 3],
+							"uv": {
+								"east": {"uv": [31, 64], "uv_size": [-3, 4]},
+								"south": {"uv": [28, 64], "uv_size": [-4, 4]},
+								"west": {"uv": [28, 64], "uv_size": [3, 4]},
+								"up": {"uv": [24, 71], "uv_size": [4, -3]},
+								"down": {"uv": [24, 71], "uv_size": [4, 3]}
+							}
+						}
+					]
+				},
+				{
+					"name": "leftDoor",
+					"pivot": [24, 0, -3],
+					"cubes": [
+						{
+							"origin": [0, 0, -3],
+							"size": [24, 64, 6],
+							"uv": {
+								"north": {"uv": [24, 0], "uv_size": [-24, 64]},
+								"east": {"uv": [36, 0], "uv_size": [-6, 64]},
+								"south": {"uv": [0, 0], "uv_size": [24, 64]},
+								"west": {"uv": [30, 0], "uv_size": [-6, 64]},
+								"up": {"uv": [24, 64], "uv_size": [-24, 6]},
+								"down": {"uv": [24, 76], "uv_size": [-24, -6]}
+							}
+						}
+					]
+				},
+				{
+					"name": "leftDoorHandle",
+					"parent": "leftDoor",
+					"pivot": [3, 23, -4.5],
+					"cubes": [
+						{
+							"origin": [1, 21, -6],
+							"size": [4, 4, 3],
+							"uv": {
+								"north": {"uv": [28, 64], "uv_size": [-4, 4]},
+								"east": {"uv": [28, 64], "uv_size": [3, 4]},
+								"west": {"uv": [31, 64], "uv_size": [-3, 4]},
+								"up": {"uv": [28, 68], "uv_size": [-4, 3]},
+								"down": {"uv": [28, 74], "uv_size": [-4, -3]}
+							}
+						}
+					]
+				},
+				{
+					"name": "leftDoorHandle2",
+					"parent": "leftDoor",
+					"pivot": [3, 23, 4.5],
+					"cubes": [
+						{
+							"origin": [1, 21, 3],
+							"size": [4, 4, 3],
+							"uv": {
+								"east": {"uv": [31, 64], "uv_size": [-3, 4]},
+								"south": {"uv": [24, 64], "uv_size": [4, 4]},
+								"west": {"uv": [28, 64], "uv_size": [3, 4]},
+								"up": {"uv": [28, 71], "uv_size": [-4, -3]},
+								"down": {"uv": [28, 71], "uv_size": [-4, 3]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "universal:hat_unicorn",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/hat/unicorn"
+            },
+            "geometry": {
+                "default": "geometry.universal.hat.unicorn"
+            },
+            "scripts": {
+                "parent_setup": "variable.helmet_layer_visible = 0.0;"
+            },
+            "render_controllers": ["controller.render.universal.item.generic"]
+        }
+    }
+}

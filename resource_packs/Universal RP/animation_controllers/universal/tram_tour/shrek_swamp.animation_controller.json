@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.universal.tram_tour.shrek_swamp": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "activated": "query.property('universal:activated')"
+                        }
+                    ]
+                },
+                "activated": {
+                    "animations": ["play", "wiggles"],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.universal.tram_tour.shrek_swamp.hold": {
+            "states": {
+                "default": {
+                    "animations": ["hold", "wiggles"],
+                    "transitions": [
+                        {
+                            "activated": "query.property('universal:activated')"
+                        }
+                    ]
+                },
+                "activated": {
+                    "animations": ["play", "wiggles"],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

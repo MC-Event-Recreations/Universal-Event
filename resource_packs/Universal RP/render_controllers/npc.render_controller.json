@@ -1,0 +1,40 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.universal_npc": {
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "Texture.director_female",
+                        "Texture.director_male",
+                        "Texture.tourist_female",
+                        "Texture.tourist_male",
+                        "Texture.tramdriver_female",
+                        "Texture.tramdriver_male",
+                        "Texture.robber_female",
+                        "Texture.robber_male",
+                        "Texture.fishing_frenzy",
+                        "Texture.target_practice"
+                    ]
+                },
+                "geometries": {
+                    "Array.geos": [
+                        "Geometry.director_female",
+                        "Geometry.director_male",
+                        "Geometry.tourist_female",
+                        "Geometry.tourist_male",
+                        "Geometry.tramdriver_female",
+                        "Geometry.tramdriver_male",
+                        "Geometry.robber_female",
+                        "Geometry.robber_male",
+                        "Geometry.fishing_frenzy",
+                        "Geometry.target_practice"
+                    ]
+                }
+            },
+            "materials": [{ "*": "Material.default" }],
+            "geometry": "Array.geos[query.property('universal:skin_id')]",
+            "textures": ["Array.skins[query.property('universal:skin_id')]"]
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:shrek_outhouse",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/shrek_outhouse"
+            },
+            "geometry": {
+                "default": "geometry.universal.shrek_outhouse"
+            },
+            "animations": {
+                "open": "animation.universal.shrek_outhouse.open",
+                "opened": "animation.universal.shrek_outhouse.opened",
+                "close": "animation.universal.shrek_outhouse.close",
+                "controller": "controller.animation.universal.shrek_outhouse"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

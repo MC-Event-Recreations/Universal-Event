@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tram_tour_jaws_dock",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/tram_tour/jaws_dock"
+            },
+            "geometry": {
+                "default": "geometry.universal.tram_tour.jaws_dock"
+            },
+            "particle_effects": {
+                "gas_spray": "universal:tram_tour_gas_spray",
+                "gas_burst": "universal:tram_tour_gas_burst",
+                "gas_drip": "universal:tram_tour_gas_drip",
+                "gas_explosion": "universal:tram_tour_gas_explosion",
+                "smoke_plume": "universal:tram_tour_smoke_plume",
+                "dock_splash": "universal:tram_tour_dock_splash",
+                "fire_spread": "universal:tram_tour_fire_spread",
+                "shark_splash": "universal:tram_tour_shark_splash",
+                "shark_splash_loop": "universal:tram_tour_shark_splash_loop",
+                "shark_splash_small": "universal:tram_tour_shark_splash_small"
+            },
+            "animations": {
+                "controller": "controller.animation.universal.tram_tour.activated",
+                "activated": "animation.universal.tram_tour.jaws_dock.jaws",
+                "idle": "animation.universal.tram_tour.jaws_dock.idle"
+            },
+            "scripts": {
+                "animate": ["controller", "idle"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

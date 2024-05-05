@@ -1,0 +1,105 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.universal.shreks_swamp_sign",
+                "texture_width": 200,
+                "texture_height": 102,
+                "visible_bounds_width": 9,
+                "visible_bounds_height": 6,
+                "visible_bounds_offset": [0, 2, 0]
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0]
+                },
+                {
+                    "name": "sign",
+                    "parent": "root",
+                    "pivot": [-32, 64, 0],
+                    "rotation": [0, -21.5, 0],
+                    "cubes": [
+                        {
+                            "origin": [-39, 22, -5],
+                            "size": [100, 10, 10],
+                            "uv": {
+                                "north": { "uv": [0, 32], "uv_size": [100, 10] },
+                                "east": { "uv": [160, 60], "uv_size": [10, 10] },
+                                "south": { "uv": [0, 42], "uv_size": [100, 10] },
+                                "west": { "uv": [170, 60], "uv_size": [10, 10] },
+                                "up": { "uv": [0, 52], "uv_size": [100, 10] },
+                                "down": { "uv": [0, 72], "uv_size": [100, -10] }
+                            }
+                        },
+                        {
+                            "origin": [-43, 12, -5],
+                            "size": [100, 10, 10],
+                            "uv": {
+                                "north": { "uv": [0, 72], "uv_size": [100, 10] },
+                                "east": { "uv": [140, 60], "uv_size": [10, 10] },
+                                "south": { "uv": [0, 82], "uv_size": [100, 10] },
+                                "west": { "uv": [150, 60], "uv_size": [10, 10] },
+                                "up": { "uv": [0, 0], "uv_size": [100, 10] },
+                                "down": { "uv": [0, 20], "uv_size": [100, -10] }
+                            }
+                        },
+                        {
+                            "origin": [-35, 2, -5],
+                            "size": [100, 10, 10],
+                            "uv": {
+                                "north": { "uv": [0, 20], "uv_size": [100, 10] },
+                                "east": { "uv": [120, 60], "uv_size": [10, 10] },
+                                "south": { "uv": [0, 92], "uv_size": [100, 10] },
+                                "west": { "uv": [130, 60], "uv_size": [10, 10] },
+                                "up": { "uv": [100, 0], "uv_size": [100, 10] },
+                                "down": { "uv": [100, 20], "uv_size": [100, -10] }
+                            }
+                        },
+                        {
+                            "origin": [-39, -8, -5],
+                            "size": [100, 10, 10],
+                            "uv": {
+                                "north": { "uv": [100, 20], "uv_size": [100, 10] },
+                                "east": { "uv": [100, 60], "uv_size": [10, 10] },
+                                "south": { "uv": [100, 30], "uv_size": [100, 10] },
+                                "west": { "uv": [110, 60], "uv_size": [10, 10] },
+                                "up": { "uv": [100, 40], "uv_size": [100, 10] },
+                                "down": { "uv": [100, 60], "uv_size": [100, -10] }
+                            }
+                        },
+                        {
+                            "origin": [-33.5, 32, 0],
+                            "size": [3, 32, 0],
+                            "uv": {
+                                "north": { "uv": [100, 70], "uv_size": [3, 32] }
+                            }
+                        },
+                        {
+                            "origin": [54, 32, -1.5],
+                            "size": [0, 32, 3],
+                            "uv": {
+                                "east": { "uv": [100, 70], "uv_size": [3, 32] }
+                            }
+                        },
+                        {
+                            "origin": [-32, 32, -1.5],
+                            "size": [0, 32, 3],
+                            "uv": {
+                                "east": { "uv": [100, 70], "uv_size": [3, 32] }
+                            }
+                        },
+                        {
+                            "origin": [52.5, 32, 0],
+                            "size": [3, 32, 0],
+                            "uv": {
+                                "north": { "uv": [100, 70], "uv_size": [3, 32] }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

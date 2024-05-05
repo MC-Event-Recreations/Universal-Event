@@ -1,0 +1,66 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.universal.director": {
+      "states": {
+        "default": {
+          "animations": ["pre_hold"],
+          "transitions": [
+            {
+              "start_transition": "query.property('universal:animation_state') == 1"
+            }
+          ]
+        },
+        "start_transition": {
+          "animations": ["start"],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations": ["pose", "idle_head", "fidget"],
+          "transitions": [
+            {
+              "default": "query.property('universal:animation_state') == 0"
+            },
+            {
+              "talk_one": "query.property('universal:animation_state') == 2"
+            },
+            {
+              "talk_two": "query.property('universal:animation_state') == 3"
+            },
+            {
+              "say": "query.property('universal:animation_state') == 4"
+            }
+          ]
+        },
+        "talk_one": {
+          "animations": ["pose", "talk1"],
+          "transitions": [
+            {
+              "idle": "query.property('universal:animation_state') == 1"
+            }
+          ]
+        },
+        "talk_two": {
+          "animations": ["pose", "talk2"],
+          "transitions": [
+            {
+              "idle": "query.property('universal:animation_state') == 1"
+            }
+          ]
+        },
+        "say": {
+          "animations": ["pose", "say"],
+          "transitions": [
+            {
+              "idle": "query.property('universal:animation_state') == 1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

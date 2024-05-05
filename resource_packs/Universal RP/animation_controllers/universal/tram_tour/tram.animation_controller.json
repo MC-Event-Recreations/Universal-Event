@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.universal.tram_tour.tram.doors": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "open": "!query.property('universal:doors_closed')"
+                        }
+                    ]
+                },
+                "open": {
+                    "animations": ["door_open"],
+                    "transitions": [
+                        {
+                            "opened": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "opened": {
+                    "animations": ["door_open_hold"],
+                    "transitions": [
+                        {
+                            "close": "query.property('universal:doors_closed')"
+                        }
+                    ]
+                },
+                "close": {
+                    "animations": ["door_close"],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

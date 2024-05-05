@@ -1,0 +1,52 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "universal:fish_vacuum",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/fishing_frenzy/fish_vacuum"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.fishing_frenzy.fish_vacuum"
+            },
+            "sound_effects": {
+                "use_loop": "sound.universal.minigame.fishing_frenzy.vacuum.loop"
+            },
+            "animations": {
+                "first_person": "animation.universal.fishing_frenzy.fish_vacuum.first",
+                "third_person": "animation.universal.fishing_frenzy.fish_vacuum.third",
+                "idle": "animation.universal.fishing_frenzy.fish_vacuum.idle",
+                "use": "animation.universal.fishing_frenzy.fish_vacuum.use",
+                "particles": "animation.universal.fishing_frenzy.fish_vacuum.particles",
+                "stop": "animation.universal.fishing_frenzy.fish_vacuum.stop",
+                "sound": "animation.universal.fishing_frenzy.fish_vacuum.sound",
+
+                "controller": "controller.animation.universal.fishing.frenzy.fish.vacuum"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.using_first = context.is_first_person && query.main_hand_item_use_duration > 0;"
+                ],
+                "animate": [
+                    {
+                        "first_person": "context.is_first_person == 1.0"
+                    },
+                    {
+                        "third_person": "context.is_first_person == 0.0"
+                    },
+                    {
+                        "sound": "variable.using_first"
+                    },
+                    {
+                        "particles": "variable.using_first"
+                    },
+                    "controller"
+                ]
+            },
+            "render_controllers": ["controller.render.universal.fishing_frenzy.fish_vacuum"]
+        }
+    }
+}

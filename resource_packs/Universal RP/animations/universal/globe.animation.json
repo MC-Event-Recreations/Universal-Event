@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.universal.globe": {
+            "loop": true,
+            "bones": {
+                "rotate": {
+                    "rotation": [0, "math.mod(query.anim_time * 7.5, 360)", 0]
+                }
+            }
+        }
+    }
+}

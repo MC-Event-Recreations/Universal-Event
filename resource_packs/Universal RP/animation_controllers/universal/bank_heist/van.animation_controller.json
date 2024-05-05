@@ -1,0 +1,69 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.van": {
+      "states": {
+        "default": {
+          "animations": ["spawn", "closed_hold"],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations": ["idle", "closed_hold"],
+          "transitions": [
+            {
+              "opening": "query.property('universal:animation_state') == 1"
+            },
+            {
+              "escape": "query.property('universal:animation_state') == 2"
+            }
+          ]
+        },
+        "opening": {
+          "animations": ["opening"],
+          "transitions": [
+            {
+              "open": "query.any_animation_finished"
+            },
+            {
+              "escape": "query.property('universal:animation_state') == 2"
+            }
+          ]
+        },
+        "open": {
+          "animations": ["open_hold"],
+          "transitions": [
+            {
+              "closing": "query.property('universal:animation_state') == 0"
+            },
+            {
+              "escape": "query.property('universal:animation_state') == 2"
+            }
+          ]
+        },
+        "closing": {
+          "animations": ["closing"],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "escape": "query.property('universal:animation_state') == 2"
+            }
+          ]
+        },
+        "escape": {
+          "animations": ["escape"],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

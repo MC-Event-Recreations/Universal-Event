@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.universal.food.donut.third": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [-54.05002, -3.42054, 16.04465],
+					"position": [-0.75, 14.10984, -5.3625],
+					"scale": 0.6
+				},
+				"donut": {
+					"position": [0.47967, 0.05792, -0.1287]
+				}
+			}
+		},
+		"animation.universal.food.donut.first": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [31.8881, -24.12796, -186.30168],
+					"position": [-8.41877, 18.42441, -0.81576]
+				}
+			}
+		}
+	}
+}

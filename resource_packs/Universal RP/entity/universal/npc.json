@@ -1,0 +1,50 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:npc",
+            "materials": {
+                "default": "npc"
+            },
+            "textures": {
+                "director_female": "textures/entity/character/director_female",
+                "director_male": "textures/entity/character/director_male",
+                "tourist_female": "textures/entity/character/tourist_female",
+                "tourist_male": "textures/entity/character/tourist_male",
+                "tramdriver_female": "textures/entity/character/tramdriver_female",
+                "tramdriver_male": "textures/entity/character/tramdriver_male",
+                "robber_female": "textures/entity/character/robber_female",
+                "robber_male": "textures/entity/character/robber_male",
+                "fishing_frenzy": "textures/entity/character/fishing_frenzy",
+                "target_practice": "textures/entity/character/target_practice"
+            },
+            "geometry": {
+                "director_female": "geometry.hive.universal.director.female",
+                "director_male": "geometry.hive.universal.director.male",
+                "tourist_female": "geometry.hive.universal.tourist.female",
+                "tourist_male": "geometry.hive.universal.tourist.male",
+                "tramdriver_female": "geometry.hive.universal.tramdriver.female",
+                "tramdriver_male": "geometry.hive.universal.tramdriver.male",
+                "robber_female": "geometry.hive.universal.robber.female",
+                "robber_male": "geometry.hive.universal.robber.male",
+                "fishing_frenzy": "geometry.universal.npc.fishingfrenzy",
+                "target_practice": "geometry.universal.npc.targetpractice"
+            },
+            "scripts": {
+                "animate": [
+                    "general",
+                    { "move": "query.modified_move_speed" },
+                    "look_at_target",
+                    { "baby_transform": "query.is_baby" }
+                ]
+            },
+            "animations": {
+                "general": "animation.npc.general",
+                "look_at_target": "animation.common.look_at_target",
+                "move": "animation.npc.move",
+                "baby_transform": "animation.npc.baby_transform"
+            },
+            "render_controllers": ["controller.render.universal_npc"]
+        }
+    }
+}

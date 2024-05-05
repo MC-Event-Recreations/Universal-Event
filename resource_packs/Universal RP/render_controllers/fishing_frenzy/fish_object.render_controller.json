@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.universal.fishing_frenzy.fish_object": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.golden_duck",
+            "Texture.old_boot",
+            "Texture.barrel_tnt"
+          ]
+        },
+        "geometries": {
+          "Array.geos": [ "Geometry.golden_duck", "Geometry.old_boot", "Geometry.barrel_tnt" ]
+        }
+      },
+      "materials": [ { "*": "Material.default" } ],
+      "geometry": "Array.geos[query.property('universal:variant_id')]",
+      "textures": [ "Array.skins[query.property('universal:variant_id')]" ]
+    }
+  }
+}

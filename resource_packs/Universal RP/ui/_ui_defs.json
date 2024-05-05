@@ -1,0 +1,15 @@
+{
+    "ui_defs": [
+      "ui/server_form/common_modal_ui.json",
+      "ui/server_form/single_image_modal.json",
+      "ui/server_form/generic_button_modal.json",
+      "ui/server_form/grid_button_modal.json",
+      "ui/server_form/quick_travel_modal.json",
+      "ui/server_form/keypad_modal.json",
+      "ui/hud_screen/floating_action_panel.json",
+      "ui/hud_screen/progress_panel.json",
+      "ui/hud_screen/text_fader.json",
+      "ui/hud_screen/game_status.json",
+      "ui/hud_screen/game_bar.json"
+    ]
+  }

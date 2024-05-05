@@ -1,0 +1,226 @@
+{
+    "namespace": "hive_hud",
+    "progress_panel": {
+        "type": "panel",
+        "$scoreboard_offset|default": [-10, 10],
+        "$scoreboard_alignment": "top_right",
+        "anchor_from": "$scoreboard_alignment",
+        "anchor_to": "$scoreboard_alignment",
+        "offset": "$scoreboard_offset",
+        "size": ["100%c", "100%c"],
+        "controls": [
+            {
+                "nested@hive_hud.show_progress_panel_when_visible": {}
+            }
+        ],
+        "variables": [
+            {
+                "requires": "($pocket_screen)",
+                "$scoreboard_offset": [0, 25],
+                "$scoreboard_alignment": "top_middle"
+            }
+        ]
+    },
+    "progress_panel_inner": {
+        "type": "panel",
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "size": ["100%c", "100%c"],
+        "controls": [
+            {
+                "progress_panel_container": {
+                    "size": ["100%c + 6px", "100%c + 6px"],
+                    "layer": 3,
+                    "type": "image",
+                    "texture": "textures/ui/universal/progress_ui",
+                    "alpha": 1,
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "progress_type_holder": {
+                                "type": "stack_panel",
+                                "anchor_from": "top_left",
+                                "anchor_to": "top_left",
+                                "orientation": "horizontal",
+                                "offset": [3, 3],
+                                "size": ["100%c", "100%cm"],
+                                "controls": [
+                                    {
+                                        "clapperboard_panel@hive_hud.background_wrapper": {
+                                            "$inner": "hive_hud.clapperboard_inner",
+                                            "$icon": "textures/ui/universal/golden_clapperboard_glyph",
+                                            "$icon_offset": [0, -0.5]
+                                        }
+                                    },
+                                    {
+                                        "spacer": {
+                                            "type": "panel",
+                                            "size": [1, 0]
+                                        }
+                                    },
+                                    {
+                                        "ticket_panel@hive_hud.background_wrapper": {
+                                            "$inner": "hive_hud.ticket_inner",
+                                            "$icon": "textures/ui/universal/ticket_glyph",
+                                            "$icon_left_padding": [1, 0]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "background_wrapper": {
+        "size": ["100%c + 2px", "100%c + 2px"],
+        "layer": 3,
+        "type": "image",
+        "texture": "textures/ui/hud_tip_text_background",
+        "alpha": 0.5,
+        "keep_ratio": false,
+        "$icon_offset|default": [0, 0],
+        "$icon_left_padding|default": [0, 0],
+        "controls": [
+            {
+                "icon_holder": {
+                    "type": "stack_panel",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "orientation": "horizontal",
+                    "offset": [1, 1],
+                    "size": ["100%c", "100%cm"],
+                    "controls": [
+                        {
+                            "pre_icon_spacer": {
+                                "type": "panel",
+                                "size": "$icon_left_padding"
+                            }
+                        },
+                        {
+                            "icon_wrapper": {
+                                "type": "panel",
+                                "size": [12, 12],
+                                "controls": [
+                                    {
+                                        "icon": {
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "size": [12, 12],
+                                            "offset": "$icon_offset",
+                                            "layer": 3,
+                                            "type": "image",
+                                            "texture": "$icon"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "spacer": {
+                                "type": "panel",
+                                "size": [3, 0]
+                            }
+                        },
+                        {
+                            "inner@$inner": {}
+                        },
+                        {
+                            "spacer2": {
+                                "type": "panel",
+                                "size": [3, 0]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "show_progress_panel_when_visible@hive_hud.data_controller": {
+        "$control_flag": "§z§w",
+        "$element": "hive_hud.progress_panel_inner"
+    },
+    "clapperboard_inner@hive_hud.data_controller": {
+        "$control_flag": "§z§w",
+        "$element": "hive_hud.clapperboard_text"
+    },
+    "ticket_inner@hive_hud.data_controller": {
+        "$control_flag": "§z§y",
+        "$element": "hive_hud.ticket_text"
+    },
+    "clapperboard_text": {
+        "type": "label",
+        "font_type": "MinecraftTen",
+        "text": "#text",
+        "line_padding": -1.5,
+        "color": [1, 0.69, 0.09],
+        "font_scale_factor": 1,
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "text_alignment": "center",
+        "size": ["default", "default"],
+        "layer": 5,
+        "shadow": false
+    },
+    "ticket_text": {
+        "type": "label",
+        "font_type": "MinecraftTen",
+        "text": "#text",
+        "line_padding": -1.5,
+        "color": [1, 0.56, 0.84],
+        "font_scale_factor": 1,
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "text_alignment": "center",
+        "size": ["default", "default"],
+        "layer": 5,
+        "shadow": false
+    },
+    "data_controller": {
+        "type": "panel",
+        "size": ["100%c", "100%c"],
+        "$original_binding|default": "#hud_title_text_string",
+        "controls": [
+            {
+                "element@$element": {
+                    "bindings": [
+                        {
+                            "binding_type": "view",
+                            "source_control_name": "data_controller_sibling",
+                            "resolve_sibling_scope": true,
+                            "source_property_name": "#datacontroller_value",
+                            "target_property_name": "#text"
+                        },
+                        {
+                            "source_property_name": "(not ((#text - $control_flag) = #text)) and ((#text - '§h§i§v§e') = #text) and (not ((#text - $control_flag) = ''))",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            },
+            {
+                "data_controller_sibling": {
+                    "type": "panel",
+                    "size": [0, 0],
+                    "bindings": [
+                        {
+                            "binding_name": "$original_binding"
+                        },
+                        {
+                            "binding_name": "$original_binding",
+                            "binding_name_override": "#datacontroller_value",
+                            "binding_condition": "visibility_changed"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(not ($original_binding = #datacontroller_value) and not (($original_binding - $control_flag) = $original_binding))",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

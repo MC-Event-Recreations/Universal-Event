@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tram_tour_studio_doors",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/tram_tour/studio_doors"
+            },
+            "geometry": {
+                "default": "geometry.universal.tram_tour.studio_doors"
+            },
+            "animations": {
+                "controller": "controller.animation.universal.tram_tour.studio_doors",
+                "open": "animation.universal.tram.studio_doors.open",
+                "open_hold": "animation.universal.tram.studio_doors.open.hold",
+                "close": "animation.universal.tram.studio_doors.close"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

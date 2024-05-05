@@ -1,0 +1,11 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.universal.fishing_frenzy.fish_vacuum": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.default" }],
+            "textures": ["Texture.default"],
+            "part_visibility": [{ "*": true }, { "p*": "variable.using_first" }]
+        }
+    }
+}

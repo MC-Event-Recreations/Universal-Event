@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "universal:plush_fiona",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/plush/fiona"
+            },
+            "geometry": {
+                "default": "geometry.universal.plush.fiona"
+            },
+            "animations": {
+                "first_person": "animation.universal.plush.first",
+                "third_person": "animation.universal.plush.third"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "first_person": "context.is_first_person == 1.0"
+                    },
+                    {
+                        "third_person": "context.is_first_person == 0.0"
+                    }
+                ]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

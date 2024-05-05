@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.universal.target_practice.target_mob": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.target_mob_creeper",
+            "Texture.target_mob_creeper_gold",
+            "Texture.target_mob_zombie",
+            "Texture.target_mob_husk_gold"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.property('universal:variant_id')]" ]
+    }
+  }
+}

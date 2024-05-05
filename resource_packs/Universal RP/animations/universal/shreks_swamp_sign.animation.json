@@ -1,0 +1,14 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.universal.shreks_swamp_sign.idle": {
+            "loop": true,
+            "bones": {
+                "sign": {
+                    "rotation": ["math.cos(query.anim_time * 60) * 1", 0, 0]
+                }
+            }
+        }
+    }
+}
+

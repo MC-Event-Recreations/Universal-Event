@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:heistboard",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/bank_heist/heistboard"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.heistboard"
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

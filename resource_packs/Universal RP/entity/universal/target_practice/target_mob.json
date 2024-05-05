@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:target_mob",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "target_mob_creeper": "textures/entity/target_practice/target_mob_creeper",
+                "target_mob_creeper_gold": "textures/entity/target_practice/target_mob_creeper_gold",
+                "target_mob_zombie": "textures/entity/target_practice/target_mob_zombie",
+                "target_mob_husk_gold": "textures/entity/target_practice/target_mob_husk_gold"
+            },
+            "geometry": {
+                "default": "geometry.universal.target_mob"
+            },
+            "animations": {
+                "controller": "controller.animation.target",
+                "hit": "animation.universal.targetmob.hit",
+                "hit_hold": "animation.universal.targetmob.hit.hold",
+                "reset": "animation.universal.targetmob.reset",
+                "idle": "animation.universal.targetmob.idle"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.universal.target_practice.target_mob"]
+        }
+    }
+}

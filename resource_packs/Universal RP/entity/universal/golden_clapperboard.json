@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:golden_clapperboard",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/golden_clapperboard"
+            },
+            "geometry": {
+                "default": "geometry.universal.golden_clapperboard"
+            },
+            "animations": {
+                "scale": "animation.universal.golden_clapperboard.scale",
+                "idle": "animation.universal.golden_clapperboard.idle",
+                "collect": "animation.universal.golden_clapperboard.collect",
+                "collect_controller": "controller.animation.universal.golden_clapperboard.collect"
+            },
+            "scripts": {
+                "animate": ["scale", "idle", "collect_controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

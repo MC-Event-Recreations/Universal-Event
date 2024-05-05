@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tram_tour_shrek_swamp",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/tram_tour/shrek_swamp"
+            },
+            "geometry": {
+                "default": "geometry.universal.tram_tour.shrek_swamp"
+            },
+            "animations": {
+                "controller": "controller.animation.universal.tram_tour.shrek_swamp",
+                "pose": "animation.universal.tram_tour.shrek_swamp.pose",
+                "play": "animation.universal.tram_tour.shrek_swamp.play",
+                "wiggles": "animation.universal.tram_tour.shrek_swamp.wiggles"
+            },
+            "scripts": {
+                "animate": ["pose", "controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

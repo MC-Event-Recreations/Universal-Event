@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:npc_bank_heist",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/npc/bank_heist"
+            },
+            "geometry": {
+                "default": "geometry.universal.npc.bank_heist"
+            },
+            "animations": {
+                "pose": "animation.universal.npc.bank_heist.pose",
+                "idle": "animation.universal.npc.bank_heist.idle",
+                "idle_head": "animation.universal.npc.bank_heist.idle.head",
+                "fidget": "animation.universal.npc.bank_heist.fidget"
+            },
+            "scripts": {
+                "animate": ["pose", "idle", "idle_head", "fidget"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

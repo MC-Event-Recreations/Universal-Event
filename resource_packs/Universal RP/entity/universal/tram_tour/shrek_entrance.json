@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tram_tour_shrek_entrance",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/tram_tour/shrek_entrance"
+            },
+            "geometry": {
+                "default": "geometry.universal.tram_tour.shrek_entrance"
+            },
+            "animations": {
+                "controller": "controller.animation.universal.tram_tour.studio_doors",
+                "open": "animation.universal.tram_tour.shrek_entrance.open",
+                "open_hold": "animation.universal.tram_tour.shrek_entrance.open.hold",
+                "close": "animation.universal.tram_tour.shrek_entrance.close"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

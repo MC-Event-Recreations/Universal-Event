@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:target_small",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "target": "textures/entity/target_practice/target_small",
+                "target_gold": "textures/entity/target_practice/target_small_gold"
+            },
+            "geometry": {
+                "default": "geometry.universal.target_small"
+            },
+            "animations": {
+                "controller": "controller.animation.target",
+                "controller_rotation": "controller.animation.target_rotation",
+                "from_right": "animation.universal.targetsmall.fromRight",
+                "from_left": "animation.universal.targetsmall.fromLeft",
+                "from_top": "animation.universal.targetsmall.fromTop",
+                "hit": "animation.universal.targetsmall.hit",
+                "hit_hold": "animation.universal.targetsmall.hit.hold",
+                "reset": "animation.universal.targetsmall.reset"
+            },
+            "scripts": {
+                "animate": ["controller", "controller_rotation"]
+            },
+            "render_controllers": ["controller.render.universal.target_practice.target"]
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:director",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/npc/director_says"
+            },
+            "geometry": {
+                "default": "geometry.universal.npc.director_says"
+            },
+            "animations": {
+                "controller": "controller.animation.universal.director",
+                "pre_hold": "animation.universal.npc.director_says.ingame.start.pre_hold",
+                "start": "animation.universal.npc.director_says.ingame.start",
+                "pose": "animation.universal.npc.director_says.ingame.pose",
+                "talk1": "animation.universal.npc.director_says.ingame.talk1",
+                "talk2": "animation.universal.npc.director_says.ingame.talk2",
+                "say": "animation.universal.npc.director_says.ingame.say",
+                "idle_head": "animation.universal.npc.director_says.head.idle",
+                "fidget": "animation.universal.npc.director_says.fidget"
+            },
+            "scripts": {
+                "animate": ["controller"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:npc_target_practice",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/npc/target_practice"
+            },
+            "geometry": {
+                "default": "geometry.universal.npc.target_practice"
+            },
+            "animations": {
+                "pose": "animation.universal.npc.target_practice.pose",
+                "idle": "animation.universal.npc.target_practice.idle",
+                "idle_head": "animation.universal.npc.target_practice.idle.head"
+            },
+            "scripts": {
+                "animate": ["pose", "idle", "idle_head"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

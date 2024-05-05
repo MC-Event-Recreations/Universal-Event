@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.universal.fishing_frenzy.fish": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.fish_red",
+            "Texture.fish_blue",
+            "Texture.fish_yellow",
+            "Texture.fish_green"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.property('universal:colour_id')]" ]
+    }
+  }
+}

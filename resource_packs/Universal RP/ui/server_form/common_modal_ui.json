@@ -1,0 +1,218 @@
+{
+    "namespace": "common_modal_ui",
+    "main_panel": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "controls": [
+            {
+                "main_modal": {
+                    "type": "input_panel",
+                    "inline_modal": true,
+                    "layer": 3,
+                    "size": ["100%c", "100%"],
+                    "controls": [{ "main_panel@common_modal_ui.main_panel_internal": {} }]
+                }
+            },
+            {
+                "background_closer@common.button": {
+                    "size": ["100%", "100%"],
+                    "layer": 2,
+                    "$pressed_button_name": "button.menu_exit",
+                    "focus_enabled": false,
+                    "controls": [
+                        {
+                            "default": {
+                                "type": "panel",
+                                "size": ["100%", "100%"]
+                            }
+                        },
+                        {
+                            "hover": {
+                                "type": "panel",
+                                "size": ["100%", "100%"]
+                            }
+                        },
+                        {
+                            "pressed": {
+                                "type": "panel",
+                                "size": ["100%", "100%"]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Custom Image Button Grid UI
+    "main_panel_internal": {
+        // Variables
+        "$top_content|default": "",
+        "$bottom_content|default": "",
+        "$close_button|default": true,
+        "$title_texture|default": "textures/ui/universal/orange_cell",
+        "type": "stack_panel",
+        "$modal_size|default": [200, "100%"],
+        "size": "$modal_size",
+        "orientation": "vertical",
+        "controls": [
+            // Spacer - Ensures vertical centering
+            {
+                "top_spacer": {
+                    "type": "panel",
+                    "size": [1, "fill"]
+                }
+            },
+            // Title + Close
+            {
+                "title": {
+                    "type": "panel",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "size": ["100%", 20],
+                    // Render the title text with a custom shadow (yay shadows!)
+                    "controls": [
+                        {
+                            "modal_title": {
+                                "size": ["100%cm + 25px", "100%cm + 7px"],
+                                "offset": [0, 9],
+                                "layer": 10,
+                                "type": "image",
+                                "texture": "$title_texture",
+                                "keep_ratio": false,
+                                "controls": [
+                                    {
+                                        "title": {
+                                            "type": "label",
+                                            "font_type": "MinecraftTen",
+                                            "text": "#title_text",
+                                            "line_padding": 2,
+                                            "color": "white",
+                                            "font_size": "normal",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "text_alignment": "center",
+                                            "offset": [0, -2],
+                                            "size": ["default", "default"],
+                                            "layer": 6,
+                                            "shadow": false,
+                                            "bindings": [
+                                                {
+                                                    "binding_name": "#title_text",
+                                                    "binding_type": "global"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title_shadow": {
+                                            "type": "label",
+                                            "font_type": "MinecraftTen",
+                                            "text": "#title_text",
+                                            "line_padding": 2,
+                                            "color": "black",
+                                            "font_size": "normal",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "text_alignment": "center",
+                                            "offset": [1, -1],
+                                            "size": ["default", "default"],
+                                            "alpha": 0.4,
+                                            "layer": 5,
+                                            "shadow": false,
+                                            "bindings": [
+                                                {
+                                                    "binding_name": "#title_text",
+                                                    "binding_type": "global"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        // Close button
+                        {
+                            "close_button@server_form.custom_close_button": {
+                                "ignored": "(not $close_button)"
+                            }
+                        }
+                    ]
+                }
+            },
+            // Spacer
+            {
+                "spacer": {
+                    "type": "panel",
+                    "size": ["100%", 4]
+                }
+            },
+            // Top content (light gray background)
+            {
+                "nested_top_content": {
+                    "ignored": "($top_content = '')",
+                    "type": "panel",
+                    "size": ["100%", "100%c"],
+                    "controls": [
+                        {
+                            "top_content_background": {
+                                "$top_content_size|default": ["100%", "100%c + 24px"],
+                                "size": "$top_content_size",
+                                "layer": 3,
+                                "type": "image",
+                                "$top_content_texture|default": "textures/ui/universal/light_gray_cell",
+                                "texture": "$top_content_texture",
+                                "alpha": 1,
+                                "keep_ratio": false,
+                                "controls": [
+                                    {
+                                        "top_content@$top_content": {}
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            // Bottom content (dark gray background)
+            {
+                "bottom_content_renderer": {
+                    "ignored": "($bottom_content = '')",
+                    "type": "panel",
+                    "size": ["100%", "100%c"],
+                    "controls": [
+                        {
+                            "bottom_content_background": {
+                                "$bottom_content_offset|default": [0, -5],
+                                "variables": [
+                                    {
+                                        "requires": "($top_content = '')",
+                                        "$bottom_content_offset": [0, 0]
+                                    }
+                                ],
+                                "size": ["100%", "100%c + 16px"],
+                                "layer": 2,
+                                "type": "image",
+                                "texture": "textures/ui/universal/dark_gray_cell",
+                                "offset": "$bottom_content_offset",
+                                "alpha": 1,
+                                "keep_ratio": false,
+                                "controls": [
+                                    {
+                                        "bottom_content@$bottom_content": {}
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            // Spacer - Ensures vertical centering
+            {
+                "bottom_spacer": {
+                    "type": "panel",
+                    "size": [1, "fill"]
+                }
+            }
+        ]
+    }
+}

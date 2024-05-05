@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.fish_object": {
+      "states": {
+        "default": {
+          "animations": ["spawn"],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [
+            {
+              "explode": "query.property('universal:animation_state') == 1"
+            },
+            {
+              "despawn": "query.property('universal:animation_state') == 2"
+            }
+          ]
+        },
+        "explode": {
+          "animations": ["explode"],
+          "transitions": []
+        },
+        "despawn": {
+          "animations": ["despawn"],
+          "transitions": []
+        }
+      }
+    }
+  }
+}

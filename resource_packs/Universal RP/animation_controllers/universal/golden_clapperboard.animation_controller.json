@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.universal.golden_clapperboard.collect": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "collect": "query.property('universal:collected')"
+                        }
+                    ]
+                },
+                "collect": {
+                    "animations": ["collect"],
+                    "transitions": [
+                        {
+                            "reset": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "reset": {
+                    "transitions": [
+                        {
+                            "default": "!query.property('universal:collected')"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

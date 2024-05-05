@@ -1,0 +1,50 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.universal.tram_tour.studio_doors": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "opened": "query.property('universal:open')"
+                        },
+                        {
+                            "closed": "!query.property('universal:open')"
+                        }
+                    ]
+                },
+                "closed": {
+                    "transitions": [
+                        {
+                            "open": "query.property('universal:open')"
+                        }
+                    ]
+                },
+                "open": {
+                    "animations": ["open"],
+                    "transitions": [
+                        {
+                            "opened": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "opened": {
+                    "animations": ["open_hold"],
+                    "transitions": [
+                        {
+                            "close": "!query.property('universal:open')"
+                        }
+                    ]
+                },
+                "close": {
+                    "animations": ["close"],
+                    "transitions": [
+                        {
+                            "closed": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

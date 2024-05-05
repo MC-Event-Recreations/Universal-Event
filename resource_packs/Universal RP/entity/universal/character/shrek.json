@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:character_shrek",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/character/shrek"
+            },
+            "geometry": {
+                "default": "geometry.universal.character.shrek"
+            },
+            "animations": {
+                "idle": "animation.universal.character.shrek.idle",
+                "idle_face": "animation.universal.character.shrek.idle_face",
+                "play": "animation.universal.character.shrek.play"
+            },
+            "scripts": {
+                "animate": ["idle", "idle_face", "play"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

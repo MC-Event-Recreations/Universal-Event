@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:food_cart_western",
+            "materials": {
+                "default": "entity_alphatest",
+                "blend": "slime_outer"
+            },
+            "textures": {
+                "default": "textures/entity/food_cart/western"
+            },
+            "geometry": {
+                "default": "geometry.universal.food_cart.western"
+            },
+            "animations": {
+                "controller_fidget": "controller.animation.universal.food_cart",
+
+                "idle": "animation.universal.food_cart.idle",
+                "idle_head": "animation.universal.food_cart.idle.head",
+                "fidget": "animation.universal.food_cart.fidget",
+                "fidget2": "animation.universal.food_cart.fidget2",
+                "fidget_pause": "animation.universal.food_cart.fidget.pause"
+            },
+            "scripts": {
+                "animate": ["idle", "idle_head", "controller_fidget"]
+            },
+            "render_controllers": ["controller.render.universal.food_cart"]
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:tnt_rig",
+            "materials": {
+                "unprimed": "slime_outer",
+                "primed": "entity_nocull"
+            },
+            "textures": {
+                "default": "textures/entity/bank_heist/tnt_rig"
+            },
+            "geometry": {
+                "default": "geometry.hive.universal.vault.tnt.rig"
+            },
+            "render_controllers": ["controller.render.universal.director_says.tnt_rig"]
+        }
+    }
+}

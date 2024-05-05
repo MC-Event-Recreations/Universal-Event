@@ -1,0 +1,3464 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "hive:stone_gradient_3": {
+      "textures": "textures/blocks/h_stone_gradient_3"
+    },
+    "hive:stone_gradient_4": {
+      "textures": "textures/blocks/h_stone_gradient_4"
+    },
+    "hive:stone_gradient_2": {
+      "textures": "textures/blocks/h_stone_gradient_2"
+    },
+    "hive:stone_gradient_1": {
+      "textures": "textures/blocks/h_stone_gradient_1"
+    },
+    "hive:thin_stone_bricks": {
+      "textures": "textures/blocks/h_thin_stone_bricks"
+    },
+    "hive:small_stone_bricks": {
+      "textures": "textures/blocks/h_small_stone_bricks"
+    },
+    "hive:stone_brick_skirting_up_down": {
+      "textures": "textures/blocks/h_stone_brick_skirting_up_down"
+    },
+    "hive:stone_brick_skirting": {
+      "textures": "textures/blocks/h_stone_brick_skirting"
+    },
+    "hive:mixed_stone_bricks_up_down": {
+      "textures": "textures/blocks/h_mixed_stone_bricks_up_down"
+    },
+    "hive:mixed_stone_bricks": {
+      "textures": "textures/blocks/h_mixed_stone_bricks"
+    },
+    "hive:mossy_mixed_stone_bricks_up_down": {
+      "textures": "textures/blocks/h_mossy_mixed_stone_bricks_up_down"
+    },
+    "hive:mossy_mixed_stone_bricks": {
+      "textures": "textures/blocks/h_mossy_mixed_stone_bricks"
+    },
+    "hive:mossy_thin_stone_bricks": {
+      "textures": "textures/blocks/h_mossy_thin_stone_bricks"
+    },
+    "hive:mossy_stone_brick_skirting_up_down": {
+      "textures": "textures/blocks/h_mossy_stone_brick_skirting_up_down"
+    },
+    "hive:mossy_stone_brick_skirting": {
+      "textures": "textures/blocks/h_mossy_stone_brick_skirting"
+    },
+    "hive:mossy_small_stone_bricks": {
+      "textures": "textures/blocks/h_mossy_small_stone_bricks"
+    },
+    "hive:cracked_mixed_stone_bricks_up_down": {
+      "textures": "textures/blocks/h_cracked_mixed_stone_bricks_up_down"
+    },
+    "hive:cracked_mixed_stone_bricks": {
+      "textures": "textures/blocks/h_cracked_mixed_stone_bricks"
+    },
+    "hive:cracked_stone_small_bricks": {
+      "textures": "textures/blocks/h_cracked_stone_small_bricks"
+    },
+    "hive:cracked_stone_thin_bricks": {
+      "textures": "textures/blocks/h_cracked_stone_thin_bricks"
+    },
+    "hive:mossy_stone_brick_tiles": {
+      "textures": "textures/blocks/h_mossy_stone_brick_tiles"
+    },
+    "hive:stone_brick_tiles": {
+      "textures": "textures/blocks/h_stone_brick_tiles"
+    },
+    "hive:stone_herring_bone_bricks": {
+      "textures": "textures/blocks/h_stone_herring_bone_bricks"
+    },
+    "hive:cracked_stone_brick_tiles": {
+      "textures": "textures/blocks/h_cracked_stone_brick_tiles"
+    },
+    "hive:dirty_stone_brick_tiles": {
+      "textures": "textures/blocks/h_dirty_stone_brick_tiles"
+    },
+    "hive:dirty_stone_brick_tiles_transition": {
+      "textures": "textures/blocks/h_dirty_stone_brick_tiles_transition"
+    },
+    "hive:snowy_stone_up": {
+      "textures": "textures/blocks/h_snowy_stone_up"
+    },
+    "hive:snowy_stone_down": {
+      "textures": "textures/blocks/h_snowy_stone_down"
+    },
+    "hive:snowy_stone": {
+      "textures": "textures/blocks/h_snowy_stone"
+    },
+    "hive:snowy_stone_transition": {
+      "textures": "textures/blocks/h_snowy_stone_transition"
+    },
+    "hive:cracked_stone_brick_skirting_up_down": {
+      "textures": "textures/blocks/h_cracked_stone_brick_skirting_up_down"
+    },
+    "hive:cracked_stone_brick_skirting": {
+      "textures": "textures/blocks/h_cracked_stone_brick_skirting"
+    },
+    "hive:small_stone_brick_tiles": {
+      "textures": "textures/blocks/h_small_stone_brick_tiles"
+    },
+    "hive:vertical_stone_bricks": {
+      "textures": "textures/blocks/h_vertical_stone_bricks"
+    },
+    "hive:diamond_stone_brick": {
+      "textures": "textures/blocks/h_diamond_stone_brick"
+    },
+    "hive:cyan_stone": {
+      "textures": "textures/blocks/h_cyan_stone"
+    },
+    "hive:rubblestone": {
+      "textures": "textures/blocks/h_rubblestone"
+    },
+    "hive:mossy_stone": {
+      "textures": "textures/blocks/h_mossy_stone"
+    },
+    "hive:polished_stone_brick": {
+      "textures": "textures/blocks/h_polished_stone_brick"
+    },
+    "hive:purple_flower_patch": {
+      "textures": "textures/blocks/h_purple_flower_patch"
+    },
+    "hive:lily_pad_patch": {
+      "textures": "textures/blocks/h_lily_pad_patch"
+    },
+    "hive:red_flower_patch": {
+      "textures": "textures/blocks/h_red_flower_patch"
+    },
+    "hive:blue_flower_patch": {
+      "textures": "textures/blocks/h_blue_flower_patch"
+    },
+    "hive:white_flower_patch": {
+      "textures": "textures/blocks/h_white_flower_patch"
+    },
+    "hive:daffodil_patch": {
+      "textures": "textures/blocks/h_daffodil_patch"
+    },
+    "hive:lapis_flower_patch": {
+      "textures": "textures/blocks/h_lapis_flower_patch"
+    },
+    "hive:pink_flower_patch": {
+      "textures": "textures/blocks/h_pink_flower_patch"
+    },
+    "hive:tall_purple_flower_patch": {
+      "textures": "textures/blocks/h_tall_purple_flower_patch"
+    },
+    "hive:tall_lily_pad_patch": {
+      "textures": "textures/blocks/h_tall_lily_pad_patch"
+    },
+    "hive:tall_red_patch": {
+      "textures": "textures/blocks/h_tall_red_patch"
+    },
+    "hive:tall_blue_flower_patch": {
+      "textures": "textures/blocks/h_tall_blue_flower_patch"
+    },
+    "hive:tall_white_flower_patch": {
+      "textures": "textures/blocks/h_tall_white_flower_patch"
+    },
+    "hive:tall_daffodil_patch": {
+      "textures": "textures/blocks/h_tall_daffodil_patch"
+    },
+    "hive:tall_popcorn_patch": {
+      "textures": "textures/blocks/h_tall_popcorn_patch"
+    },
+    "hive:tall_rose_patch": {
+      "textures": "textures/blocks/h_tall_rose_patch"
+    },
+    "hive:tall_frost_patch": {
+      "textures": "textures/blocks/h_tall_frost_patch"
+    },
+    "hive:tall_blossom_patch": {
+      "textures": "textures/blocks/h_tall_blossom_patch"
+    },
+    "hive:tall_lapis_flower_patch": {
+      "textures": "textures/blocks/h_tall_lapis_flower_patch"
+    },
+    "hive:tall_lazuli_flower_patch": {
+      "textures": "textures/blocks/h_tall_lazuli_flower_patch"
+    },
+    "hive:tall_pink_flower_patch": {
+      "textures": "textures/blocks/h_tall_pink_flower_patch"
+    },
+    "hive:tall_candy_patch": {
+      "textures": "textures/blocks/h_tall_candy_patch"
+    },
+    "hive:lily_pad_big": {
+      "textures": "textures/blocks/h_lily_pad_big"
+    },
+    "hive:jungle_root_vine": {
+      "textures": "textures/blocks/h_jungle_root_vine"
+    },
+    "hive:jungle_root_vine_bottom": {
+      "textures": "textures/blocks/h_jungle_root_vine_bottom"
+    },
+    "hive:lilac_vine": {
+      "textures": "textures/blocks/h_lilac_vine"
+    },
+    "hive:lilac_vine_bottom": {
+      "textures": "textures/blocks/h_lilac_vine_bottom"
+    },
+    "hive:small_dried_grass": {
+      "textures": "textures/blocks/h_small_dried_grass"
+    },
+    "hive:blue_snapdragons": {
+      "textures": "textures/blocks/h_blue_snapdragons"
+    },
+    "hive:purple_snapdragons": {
+      "textures": "textures/blocks/h_purple_snapdragons"
+    },
+    "hive:red_snapdragons": {
+      "textures": "textures/blocks/h_red_snapdragons"
+    },
+    "hive:lapis_snapdragons": {
+      "textures": "textures/blocks/h_lapis_snapdragons"
+    },
+    "hive:yellow_snapdragons": {
+      "textures": "textures/blocks/h_yellow_snapdragons"
+    },
+    "hive:lavender": {
+      "textures": "textures/blocks/h_lavender"
+    },
+    "hive:white_snapdragons": {
+      "textures": "textures/blocks/h_white_snapdragons"
+    },
+    "hive:pink_snapdragons": {
+      "textures": "textures/blocks/h_pink_snapdragons"
+    },
+    "hive:big_leaf_swamp_plant": {
+      "textures": "textures/blocks/h_big_leaf_swamp_plant"
+    },
+    "hive:big_leaf_jungle_plant": {
+      "textures": "textures/blocks/h_big_leaf_jungle_plant"
+    },
+    "hive:big_leaf_jungle_fern": {
+      "textures": "textures/blocks/h_big_leaf_jungle_fern"
+    },
+    "hive:big_leaf_swamp_fern": {
+      "textures": "textures/blocks/h_big_leaf_swamp_fern"
+    },
+    "hive:big_leaf_taiga_fern": {
+      "textures": "textures/blocks/h_big_leaf_taiga_fern"
+    },
+    "hive:lily_pad_cluster": {
+      "textures": "textures/blocks/h_lily_pad_cluster"
+    },
+    "hive:white_creeping_thyme": {
+      "textures": "textures/blocks/h_white_creeping_thyme"
+    },
+    "hive:purple_creeping_thyme": {
+      "textures": "textures/blocks/h_purple_creeping_thyme"
+    },
+    "hive:red_creeping_thyme": {
+      "textures": "textures/blocks/h_red_creeping_thyme"
+    },
+    "hive:blossom_creeping_thyme": {
+      "textures": "textures/blocks/h_blossom_creeping_thyme"
+    },
+    "hive:rose_creeping_thyme": {
+      "textures": "textures/blocks/h_rose_creeping_thyme"
+    },
+    "hive:blue_creeping_thyme": {
+      "textures": "textures/blocks/h_blue_creeping_thyme"
+    },
+    "hive:frost_creeping_thyme": {
+      "textures": "textures/blocks/h_frost_creeping_thyme"
+    },
+    "hive:yellow_creeping_thyme": {
+      "textures": "textures/blocks/h_yellow_creeping_thyme"
+    },
+    "hive:popcorn_creeping_thyme": {
+      "textures": "textures/blocks/h_popcorn_creeping_thyme"
+    },
+    "hive:lapis_creeping_thyme": {
+      "textures": "textures/blocks/h_lapis_creeping_thyme"
+    },
+    "hive:candy_creeping_thyme": {
+      "textures": "textures/blocks/h_candy_creeping_thyme"
+    },
+    "hive:pink_creeping_thyme": {
+      "textures": "textures/blocks/h_pink_creeping_thyme"
+    },
+    "hive:lazuli_creeping_thyme": {
+      "textures": "textures/blocks/h_lazuli_creeping_thyme"
+    },
+    "hive:lily_pad": {
+      "textures": "textures/blocks/h_lily_pad"
+    },
+    "hive:large_dried_grass": {
+      "textures": "textures/blocks/h_large_dried_grass"
+    },
+    "hive:medium_dried_grass": {
+      "textures": "textures/blocks/h_medium_dried_grass"
+    },
+    "hive:cat_tail": {
+      "textures": "textures/blocks/h_cat_tail"
+    },
+    "hive:dwarf_shrub_red": {
+      "textures": "textures/blocks/h_dwarf_shrub_red"
+    },
+    "hive:dwarf_shrub_purple": {
+      "textures": "textures/blocks/h_dwarf_shrub_purple"
+    },
+    "hive:dwarf_shrub_white": {
+      "textures": "textures/blocks/h_dwarf_shrub_white"
+    },
+    "hive:dwarf_shrub_lapis": {
+      "textures": "textures/blocks/h_dwarf_shrub_lapis"
+    },
+    "hive:dwarf_shrub_blue": {
+      "textures": "textures/blocks/h_dwarf_shrub_blue"
+    },
+    "hive:dwarf_shrub_yellow": {
+      "textures": "textures/blocks/h_dwarf_shrub_yellow"
+    },
+    "hive:dwarf_shrub_pink": {
+      "textures": "textures/blocks/h_dwarf_shrub_pink"
+    },
+    "hive:jungle_vine": {
+      "textures": "textures/blocks/h_jungle_vine"
+    },
+    "hive:looped_jungle_vine_": {
+      "textures": "textures/blocks/h_looped_jungle_vine_"
+    },
+    "hive:white_flowered_jungle_vine": {
+      "textures": "textures/blocks/h_white_flowered_jungle_vine"
+    },
+    "hive:purple_flowered_jungle_vine": {
+      "textures": "textures/blocks/h_purple_flowered_jungle_vine"
+    },
+    "hive:looped_purple_flowered_jungle_vine_": {
+      "textures": "textures/blocks/h_looped_purple_flowered_jungle_vine_"
+    },
+    "hive:trailing_ivy": {
+      "textures": "textures/blocks/h_trailing_ivy"
+    },
+    "hive:sparse_ivy": {
+      "textures": "textures/blocks/h_sparse_ivy"
+    },
+    "hive:sparse_jungle_ivy": {
+      "textures": "textures/blocks/h_sparse_jungle_ivy"
+    },
+    "hive:purple_flowered_jungle_ivy": {
+      "textures": "textures/blocks/h_purple_flowered_jungle_ivy"
+    },
+    "hive:jungle_ivy": {
+      "textures": "textures/blocks/h_jungle_ivy"
+    },
+    "hive:white_flowered_trailing_ivy": {
+      "textures": "textures/blocks/h_white_flowered_trailing_ivy"
+    },
+    "hive:jurassic_grass": {
+      "textures": "textures/blocks/h_jurassic_grass"
+    },
+    "hive:snake_plant": {
+      "textures": "textures/blocks/h_snake_plant"
+    },
+    "hive:climbing_rose_vine": {
+      "textures": "textures/blocks/h_climbing_rose_vine"
+    },
+    "hive:lotus_flower": {
+      "textures": "textures/blocks/h_lotus_flower"
+    },
+    "hive:lotus_flower_lilypad": {
+      "textures": "textures/blocks/h_lotus_flower_lilypad"
+    },
+    "hive:mixed_andesite_bricks_up_down": {
+      "textures": "textures/blocks/h_mixed_andesite_bricks_up_down"
+    },
+    "hive:mixed_andesite_bricks": {
+      "textures": "textures/blocks/h_mixed_andesite_bricks"
+    },
+    "hive:small_andesite_bricks": {
+      "textures": "textures/blocks/h_small_andesite_bricks"
+    },
+    "hive:thin_andesite_bricks": {
+      "textures": "textures/blocks/h_thin_andesite_bricks"
+    },
+    "hive:cobbled_andesite_bricks": {
+      "textures": "textures/blocks/h_cobbled_andesite_bricks"
+    },
+    "hive:andesite_bricks": {
+      "textures": "textures/blocks/h_andesite_bricks"
+    },
+    "hive:andesite_herringbone_bricks": {
+      "textures": "textures/blocks/h_andesite_herringbone_bricks"
+    },
+    "hive:small_sandstone_bricks": {
+      "textures": "textures/blocks/h_small_sandstone_bricks"
+    },
+    "hive:sandstone_bricks": {
+      "textures": "textures/blocks/h_sandstone_bricks"
+    },
+    "hive:chiselled_sandstone_target": {
+      "textures": "textures/blocks/h_chiselled_sandstone_target"
+    },
+    "hive:dark_cobbled_terracotta_bricks": {
+      "textures": "textures/blocks/h_dark_cobbled_terracotta_bricks"
+    },
+    "hive:dark_terracotta_bricks": {
+      "textures": "textures/blocks/h_dark_terracotta_bricks"
+    },
+    "hive:dark_terracotta_brick_skirting_up_down": {
+      "textures": "textures/blocks/h_dark_terracotta_brick_skirting_up_down"
+    },
+    "hive:dark_terracotta_brick_skirting": {
+      "textures": "textures/blocks/h_dark_terracotta_brick_skirting"
+    },
+    "hive:cobbled_terracotta_brick": {
+      "textures": "textures/blocks/h_cobbled_terracotta_brick"
+    },
+    "hive:terracotta_bricks": {
+      "textures": "textures/blocks/h_terracotta_bricks"
+    },
+    "hive:terracotta_brick_skirting_up_down": {
+      "textures": "textures/blocks/h_terracotta_brick_skirting_up_down"
+    },
+    "hive:terracotta_brick_skirting": {
+      "textures": "textures/blocks/h_terracotta_brick_skirting"
+    },
+    "hive:orange_terracotta_brick_skirting_up_down": {
+      "textures": "textures/blocks/h_orange_terracotta_brick_skirting_up_down"
+    },
+    "hive:orange_terracotta_brick_skirting": {
+      "textures": "textures/blocks/h_orange_terracotta_brick_skirting"
+    },
+    "hive:orange_terracotta_bricks": {
+      "textures": "textures/blocks/h_orange_terracotta_bricks"
+    },
+    "hive:orange_cobbled_terracotta_bricks": {
+      "textures": "textures/blocks/h_orange_cobbled_terracotta_bricks"
+    },
+    "hive:tan_brick": {
+      "textures": "textures/blocks/h_tan_brick"
+    },
+    "hive:orange_brick": {
+      "textures": "textures/blocks/h_orange_brick"
+    },
+    "hive:cream_brick": {
+      "textures": "textures/blocks/h_cream_brick"
+    },
+    "hive:mixed_orange_brick": {
+      "textures": "textures/blocks/h_mixed_orange_brick"
+    },
+    "hive:mixed_tan_brick": {
+      "textures": "textures/blocks/h_mixed_tan_brick"
+    },
+    "hive:mixed_cream_brick": {
+      "textures": "textures/blocks/h_mixed_cream_brick"
+    },
+    "hive:stone_wall": {
+      "textures": "textures/blocks/h_stone_wall"
+    },
+    "hive:dark_stone_wall": {
+      "textures": "textures/blocks/h_dark_stone_wall"
+    },
+    "hive:apple_fruit_crate": {
+      "textures": "textures/blocks/h_apple_fruit_crate"
+    },
+    "hive:orange_fruit_crate": {
+      "textures": "textures/blocks/h_orange_fruit_crate"
+    },
+    "hive:small_apple_crate": {
+      "textures": "textures/blocks/h_small_apple_crate"
+    },
+    "hive:small_orange_crate": {
+      "textures": "textures/blocks/h_small_orange_crate"
+    },
+    "hive:right_angled_spruce_shutters": {
+      "textures": "textures/blocks/h_right_angled_spruce_shutters"
+    },
+    "hive:right_angled_oak_shutters": {
+      "textures": "textures/blocks/h_right_angled_oak_shutters"
+    },
+    "hive:right_angled_jungle_shutters": {
+      "textures": "textures/blocks/h_right_angled_jungle_shutters"
+    },
+    "hive:right_angled_dark_oak_shutters": {
+      "textures": "textures/blocks/h_right_angled_dark_oak_shutters"
+    },
+    "hive:right_angled_birch_shutters": {
+      "textures": "textures/blocks/h_right_angled_birch_shutters"
+    },
+    "hive:right_angled_acacia_shutters": {
+      "textures": "textures/blocks/h_right_angled_acacia_shutters"
+    },
+    "hive:right_angled_warped_shutters": {
+      "textures": "textures/blocks/h_right_angled_warped_shutters"
+    },
+    "hive:right_angled_mangrove_shutters": {
+      "textures": "textures/blocks/h_right_angled_mangrove_shutters"
+    },
+    "hive:right_angled_sakura_shutters": {
+      "textures": "textures/blocks/h_right_angled_sakura_shutters"
+    },
+    "hive:right_angled_crimson_shutters": {
+      "textures": "textures/blocks/h_right_angled_crimson_shutters"
+    },
+    "hive:left_angled_spruce_shutters": {
+      "textures": "textures/blocks/h_left_angled_spruce_shutters"
+    },
+    "hive:left_angled_jungle_shutters": {
+      "textures": "textures/blocks/h_left_angled_jungle_shutters"
+    },
+    "hive:left_angled_oak_shutters": {
+      "textures": "textures/blocks/h_left_angled_oak_shutters"
+    },
+    "hive:left_angled_dark_oak_shutters": {
+      "textures": "textures/blocks/h_left_angled_dark_oak_shutters"
+    },
+    "hive:left_angled_birch_shutters": {
+      "textures": "textures/blocks/h_left_angled_birch_shutters"
+    },
+    "hive:left_angled_mangrove_shutters": {
+      "textures": "textures/blocks/h_left_angled_mangrove_shutters"
+    },
+    "hive:left_angled_acacia_shutters": {
+      "textures": "textures/blocks/h_left_angled_acacia_shutters"
+    },
+    "hive:left_angled_warped_shutters": {
+      "textures": "textures/blocks/h_left_angled_warped_shutters"
+    },
+    "hive:left_angled_sakura_shutters": {
+      "textures": "textures/blocks/h_left_angled_sakura_shutters"
+    },
+    "hive:left_angled_crimson_shutters": {
+      "textures": "textures/blocks/h_left_angled_crimson_shutters"
+    },
+    "hive:spruce_shutters": {
+      "textures": "textures/blocks/h_spruce_shutters"
+    },
+    "hive:oak_shutters": {
+      "textures": "textures/blocks/h_oak_shutters"
+    },
+    "hive:jungle_shutters": {
+      "textures": "textures/blocks/h_jungle_shutters"
+    },
+    "hive:dark_oak_shutters": {
+      "textures": "textures/blocks/h_dark_oak_shutters"
+    },
+    "hive:birch_shutters": {
+      "textures": "textures/blocks/h_birch_shutters"
+    },
+    "hive:warped_shutters": {
+      "textures": "textures/blocks/h_warped_shutters"
+    },
+    "hive:mangrove_shutters": {
+      "textures": "textures/blocks/h_mangrove_shutters"
+    },
+    "hive:acacia_shutters": {
+      "textures": "textures/blocks/h_acacia_shutters"
+    },
+    "hive:sakura_shutters": {
+      "textures": "textures/blocks/h_sakura_shutters"
+    },
+    "hive:crimson_shutters": {
+      "textures": "textures/blocks/h_crimson_shutters"
+    },
+    "hive:spruce_panelling": {
+      "textures": "textures/blocks/h_spruce_panelling"
+    },
+    "hive:spruce_large_jointed_planks": {
+      "textures": "textures/blocks/h_spruce_large_jointed_planks"
+    },
+    "hive:spruce_large_planks": {
+      "textures": "textures/blocks/h_spruce_large_planks"
+    },
+    "hive:spruce_skirting_up_down": {
+      "textures": "textures/blocks/h_spruce_skirting_up_down"
+    },
+    "hive:spruce_skirting": {
+      "textures": "textures/blocks/h_spruce_skirting"
+    },
+    "hive:vertical_spruce_planks": {
+      "textures": "textures/blocks/h_vertical_spruce_planks"
+    },
+    "hive:oak_large_planks": {
+      "textures": "textures/blocks/h_oak_large_planks"
+    },
+    "hive:oak_large_jointed_planks": {
+      "textures": "textures/blocks/h_oak_large_jointed_planks"
+    },
+    "hive:oak_panelling": {
+      "textures": "textures/blocks/h_oak_panelling"
+    },
+    "hive:oak_skirting_up_down": {
+      "textures": "textures/blocks/h_oak_skirting_up_down"
+    },
+    "hive:oak_skirting": {
+      "textures": "textures/blocks/h_oak_skirting"
+    },
+    "hive:vertical_oak_planks": {
+      "textures": "textures/blocks/h_vertical_oak_planks"
+    },
+    "hive:jungle_large_planks": {
+      "textures": "textures/blocks/h_jungle_large_planks"
+    },
+    "hive:jungle_large_jointed_planks": {
+      "textures": "textures/blocks/h_jungle_large_jointed_planks"
+    },
+    "hive:jungle_panelling": {
+      "textures": "textures/blocks/h_jungle_panelling"
+    },
+    "hive:jungle_skirting_up_down": {
+      "textures": "textures/blocks/h_jungle_skirting_up_down"
+    },
+    "hive:jungle_skirting": {
+      "textures": "textures/blocks/h_jungle_skirting"
+    },
+    "hive:vertical_jungle_planks": {
+      "textures": "textures/blocks/h_vertical_jungle_planks"
+    },
+    "hive:birch_large_planks": {
+      "textures": "textures/blocks/h_birch_large_planks"
+    },
+    "hive:birch_large_jointed_planks": {
+      "textures": "textures/blocks/h_birch_large_jointed_planks"
+    },
+    "hive:birch_panelling": {
+      "textures": "textures/blocks/h_birch_panelling"
+    },
+    "hive:birch_skirting_up_down": {
+      "textures": "textures/blocks/h_birch_skirting_up_down"
+    },
+    "hive:birch_skirting": {
+      "textures": "textures/blocks/h_birch_skirting"
+    },
+    "hive:vertical_birch_planks": {
+      "textures": "textures/blocks/h_vertical_birch_planks"
+    },
+    "hive:dark_oak_large_planks": {
+      "textures": "textures/blocks/h_dark_oak_large_planks"
+    },
+    "hive:dark_oak_large_jointed_planks": {
+      "textures": "textures/blocks/h_dark_oak_large_jointed_planks"
+    },
+    "hive:dark_oak_panelling": {
+      "textures": "textures/blocks/h_dark_oak_panelling"
+    },
+    "hive:dark_oak_skirting_up_down": {
+      "textures": "textures/blocks/h_dark_oak_skirting_up_down"
+    },
+    "hive:dark_oak_skirting": {
+      "textures": "textures/blocks/h_dark_oak_skirting"
+    },
+    "hive:vertical_dark_oak_planks": {
+      "textures": "textures/blocks/h_vertical_dark_oak_planks"
+    },
+    "hive:acacia_large_planks": {
+      "textures": "textures/blocks/h_acacia_large_planks"
+    },
+    "hive:acacia_large_joined_planks": {
+      "textures": "textures/blocks/h_acacia_large_joined_planks"
+    },
+    "hive:acacia_skirting_up_down": {
+      "textures": "textures/blocks/h_acacia_skirting_up_down"
+    },
+    "hive:acacia_skirting": {
+      "textures": "textures/blocks/h_acacia_skirting"
+    },
+    "hive:acacia_panelling": {
+      "textures": "textures/blocks/h_acacia_panelling"
+    },
+    "hive:vertical_acacia_planks": {
+      "textures": "textures/blocks/h_vertical_acacia_planks"
+    },
+    "hive:mangrove_large_planks": {
+      "textures": "textures/blocks/h_mangrove_large_planks"
+    },
+    "hive:mangrove_large_jointed_planks": {
+      "textures": "textures/blocks/h_mangrove_large_jointed_planks"
+    },
+    "hive:mangrove_skirting_up_down": {
+      "textures": "textures/blocks/h_mangrove_skirting_up_down"
+    },
+    "hive:mangrove_skirting": {
+      "textures": "textures/blocks/h_mangrove_skirting"
+    },
+    "hive:mangrove_panelling": {
+      "textures": "textures/blocks/h_mangrove_panelling"
+    },
+    "hive:vertical_mangrove_planks": {
+      "textures": "textures/blocks/h_vertical_mangrove_planks"
+    },
+    "hive:warped_large_planks": {
+      "textures": "textures/blocks/h_warped_large_planks"
+    },
+    "hive:warped_large_jointed_planks": {
+      "textures": "textures/blocks/h_warped_large_jointed_planks"
+    },
+    "hive:warped_panelling": {
+      "textures": "textures/blocks/h_warped_panelling"
+    },
+    "hive:warped_skirting_up_down": {
+      "textures": "textures/blocks/h_warped_skirting_up_down"
+    },
+    "hive:warped_skirting": {
+      "textures": "textures/blocks/h_warped_skirting"
+    },
+    "hive:vertical_warped_planks": {
+      "textures": "textures/blocks/h_vertical_warped_planks"
+    },
+    "hive:crimson_large_planks": {
+      "textures": "textures/blocks/h_crimson_large_planks"
+    },
+    "hive:crimson_large_jointed_planks": {
+      "textures": "textures/blocks/h_crimson_large_jointed_planks"
+    },
+    "hive:crimson_skirting_up_down": {
+      "textures": "textures/blocks/h_crimson_skirting_up_down"
+    },
+    "hive:crimson_skirting": {
+      "textures": "textures/blocks/h_crimson_skirting"
+    },
+    "hive:crimson_panelling": {
+      "textures": "textures/blocks/h_crimson_panelling"
+    },
+    "hive:vertical_crimson_planks": {
+      "textures": "textures/blocks/h_vertical_crimson_planks"
+    },
+    "hive:sakura_planks": {
+      "textures": "textures/blocks/h_sakura_planks"
+    },
+    "hive:sakura_log_up_down": {
+      "textures": "textures/blocks/h_sakura_log_up_down"
+    },
+    "hive:sakura_log": {
+      "textures": "textures/blocks/h_sakura_log"
+    },
+    "hive:stripped_sakura_log_up_down": {
+      "textures": "textures/blocks/h_stripped_sakura_log_up_down"
+    },
+    "hive:stripped_sakura_log": {
+      "textures": "textures/blocks/h_stripped_sakura_log"
+    },
+    "hive:sakura_large_planks": {
+      "textures": "textures/blocks/h_sakura_large_planks"
+    },
+    "hive:sakura_large_jointed_planks": {
+      "textures": "textures/blocks/h_sakura_large_jointed_planks"
+    },
+    "hive:sakura_panelling": {
+      "textures": "textures/blocks/h_sakura_panelling"
+    },
+    "hive:sakura_skirting_up_down": {
+      "textures": "textures/blocks/h_sakura_skirting_up_down"
+    },
+    "hive:sakura_skirting": {
+      "textures": "textures/blocks/h_sakura_skirting"
+    },
+    "hive:vertical_sakura_planks": {
+      "textures": "textures/blocks/h_vertical_sakura_planks"
+    },
+    "hive:sakura_wood": {
+      "textures": "textures/blocks/h_sakura_wood"
+    },
+    "hive:granite_bricks": {
+      "textures": "textures/blocks/h_granite_bricks"
+    },
+    "hive:small_granite_bricks": {
+      "textures": "textures/blocks/h_small_granite_bricks"
+    },
+    "hive:granite_tiles": {
+      "textures": "textures/blocks/h_granite_tiles"
+    },
+    "hive:granite_herringbone_bricks": {
+      "textures": "textures/blocks/h_granite_herringbone_bricks"
+    },
+    "hive:mossy_granite_herringbone_bricks": {
+      "textures": "textures/blocks/h_mossy_granite_herringbone_bricks"
+    },
+    "hive:mossy_granite_tiles": {
+      "textures": "textures/blocks/h_mossy_granite_tiles"
+    },
+    "hive:deepslate_herringbone_bricks": {
+      "textures": "textures/blocks/h_deepslate_herringbone_bricks"
+    },
+    "hive:thin_deepslate_bricks": {
+      "textures": "textures/blocks/h_thin_deepslate_bricks"
+    },
+    "hive:small_deepslate_bricks": {
+      "textures": "textures/blocks/h_small_deepslate_bricks"
+    },
+    "hive:mixed_deepslate_bricks_up_down": {
+      "textures": "textures/blocks/h_mixed_deepslate_bricks_up_down"
+    },
+    "hive:mixed_deepslate_bricks": {
+      "textures": "textures/blocks/h_mixed_deepslate_bricks"
+    },
+    "hive:deepslate_tiles": {
+      "textures": "textures/blocks/h_deepslate_tiles"
+    },
+    "hive:bookshelf_borderless_empty_up_down": {
+      "textures": "textures/blocks/h_bookshelf_borderless_empty_up_down"
+    },
+    "hive:bookshelf_borderless_empty": {
+      "textures": "textures/blocks/h_bookshelf_borderless_empty"
+    },
+    "hive:bookshelf_empty_up_down": {
+      "textures": "textures/blocks/h_bookshelf_empty_up_down"
+    },
+    "hive:bookshelf_empty": {
+      "textures": "textures/blocks/h_bookshelf_empty"
+    },
+    "hive:bookshelf_borderless_up_down": {
+      "textures": "textures/blocks/h_bookshelf_borderless_up_down"
+    },
+    "hive:bookshelf_borderless": {
+      "textures": "textures/blocks/h_bookshelf_borderless"
+    },
+    "hive:bookshelf_half_empty_up_down": {
+      "textures": "textures/blocks/h_bookshelf_half_empty_up_down"
+    },
+    "hive:bookshelf_half_empty": {
+      "textures": "textures/blocks/h_bookshelf_half_empty"
+    },
+    "hive:bookshelf_borderless_half_empty_up_down": {
+      "textures": "textures/blocks/h_bookshelf_borderless_half_empty_up_down"
+    },
+    "hive:bookshelf_borderless_half_empty": {
+      "textures": "textures/blocks/h_bookshelf_borderless_half_empty"
+    },
+    "hive:moss_gradient_1": {
+      "textures": "textures/blocks/h_moss_gradient_1"
+    },
+    "hive:moss_gradient_3": {
+      "textures": "textures/blocks/h_moss_gradient_3"
+    },
+    "hive:moss_gradient_2": {
+      "textures": "textures/blocks/h_moss_gradient_2"
+    },
+    "hive:moss_gradient_4": {
+      "textures": "textures/blocks/h_moss_gradient_4"
+    },
+    "hive:mossy_sand": {
+      "textures": "textures/blocks/h_mossy_sand"
+    },
+    "hive:mossy_dirt": {
+      "textures": "textures/blocks/h_mossy_dirt"
+    },
+    "hive:mossy_dirt_transition": {
+      "textures": "textures/blocks/h_mossy_dirt_transition"
+    },
+    "hive:jungle_moss": {
+      "textures": "textures/blocks/h_jungle_moss"
+    },
+    "hive:dirty_cobblestone_transition": {
+      "textures": "textures/blocks/h_dirty_cobblestone_transition"
+    },
+    "hive:dirty_cobbstone": {
+      "textures": "textures/blocks/h_dirty_cobbstone"
+    },
+    "hive:crumbling_cobblestone": {
+      "textures": "textures/blocks/h_crumbling_cobblestone"
+    },
+    "hive:large_pebbles": {
+      "textures": "textures/blocks/h_large_pebbles"
+    },
+    "hive:small_pebbles": {
+      "textures": "textures/blocks/h_small_pebbles"
+    },
+    "hive:medium_pebbles": {
+      "textures": "textures/blocks/h_medium_pebbles"
+    },
+    "hive:terracotta_pot": {
+      "textures": "textures/blocks/h_terracotta_pot"
+    },
+    "hive:terracotta_pot_blue": {
+      "textures": "textures/blocks/h_terracotta_pot_blue"
+    },
+    "hive:terracotta_pot_green": {
+      "textures": "textures/blocks/h_terracotta_pot_green"
+    },
+    "hive:terracotta_pot_white": {
+      "textures": "textures/blocks/h_terracotta_pot_white"
+    },
+    "hive:terracotta_pot_red": {
+      "textures": "textures/blocks/h_terracotta_pot_red"
+    },
+    "hive:terracotta_pot_black": {
+      "textures": "textures/blocks/h_terracotta_pot_black"
+    },
+    "hive:decorated_pot": {
+      "textures": "textures/blocks/h_decorated_pot"
+    },
+    "hive:decorated_pot_blue": {
+      "textures": "textures/blocks/h_decorated_pot_blue"
+    },
+    "hive:decorated_small_pot": {
+      "textures": "textures/blocks/h_decorated_small_pot"
+    },
+    "hive:decorated_small_blue_pot": {
+      "textures": "textures/blocks/h_decorated_small_blue_pot"
+    },
+    "hive:small_blue_pot": {
+      "textures": "textures/blocks/h_small_blue_pot"
+    },
+    "hive:small_pot": {
+      "textures": "textures/blocks/h_small_pot"
+    },
+    "hive:decorated_thin_pot": {
+      "textures": "textures/blocks/h_decorated_thin_pot"
+    },
+    "hive:decorated_thin_blue_pot": {
+      "textures": "textures/blocks/h_decorated_thin_blue_pot"
+    },
+    "hive:thin_blue_pot": {
+      "textures": "textures/blocks/h_thin_blue_pot"
+    },
+    "hive:thin_pot": {
+      "textures": "textures/blocks/h_thin_pot"
+    },
+    "hive:sand_gradient_2": {
+      "textures": "textures/blocks/h_sand_gradient_2"
+    },
+    "hive:sand_gradient_3": {
+      "textures": "textures/blocks/h_sand_gradient_3"
+    },
+    "hive:sand_gradient_1": {
+      "textures": "textures/blocks/h_sand_gradient_1"
+    },
+    "hive:sand_gradient_4": {
+      "textures": "textures/blocks/h_sand_gradient_4"
+    },
+    "hive:smooth_sand_gradient_1": {
+      "textures": "textures/blocks/h_smooth_sand_gradient_1"
+    },
+    "hive:smooth_sand_gradient_4": {
+      "textures": "textures/blocks/h_smooth_sand_gradient_4"
+    },
+    "hive:smooth_sand_gradient_3": {
+      "textures": "textures/blocks/h_smooth_sand_gradient_3"
+    },
+    "hive:smooth_sand_gradient_2": {
+      "textures": "textures/blocks/h_smooth_sand_gradient_2"
+    },
+    "hive:smoothest_sand_gradient_1": {
+      "textures": "textures/blocks/h_smoothest_sand_gradient_1"
+    },
+    "hive:smoothest_sand_gradient_3": {
+      "textures": "textures/blocks/h_smoothest_sand_gradient_3"
+    },
+    "hive:smoothest_sand_gradient_2": {
+      "textures": "textures/blocks/h_smoothest_sand_gradient_2"
+    },
+    "hive:smoothest_sand_gradient_4": {
+      "textures": "textures/blocks/h_smoothest_sand_gradient_4"
+    },
+    "hive:coarser_sand": {
+      "textures": "textures/blocks/h_coarser_sand"
+    },
+    "hive:coarse_sand": {
+      "textures": "textures/blocks/h_coarse_sand"
+    },
+    "hive:coarse_wavy_sand": {
+      "textures": "textures/blocks/h_coarse_wavy_sand"
+    },
+    "hive:wavy_sand": {
+      "textures": "textures/blocks/h_wavy_sand"
+    },
+    "hive:roof_tile_crimson_1": {
+      "textures": "textures/blocks/h_roof_tile_crimson_1"
+    },
+    "hive:roof_tile_crimson_2": {
+      "textures": "textures/blocks/h_roof_tile_crimson_2"
+    },
+    "hive:roof_tile_crimson_3": {
+      "textures": "textures/blocks/h_roof_tile_crimson_3"
+    },
+    "hive:roof_tile_crimson_5": {
+      "textures": "textures/blocks/h_roof_tile_crimson_5"
+    },
+    "hive:roof_tile_crimson_4": {
+      "textures": "textures/blocks/h_roof_tile_crimson_4"
+    },
+    "hive:roof_tile_aqua_1": {
+      "textures": "textures/blocks/h_roof_tile_aqua_1"
+    },
+    "hive:roof_tile_aqua_4": {
+      "textures": "textures/blocks/h_roof_tile_aqua_4"
+    },
+    "hive:roof_tile_aqua_3": {
+      "textures": "textures/blocks/h_roof_tile_aqua_3"
+    },
+    "hive:roof_tile_aqua_2": {
+      "textures": "textures/blocks/h_roof_tile_aqua_2"
+    },
+    "hive:roof_tile_aqua_6": {
+      "textures": "textures/blocks/h_roof_tile_aqua_6"
+    },
+    "hive:roof_tile_aqua_5": {
+      "textures": "textures/blocks/h_roof_tile_aqua_5"
+    },
+    "hive:roof_tile_amethyst_1": {
+      "textures": "textures/blocks/h_roof_tile_amethyst_1"
+    },
+    "hive:roof_tile_amethyst_3": {
+      "textures": "textures/blocks/h_roof_tile_amethyst_3"
+    },
+    "hive:roof_tile_amethyst_2": {
+      "textures": "textures/blocks/h_roof_tile_amethyst_2"
+    },
+    "hive:roof_tile_amethyst_5": {
+      "textures": "textures/blocks/h_roof_tile_amethyst_5"
+    },
+    "hive:roof_tile_amethyst_4": {
+      "textures": "textures/blocks/h_roof_tile_amethyst_4"
+    },
+    "hive:roof_tile_sunset_1": {
+      "textures": "textures/blocks/h_roof_tile_sunset_1"
+    },
+    "hive:roof_tile_sunset_3": {
+      "textures": "textures/blocks/h_roof_tile_sunset_3"
+    },
+    "hive:roof_tile_sunset_2": {
+      "textures": "textures/blocks/h_roof_tile_sunset_2"
+    },
+    "hive:roof_tile_sunset_5": {
+      "textures": "textures/blocks/h_roof_tile_sunset_5"
+    },
+    "hive:roof_tile_sunset_4": {
+      "textures": "textures/blocks/h_roof_tile_sunset_4"
+    },
+    "hive:roof_tile_sunset_6": {
+      "textures": "textures/blocks/h_roof_tile_sunset_6"
+    },
+    "hive:roof_tile_terracotta_1": {
+      "textures": "textures/blocks/h_roof_tile_terracotta_1"
+    },
+    "hive:roof_tile_stone_1": {
+      "textures": "textures/blocks/h_roof_tile_stone_1"
+    },
+    "hive:snowy_roof_tile_sunset_2_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_2_up"
+    },
+    "hive:snowy_roof_tile_sunset_2_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_2_down"
+    },
+    "hive:snowy_roof_tile_sunset_2": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_2"
+    },
+    "hive:snowy_roof_tile_sunset_6_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_6_up"
+    },
+    "hive:snowy_roof_tile_sunset_6_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_6_down"
+    },
+    "hive:snowy_roof_tile_sunset_6": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_6"
+    },
+    "hive:snowy_roof_tile_aqua_4_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_4_up"
+    },
+    "hive:snowy_roof_tile_aqua_4_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_4_down"
+    },
+    "hive:snowy_roof_tile_aqua_4": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_4"
+    },
+    "hive:snowy_roof_tile_amethyst_3_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_3_up"
+    },
+    "hive:snowy_roof_tile_amethyst_3_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_3_down"
+    },
+    "hive:snowy_roof_tile_amethyst_3": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_3"
+    },
+    "hive:snowy_roof_tile_sunset_3_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_3_up"
+    },
+    "hive:snowy_roof_tile_sunset_3_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_3_down"
+    },
+    "hive:snowy_roof_tile_sunset_3": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_3"
+    },
+    "hive:snowy_roof_tile_amethyst_4_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_4_up"
+    },
+    "hive:snowy_roof_tile_amethyst_4_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_4_down"
+    },
+    "hive:snowy_roof_tile_amethyst_4": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_4"
+    },
+    "hive:snowy_roof_tile_amethyst_2_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_2_up"
+    },
+    "hive:snowy_roof_tile_amethyst_2_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_2_down"
+    },
+    "hive:snowy_roof_tile_amethyst_2": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_2"
+    },
+    "hive:snowy_roof_tile_amethyst_1_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_1_up"
+    },
+    "hive:snowy_roof_tile_amethyst_1_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_1_down"
+    },
+    "hive:snowy_roof_tile_amethyst_1": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_1"
+    },
+    "hive:snowy_roof_tile_sunset_4_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_4_up"
+    },
+    "hive:snowy_roof_tile_sunset_4_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_4_down"
+    },
+    "hive:snowy_roof_tile_sunset_4": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_4"
+    },
+    "hive:snowy_roof_tile_amethyst_5_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_5_up"
+    },
+    "hive:snowy_roof_tile_amethyst_5_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_5_down"
+    },
+    "hive:snowy_roof_tile_amethyst_5": {
+      "textures": "textures/blocks/h_snowy_roof_tile_amethyst_5"
+    },
+    "hive:snowy_roof_tile_sunset_1_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_1_up"
+    },
+    "hive:snowy_roof_tile_sunset_1_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_1_down"
+    },
+    "hive:snowy_roof_tile_sunset_1": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_1"
+    },
+    "hive:snowy_roof_tile_aqua_6_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_6_up"
+    },
+    "hive:snowy_roof_tile_aqua_6_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_6_down"
+    },
+    "hive:snowy_roof_tile_aqua_6": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_6"
+    },
+    "hive:snowy_roof_tile_aqua_5_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_5_up"
+    },
+    "hive:snowy_roof_tile_aqua_5_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_5_down"
+    },
+    "hive:snowy_roof_tile_aqua_5": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_5"
+    },
+    "hive:snowy_roof_tile_sunset_5_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_5_up"
+    },
+    "hive:snowy_roof_tile_sunset_5_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_5_down"
+    },
+    "hive:snowy_roof_tile_sunset_5": {
+      "textures": "textures/blocks/h_snowy_roof_tile_sunset_5"
+    },
+    "hive:snowy_roof_tile_aqua_3_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_3_up"
+    },
+    "hive:snowy_roof_tile_aqua_3_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_3_down"
+    },
+    "hive:snowy_roof_tile_aqua_3": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_3"
+    },
+    "hive:snowy_roof_tile_crimson_5_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_5_up"
+    },
+    "hive:snowy_roof_tile_crimson_5_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_5_down"
+    },
+    "hive:snowy_roof_tile_crimson_5": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_5"
+    },
+    "hive:snowy_roof_tile_aqua_2_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_2_up"
+    },
+    "hive:snowy_roof_tile_aqua_2_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_2_down"
+    },
+    "hive:snowy_roof_tile_aqua_2": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_2"
+    },
+    "hive:snowy_roof_tile_crimson_3_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_3_up"
+    },
+    "hive:snowy_roof_tile_crimson_3_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_3_down"
+    },
+    "hive:snowy_roof_tile_crimson_3": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_3"
+    },
+    "hive:snowy_roof_tile_aqua_1_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_1_up"
+    },
+    "hive:snowy_roof_tile_aqua_1_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_1_down"
+    },
+    "hive:snowy_roof_tile_aqua_1": {
+      "textures": "textures/blocks/h_snowy_roof_tile_aqua_1"
+    },
+    "hive:snowy_roof_tile_crimson_4_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_4_up"
+    },
+    "hive:snowy_roof_tile_crimson_4_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_4_down"
+    },
+    "hive:snowy_roof_tile_crimson_4": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_4"
+    },
+    "hive:snowy_roof_tile_crimson_2_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_2_up"
+    },
+    "hive:snowy_roof_tile_crimson_2_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_2_down"
+    },
+    "hive:snowy_roof_tile_crimson_2": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_2"
+    },
+    "hive:snowy_roof_tile_crimson_1_up": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_1_up"
+    },
+    "hive:snowy_roof_tile_crimson_1_down": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_1_down"
+    },
+    "hive:snowy_roof_tile_crimson_1": {
+      "textures": "textures/blocks/h_snowy_roof_tile_crimson_1"
+    },
+    "hive:roof_tile_emerald_1": {
+      "textures": "textures/blocks/h_roof_tile_emerald_1"
+    },
+    "hive:roof_tile_emerald_4": {
+      "textures": "textures/blocks/h_roof_tile_emerald_4"
+    },
+    "hive:roof_tile_emerald_3": {
+      "textures": "textures/blocks/h_roof_tile_emerald_3"
+    },
+    "hive:roof_tile_emerald_2": {
+      "textures": "textures/blocks/h_roof_tile_emerald_2"
+    },
+    "hive:roof_tile_emerald_5": {
+      "textures": "textures/blocks/h_roof_tile_emerald_5"
+    },
+    "hive:roof_tile_amber_1": {
+      "textures": "textures/blocks/h_roof_tile_amber_1"
+    },
+    "hive:roof_tile_amber_3": {
+      "textures": "textures/blocks/h_roof_tile_amber_3"
+    },
+    "hive:roof_tile_amber_2": {
+      "textures": "textures/blocks/h_roof_tile_amber_2"
+    },
+    "hive:roof_tile_amber_4": {
+      "textures": "textures/blocks/h_roof_tile_amber_4"
+    },
+    "hive:roof_tile_amber_5": {
+      "textures": "textures/blocks/h_roof_tile_amber_5"
+    },
+    "hive:terracotta_roof_shingles": {
+      "textures": "textures/blocks/h_terracotta_roof_shingles"
+    },
+    "hive:mixed_terracotta_roof_shingles": {
+      "textures": "textures/blocks/h_mixed_terracotta_roof_shingles"
+    },
+    "hive:roof_tile_mixed_terracotta": {
+      "textures": "textures/blocks/h_roof_tile_mixed_terracotta"
+    },
+    "hive:mossy_terracotta_roof_shingles": {
+      "textures": "textures/blocks/h_mossy_terracotta_roof_shingles"
+    },
+    "hive:mossy_terracotta_roof_tile": {
+      "textures": "textures/blocks/h_mossy_terracotta_roof_tile"
+    },
+    "hive:dark_metal_truss_pane": {
+      "textures": "textures/blocks/h_dark_metal_truss_pane"
+    },
+    "hive:dark_metal_truss_connector": {
+      "textures": "textures/blocks/h_dark_metal_truss_connector"
+    },
+    "hive:dark_metal_truss_pillar": {
+      "textures": "textures/blocks/h_dark_metal_truss_pillar"
+    },
+    "hive:studio_tiles": {
+      "textures": "textures/blocks/h_studio_tiles"
+    },
+    "hive:small_studio_tiles": {
+      "textures": "textures/blocks/h_small_studio_tiles"
+    },
+    "hive:studio_tiles_purple": {
+      "textures": "textures/blocks/h_studio_tiles_purple"
+    },
+    "hive:small_studio_tiles_purple": {
+      "textures": "textures/blocks/h_small_studio_tiles_purple"
+    },
+    "hive:studio_floor_yellow": {
+      "textures": "textures/blocks/h_studio_floor_yellow"
+    },
+    "hive:studio_floor_black": {
+      "textures": "textures/blocks/h_studio_floor_black"
+    },
+    "hive:studio_floor_blue": {
+      "textures": "textures/blocks/h_studio_floor_blue"
+    },
+    "hive:studio_floor_brown": {
+      "textures": "textures/blocks/h_studio_floor_brown"
+    },
+    "hive:studio_floor_cyan": {
+      "textures": "textures/blocks/h_studio_floor_cyan"
+    },
+    "hive:studio_floor_gray": {
+      "textures": "textures/blocks/h_studio_floor_gray"
+    },
+    "hive:studio_floor_green": {
+      "textures": "textures/blocks/h_studio_floor_green"
+    },
+    "hive:studio_floor_light_blue": {
+      "textures": "textures/blocks/h_studio_floor_light_blue"
+    },
+    "hive:studio_floor_light_gray": {
+      "textures": "textures/blocks/h_studio_floor_light_gray"
+    },
+    "hive:studio_floor_lime": {
+      "textures": "textures/blocks/h_studio_floor_lime"
+    },
+    "hive:studio_floor_magenta": {
+      "textures": "textures/blocks/h_studio_floor_magenta"
+    },
+    "hive:studio_floor_orange": {
+      "textures": "textures/blocks/h_studio_floor_orange"
+    },
+    "hive:studio_floor_pink": {
+      "textures": "textures/blocks/h_studio_floor_pink"
+    },
+    "hive:studio_floor_purple": {
+      "textures": "textures/blocks/h_studio_floor_purple"
+    },
+    "hive:studio_floor_red": {
+      "textures": "textures/blocks/h_studio_floor_red"
+    },
+    "hive:studio_floor_white": {
+      "textures": "textures/blocks/h_studio_floor_white"
+    },
+    "hive:studio_floor_symbol_black": {
+      "textures": "textures/blocks/h_studio_floor_symbol_black"
+    },
+    "hive:studio_floor_symbol_blue": {
+      "textures": "textures/blocks/h_studio_floor_symbol_blue"
+    },
+    "hive:studio_floor_symbol_brown": {
+      "textures": "textures/blocks/h_studio_floor_symbol_brown"
+    },
+    "hive:studio_floor_symbol_cyan": {
+      "textures": "textures/blocks/h_studio_floor_symbol_cyan"
+    },
+    "hive:studio_floor_symbol_gray": {
+      "textures": "textures/blocks/h_studio_floor_symbol_gray"
+    },
+    "hive:studio_floor_symbol_green": {
+      "textures": "textures/blocks/h_studio_floor_symbol_green"
+    },
+    "hive:studio_floor_symbol_light_blue": {
+      "textures": "textures/blocks/h_studio_floor_symbol_light_blue"
+    },
+    "hive:studio_floor_symbol_light_gray": {
+      "textures": "textures/blocks/h_studio_floor_symbol_light_gray"
+    },
+    "hive:studio_floor_symbol_lime": {
+      "textures": "textures/blocks/h_studio_floor_symbol_lime"
+    },
+    "hive:studio_floor_symbol_magenta": {
+      "textures": "textures/blocks/h_studio_floor_symbol_magenta"
+    },
+    "hive:studio_floor_symbol_orange": {
+      "textures": "textures/blocks/h_studio_floor_symbol_orange"
+    },
+    "hive:studio_floor_symbol_pink": {
+      "textures": "textures/blocks/h_studio_floor_symbol_pink"
+    },
+    "hive:studio_floor_symbol_purple": {
+      "textures": "textures/blocks/h_studio_floor_symbol_purple"
+    },
+    "hive:studio_floor_symbol_red": {
+      "textures": "textures/blocks/h_studio_floor_symbol_red"
+    },
+    "hive:studio_floor_symbol_white": {
+      "textures": "textures/blocks/h_studio_floor_symbol_white"
+    },
+    "hive:studio_floor_symbol_yellow": {
+      "textures": "textures/blocks/h_studio_floor_symbol_yellow"
+    },
+    "hive:stone_wall_corner": {
+      "textures": "textures/blocks/h_stone_wall_corner"
+    },
+    "hive:dark_stone_wall_corner": {
+      "textures": "textures/blocks/h_dark_stone_wall_corner"
+    },
+    "hive:oak_stump": {
+      "textures": "textures/blocks/h_oak_stump"
+    },
+    "hive:spruce_stump": {
+      "textures": "textures/blocks/h_spruce_stump"
+    },
+    "hive:birch_stump": {
+      "textures": "textures/blocks/h_birch_stump"
+    },
+    "hive:wooden_stool": {
+      "textures": "textures/blocks/h_wooden_stool"
+    },
+    "hive:shattered_crate": {
+      "textures": "textures/blocks/h_shattered_crate"
+    },
+    "hive:bottle_crate": {
+      "textures": "textures/blocks/h_bottle_crate"
+    },
+    "hive:book_crate": {
+      "textures": "textures/blocks/h_book_crate"
+    },
+    "hive:sealed_crate": {
+      "textures": "textures/blocks/h_sealed_crate"
+    },
+    "hive:broken_crate": {
+      "textures": "textures/blocks/h_broken_crate"
+    },
+    "hive:stacked_sealed_crates": {
+      "textures": "textures/blocks/h_stacked_sealed_crates"
+    },
+    "hive:broken_stacked_crates": {
+      "textures": "textures/blocks/h_broken_stacked_crates"
+    },
+    "hive:stacked_bottle_crates": {
+      "textures": "textures/blocks/h_stacked_bottle_crates"
+    },
+    "hive:wall_anchor": {
+      "textures": "textures/blocks/h_wall_anchor"
+    },
+    "hive:sunken_wall_anchor": {
+      "textures": "textures/blocks/h_sunken_wall_anchor"
+    },
+    "hive:anchor": {
+      "textures": "textures/blocks/h_anchor"
+    },
+    "hive:sunken_anchor": {
+      "textures": "textures/blocks/h_sunken_anchor"
+    },
+    "hive:large_ships_wheel": {
+      "textures": "textures/blocks/h_large_ships_wheel"
+    },
+    "hive:ships_wheel": {
+      "textures": "textures/blocks/h_ships_wheel"
+    },
+    "hive:jungle_wooden_table": {
+      "textures": "textures/blocks/h_jungle_wooden_table"
+    },
+    "hive:oak_wooden_table": {
+      "textures": "textures/blocks/h_oak_wooden_table"
+    },
+    "hive:standing_spyglass": {
+      "textures": "textures/blocks/h_standing_spyglass"
+    },
+    "hive:pinned_treasure_map": {
+      "textures": "textures/blocks/h_pinned_treasure_map"
+    },
+    "hive:treasure_map": {
+      "textures": "textures/blocks/h_treasure_map"
+    },
+    "hive:tipped_broken_keg": {
+      "textures": "textures/blocks/h_tipped_broken_keg"
+    },
+    "hive:tipped_wooden_keg": {
+      "textures": "textures/blocks/h_tipped_wooden_keg"
+    },
+    "hive:tipped_explosive_keg": {
+      "textures": "textures/blocks/h_tipped_explosive_keg"
+    },
+    "hive:broken_keg": {
+      "textures": "textures/blocks/h_broken_keg"
+    },
+    "hive:explosive_keg": {
+      "textures": "textures/blocks/h_explosive_keg"
+    },
+    "hive:wooden_keg": {
+      "textures": "textures/blocks/h_wooden_keg"
+    },
+    "hive:tankards": {
+      "textures": "textures/blocks/h_tankards"
+    },
+    "hive:tankard": {
+      "textures": "textures/blocks/h_tankard"
+    },
+    "hive:toy_train": {
+      "textures": "textures/blocks/h_toy_train"
+    },
+    "hive:red_painted_toy_train": {
+      "textures": "textures/blocks/h_red_painted_toy_train"
+    },
+    "hive:pink_toy_bear": {
+      "textures": "textures/blocks/h_pink_toy_bear"
+    },
+    "hive:toy_bear": {
+      "textures": "textures/blocks/h_toy_bear"
+    },
+    "hive:gift_box_red": {
+      "textures": "textures/blocks/h_gift_box_red"
+    },
+    "hive:gift_box_white": {
+      "textures": "textures/blocks/h_gift_box_white"
+    },
+    "hive:gift_box_blue": {
+      "textures": "textures/blocks/h_gift_box_blue"
+    },
+    "hive:gift_box_green": {
+      "textures": "textures/blocks/h_gift_box_green"
+    },
+    "hive:wide_gift_box_red": {
+      "textures": "textures/blocks/h_wide_gift_box_red"
+    },
+    "hive:wide_gift_box_yellow": {
+      "textures": "textures/blocks/h_wide_gift_box_yellow"
+    },
+    "hive:wide_gift_box_green": {
+      "textures": "textures/blocks/h_wide_gift_box_green"
+    },
+    "hive:wide_gift_box_blue": {
+      "textures": "textures/blocks/h_wide_gift_box_blue"
+    },
+    "hive:tall_gift_box_green": {
+      "textures": "textures/blocks/h_tall_gift_box_green"
+    },
+    "hive:tall_gift_box_red": {
+      "textures": "textures/blocks/h_tall_gift_box_red"
+    },
+    "hive:tall_gift_box_blue": {
+      "textures": "textures/blocks/h_tall_gift_box_blue"
+    },
+    "hive:tall_gift_box_white": {
+      "textures": "textures/blocks/h_tall_gift_box_white"
+    },
+    "hive:light_blue_wrapped_gift": {
+      "textures": "textures/blocks/h_light_blue_wrapped_gift"
+    },
+    "hive:magenta_wrapped_gift": {
+      "textures": "textures/blocks/h_magenta_wrapped_gift"
+    },
+    "hive:yellow_wrapped_gift": {
+      "textures": "textures/blocks/h_yellow_wrapped_gift"
+    },
+    "hive:blue_wrapped_gift": {
+      "textures": "textures/blocks/h_blue_wrapped_gift"
+    },
+    "hive:green_wrapped_gift": {
+      "textures": "textures/blocks/h_green_wrapped_gift"
+    },
+    "hive:purple_wrapped_gift": {
+      "textures": "textures/blocks/h_purple_wrapped_gift"
+    },
+    "hive:lime_wrapped_gift": {
+      "textures": "textures/blocks/h_lime_wrapped_gift"
+    },
+    "hive:red_wrapped_gift": {
+      "textures": "textures/blocks/h_red_wrapped_gift"
+    },
+    "hive:snowball_pile": {
+      "textures": "textures/blocks/h_snowball_pile"
+    },
+    "hive:cookies_and_milk": {
+      "textures": "textures/blocks/h_cookies_and_milk"
+    },
+    "hive:snowy_dirt_down": {
+      "textures": "textures/blocks/h_snowy_dirt_down"
+    },
+    "hive:snowy_dirt_up": {
+      "textures": "textures/blocks/h_snowy_dirt_up"
+    },
+    "hive:snowy_dirt": {
+      "textures": "textures/blocks/h_snowy_dirt"
+    },
+    "hive:snowy_dirt_transition": {
+      "textures": "textures/blocks/h_snowy_dirt_transition"
+    },
+    "hive:snowy_footprints": {
+      "textures": "textures/blocks/h_snowy_footprints"
+    },
+    "hive:snowy_pawprints": {
+      "textures": "textures/blocks/h_snowy_pawprints"
+    },
+    "hive:snow_path_block": {
+      "textures": "textures/blocks/h_snow_path_block"
+    },
+    "hive:sea_shells": {
+      "textures": "textures/blocks/h_sea_shells"
+    },
+    "hive:wanted_poster": {
+      "textures": "textures/blocks/h_wanted_poster"
+    },
+    "hive:tailor_dummy": {
+      "textures": "textures/blocks/h_tailor_dummy"
+    },
+    "hive:fabric_bolts": {
+      "textures": "textures/blocks/h_fabric_bolts"
+    },
+    "hive:sewing_machine": {
+      "textures": "textures/blocks/h_sewing_machine"
+    },
+    "hive:spools_of_thread": {
+      "textures": "textures/blocks/h_spools_of_thread"
+    },
+    "hive:wonky_jungle_plank": {
+      "textures": "textures/blocks/h_wonky_jungle_plank"
+    },
+    "hive:wonky_spruce_plank": {
+      "textures": "textures/blocks/h_wonky_spruce_plank"
+    },
+    "hive:wonky_oak_plank": {
+      "textures": "textures/blocks/h_wonky_oak_plank"
+    },
+    "hive:crooked_oak_plank": {
+      "textures": "textures/blocks/h_crooked_oak_plank"
+    },
+    "hive:crooked_spruce_plank": {
+      "textures": "textures/blocks/h_crooked_spruce_plank"
+    },
+    "hive:crooked_jungle_plank": {
+      "textures": "textures/blocks/h_crooked_jungle_plank"
+    },
+    "hive:tiki_torch": {
+      "textures": "textures/blocks/h_tiki_torch"
+    },
+    "hive:tiki_table_lamp": {
+      "textures": "textures/blocks/h_tiki_table_lamp"
+    },
+    "hive:hanging_tiki_lantern": {
+      "textures": "textures/blocks/h_hanging_tiki_lantern"
+    },
+    "hive:sandstone_pillar_up_down": {
+      "textures": "textures/blocks/h_sandstone_pillar_up_down"
+    },
+    "hive:sandstone_pillar": {
+      "textures": "textures/blocks/h_sandstone_pillar"
+    },
+    "hive:stone_brick_pillar_up_down": {
+      "textures": "textures/blocks/h_stone_brick_pillar_up_down"
+    },
+    "hive:stone_brick_pillar": {
+      "textures": "textures/blocks/h_stone_brick_pillar"
+    },
+    "hive:dark_terracotta_pillar_up_down": {
+      "textures": "textures/blocks/h_dark_terracotta_pillar_up_down"
+    },
+    "hive:dark_terracotta_pillar": {
+      "textures": "textures/blocks/h_dark_terracotta_pillar"
+    },
+    "hive:chiseled_sandstone_pillar_up_down": {
+      "textures": "textures/blocks/h_chiseled_sandstone_pillar_up_down"
+    },
+    "hive:chiseled_sandstone_pillar": {
+      "textures": "textures/blocks/h_chiseled_sandstone_pillar"
+    },
+    "hive:chiseled_dark_terracotta_pillar_up_down": {
+      "textures": "textures/blocks/h_chiseled_dark_terracotta_pillar_up_down"
+    },
+    "hive:chiseled_dark_terracotta_pillar": {
+      "textures": "textures/blocks/h_chiseled_dark_terracotta_pillar"
+    },
+    "hive:chiseled_orange_terracotta_pillar_up_down": {
+      "textures": "textures/blocks/h_chiseled_orange_terracotta_pillar_up_down"
+    },
+    "hive:chiseled_orange_terracotta_pillar": {
+      "textures": "textures/blocks/h_chiseled_orange_terracotta_pillar"
+    },
+    "hive:orange_terracotta_pillar_up_down": {
+      "textures": "textures/blocks/h_orange_terracotta_pillar_up_down"
+    },
+    "hive:orange_terracotta_pillar": {
+      "textures": "textures/blocks/h_orange_terracotta_pillar"
+    },
+    "hive:terracotta_pillar_up_down": {
+      "textures": "textures/blocks/h_terracotta_pillar_up_down"
+    },
+    "hive:terracotta_pillar": {
+      "textures": "textures/blocks/h_terracotta_pillar"
+    },
+    "hive:chiseled_terracotta_pillar_up_down": {
+      "textures": "textures/blocks/h_chiseled_terracotta_pillar_up_down"
+    },
+    "hive:chiseled_terracotta_pillar": {
+      "textures": "textures/blocks/h_chiseled_terracotta_pillar"
+    },
+    "hive:granite_pillar_up_down": {
+      "textures": "textures/blocks/h_granite_pillar_up_down"
+    },
+    "hive:granite_pillar": {
+      "textures": "textures/blocks/h_granite_pillar"
+    },
+    "hive:andesite_pillar_up_down": {
+      "textures": "textures/blocks/h_andesite_pillar_up_down"
+    },
+    "hive:andesite_pillar": {
+      "textures": "textures/blocks/h_andesite_pillar"
+    },
+    "hive:smooth_stone_pillar_up_down": {
+      "textures": "textures/blocks/h_smooth_stone_pillar_up_down"
+    },
+    "hive:smooth_stone_pillar": {
+      "textures": "textures/blocks/h_smooth_stone_pillar"
+    },
+    "hive:deepslate_pillar_up_down": {
+      "textures": "textures/blocks/h_deepslate_pillar_up_down"
+    },
+    "hive:deepslate_pillar": {
+      "textures": "textures/blocks/h_deepslate_pillar"
+    },
+    "hive:dark_prismarine_pillar_up_down": {
+      "textures": "textures/blocks/h_dark_prismarine_pillar_up_down"
+    },
+    "hive:dark_prismarine_pillar": {
+      "textures": "textures/blocks/h_dark_prismarine_pillar"
+    },
+    "hive:plaster": {
+      "textures": "textures/blocks/h_plaster"
+    },
+    "hive:stone_plaster": {
+      "textures": "textures/blocks/h_stone_plaster"
+    },
+    "hive:terracotta_plaster": {
+      "textures": "textures/blocks/h_terracotta_plaster"
+    },
+    "hive:plastered_brick": {
+      "textures": "textures/blocks/h_plastered_brick"
+    },
+    "hive:decayed_plastered_brick": {
+      "textures": "textures/blocks/h_decayed_plastered_brick"
+    },
+    "hive:broken_plastered_brick": {
+      "textures": "textures/blocks/h_broken_plastered_brick"
+    },
+    "hive:withered_plastered_brick": {
+      "textures": "textures/blocks/h_withered_plastered_brick"
+    },
+    "hive:broken_plastered_tan_brick": {
+      "textures": "textures/blocks/h_broken_plastered_tan_brick"
+    },
+    "hive:withered_plastered_tan_brick": {
+      "textures": "textures/blocks/h_withered_plastered_tan_brick"
+    },
+    "hive:decayed_plastered_tan_brick": {
+      "textures": "textures/blocks/h_decayed_plastered_tan_brick"
+    },
+    "hive:withered_plastered_cream_brick": {
+      "textures": "textures/blocks/h_withered_plastered_cream_brick"
+    },
+    "hive:broken_plastered_cream_brick": {
+      "textures": "textures/blocks/h_broken_plastered_cream_brick"
+    },
+    "hive:decayed_plastered_cream_brick": {
+      "textures": "textures/blocks/h_decayed_plastered_cream_brick"
+    },
+    "hive:ochre_plaster": {
+      "textures": "textures/blocks/h_ochre_plaster"
+    },
+    "hive:meandering_ochre_plaster": {
+      "textures": "textures/blocks/h_meandering_ochre_plaster"
+    },
+    "hive:meandering_red_plaster": {
+      "textures": "textures/blocks/h_meandering_red_plaster"
+    },
+    "hive:snaking_red_plaster": {
+      "textures": "textures/blocks/h_snaking_red_plaster"
+    },
+    "hive:snaking_ochre_plaster": {
+      "textures": "textures/blocks/h_snaking_ochre_plaster"
+    },
+    "hive:plaster_frame_corner": {
+      "textures": "textures/blocks/h_plaster_frame_corner"
+    },
+    "hive:plaster_frame_lower_x": {
+      "textures": "textures/blocks/h_plaster_frame_lower_x"
+    },
+    "hive:plaster_frame_upper_x": {
+      "textures": "textures/blocks/h_plaster_frame_upper_x"
+    },
+    "hive:plaster_frame_x": {
+      "textures": "textures/blocks/h_plaster_frame_x"
+    },
+    "hive:plaster_frame_corner_bar": {
+      "textures": "textures/blocks/h_plaster_frame_corner_bar"
+    },
+    "hive:plaster_frame_bar": {
+      "textures": "textures/blocks/h_plaster_frame_bar"
+    },
+    "hive:plaster_frame_left_diagonal": {
+      "textures": "textures/blocks/h_plaster_frame_left_diagonal"
+    },
+    "hive:plaster_frame_right_diagonal": {
+      "textures": "textures/blocks/h_plaster_frame_right_diagonal"
+    },
+    "hive:plaster_frame_middle": {
+      "textures": "textures/blocks/h_plaster_frame_middle"
+    },
+    "hive:plaster_frame_middle_bar": {
+      "textures": "textures/blocks/h_plaster_frame_middle_bar"
+    },
+    "hive:small_treasure_pile": {
+      "textures": "textures/blocks/h_small_treasure_pile"
+    },
+    "hive:large_coin_pile": {
+      "textures": "textures/blocks/h_large_coin_pile"
+    },
+    "hive:small_coin_pile": {
+      "textures": "textures/blocks/h_small_coin_pile"
+    },
+    "hive:tiny_coin_pile": {
+      "textures": "textures/blocks/h_tiny_coin_pile"
+    },
+    "hive:crooked_fence_posts": {
+      "textures": "textures/blocks/h_crooked_fence_posts"
+    },
+    "hive:crooked_fence": {
+      "textures": "textures/blocks/h_crooked_fence"
+    },
+    "hive:crooked_fence_corner": {
+      "textures": "textures/blocks/h_crooked_fence_corner"
+    },
+    "hive:wooden_crate_up_down": {
+      "textures": "textures/blocks/h_wooden_crate_up_down"
+    },
+    "hive:wooden_crate": {
+      "textures": "textures/blocks/h_wooden_crate"
+    },
+    "hive:stone_brick_corner": {
+      "textures": "textures/blocks/h_stone_brick_corner"
+    },
+    "hive:cobblestone_brick_corner": {
+      "textures": "textures/blocks/h_cobblestone_brick_corner"
+    },
+    "hive:stone_plaster_corner": {
+      "textures": "textures/blocks/h_stone_plaster_corner"
+    },
+    "hive:rubblestone_corner": {
+      "textures": "textures/blocks/h_rubblestone_corner"
+    },
+    "hive:orange_brick_corner": {
+      "textures": "textures/blocks/h_orange_brick_corner"
+    },
+    "hive:tan_brick_corner": {
+      "textures": "textures/blocks/h_tan_brick_corner"
+    },
+    "hive:cream_brick_corner": {
+      "textures": "textures/blocks/h_cream_brick_corner"
+    },
+    "hive:orange_oak_leaves": {
+      "textures": "textures/blocks/h_orange_oak_leaves"
+    },
+    "hive:red_oak_leaves": {
+      "textures": "textures/blocks/h_red_oak_leaves"
+    },
+    "hive:yellow_oak_leaves": {
+      "textures": "textures/blocks/h_yellow_oak_leaves"
+    },
+    "hive:yellow_acacia_leaves": {
+      "textures": "textures/blocks/h_yellow_acacia_leaves"
+    },
+    "hive:orange_acacia_leaves": {
+      "textures": "textures/blocks/h_orange_acacia_leaves"
+    },
+    "hive:red_acacia_leaves": {
+      "textures": "textures/blocks/h_red_acacia_leaves"
+    },
+    "hive:lilac_oak_leaves": {
+      "textures": "textures/blocks/h_lilac_oak_leaves"
+    },
+    "hive:lilac_acacia_leaves": {
+      "textures": "textures/blocks/h_lilac_acacia_leaves"
+    },
+    "hive:apple_tree_leaves": {
+      "textures": "textures/blocks/h_apple_tree_leaves"
+    },
+    "hive:willow_leaves": {
+      "textures": "textures/blocks/h_willow_leaves"
+    },
+    "hive:jungle_willow_leaves": {
+      "textures": "textures/blocks/h_jungle_willow_leaves"
+    },
+    "hive:lilac_willow_leaves": {
+      "textures": "textures/blocks/h_lilac_willow_leaves"
+    },
+    "hive:aqua_leaves": {
+      "textures": "textures/blocks/h_aqua_leaves"
+    },
+    "hive:pink_leaves": {
+      "textures": "textures/blocks/h_pink_leaves"
+    },
+    "hive:lamp_post": {
+      "textures": "textures/blocks/h_lamp_post"
+    },
+    "hive:large_lamp": {
+      "textures": "textures/blocks/h_large_lamp"
+    },
+    "hive:lamp_post_base": {
+      "textures": "textures/blocks/h_lamp_post_base"
+    },
+    "hive:lamp_post_t_piece": {
+      "textures": "textures/blocks/h_lamp_post_t_piece"
+    },
+    "hive:lamp_post_l_piece": {
+      "textures": "textures/blocks/h_lamp_post_l_piece"
+    },
+    "hive:spruce_roof_awning": {
+      "textures": "textures/blocks/h_spruce_roof_awning"
+    },
+    "hive:aqua_roof_awning": {
+      "textures": "textures/blocks/h_aqua_roof_awning"
+    },
+    "hive:emerald_roof_awning": {
+      "textures": "textures/blocks/h_emerald_roof_awning"
+    },
+    "hive:sunset_roof_awning": {
+      "textures": "textures/blocks/h_sunset_roof_awning"
+    },
+    "hive:terracotta_roof_awning": {
+      "textures": "textures/blocks/h_terracotta_roof_awning"
+    },
+    "hive:terracotta_shingle_awning": {
+      "textures": "textures/blocks/h_terracotta_shingle_awning"
+    },
+    "hive:white_picket_fence": {
+      "textures": "textures/blocks/h_white_picket_fence"
+    },
+    "hive:white_picket_corner": {
+      "textures": "textures/blocks/h_white_picket_corner"
+    },
+    "hive:white_picket_inner_corner": {
+      "textures": "textures/blocks/h_white_picket_inner_corner"
+    },
+    "hive:wrought_iron_skirting": {
+      "textures": "textures/blocks/h_wrought_iron_skirting"
+    },
+    "hive:wrought_iron_bars": {
+      "textures": "textures/blocks/h_wrought_iron_bars"
+    },
+    "hive:wrought_iron_skirting_corner": {
+      "textures": "textures/blocks/h_wrought_iron_skirting_corner"
+    },
+    "hive:wrought_iron_bars_corner": {
+      "textures": "textures/blocks/h_wrought_iron_bars_corner"
+    },
+    "hive:oak_lattice": {
+      "textures": "textures/blocks/h_oak_lattice"
+    },
+    "hive:oak_lattice_top": {
+      "textures": "textures/blocks/h_oak_lattice_top"
+    },
+    "hive:oak_lattice_corner": {
+      "textures": "textures/blocks/h_oak_lattice_corner"
+    },
+    "hive:oak_lattice_corner_top": {
+      "textures": "textures/blocks/h_oak_lattice_corner_top"
+    },
+    "hive:weapon_rack": {
+      "textures": "textures/blocks/h_weapon_rack"
+    },
+    "hive:wall_rack": {
+      "textures": "textures/blocks/h_wall_rack"
+    },
+    "hive:sword_wall_rack": {
+      "textures": "textures/blocks/h_sword_wall_rack"
+    },
+    "hive:axe_wall_rack": {
+      "textures": "textures/blocks/h_axe_wall_rack"
+    },
+    "hive:axe_weapon_rack": {
+      "textures": "textures/blocks/h_axe_weapon_rack"
+    },
+    "hive:sword_weapon_rack": {
+      "textures": "textures/blocks/h_sword_weapon_rack"
+    },
+    "hive:post_office_boxes_east_west": {
+      "textures": "textures/blocks/h_post_office_boxes_east_west"
+    },
+    "hive:post_office_boxes_up_down": {
+      "textures": "textures/blocks/h_post_office_boxes_up_down"
+    },
+    "hive:post_office_boxes": {
+      "textures": "textures/blocks/h_post_office_boxes"
+    },
+    "hive:small_cardboard_box": {
+      "textures": "textures/blocks/h_small_cardboard_box"
+    },
+    "hive:cardboard_box_up_down": {
+      "textures": "textures/blocks/h_cardboard_box_up_down"
+    },
+    "hive:cardboard_box_east_west": {
+      "textures": "textures/blocks/h_cardboard_box_east_west"
+    },
+    "hive:cardboard_box_north": {
+      "textures": "textures/blocks/h_cardboard_box_north"
+    },
+    "hive:cardboard_box": {
+      "textures": "textures/blocks/h_cardboard_box"
+    },
+    "hive:cardboard_box_short": {
+      "textures": "textures/blocks/h_cardboard_box_short"
+    },
+    "hive:train_station_sign": {
+      "textures": "textures/blocks/h_train_station_sign"
+    },
+    "hive:post_office_sign": {
+      "textures": "textures/blocks/h_post_office_sign"
+    },
+    "hive:blacksmith_sign": {
+      "textures": "textures/blocks/h_blacksmith_sign"
+    },
+    "hive:hanging_sign": {
+      "textures": "textures/blocks/h_hanging_sign"
+    },
+    "hive:bookseller_sign": {
+      "textures": "textures/blocks/h_bookseller_sign"
+    },
+    "hive:tailor_sign": {
+      "textures": "textures/blocks/h_tailor_sign"
+    },
+    "hive:flower_shop_sign": {
+      "textures": "textures/blocks/h_flower_shop_sign"
+    },
+    "hive:inn_sign": {
+      "textures": "textures/blocks/h_inn_sign"
+    },
+    "hive:thin_dark_prismarine_bricks": {
+      "textures": "textures/blocks/h_thin_dark_prismarine_bricks"
+    },
+    "hive:small_dark_prismarine_bricks": {
+      "textures": "textures/blocks/h_small_dark_prismarine_bricks"
+    },
+    "hive:dark_prismarine_herringbone_bricks": {
+      "textures": "textures/blocks/h_dark_prismarine_herringbone_bricks"
+    },
+    "hive:dark_prismarine_tiles": {
+      "textures": "textures/blocks/h_dark_prismarine_tiles"
+    },
+    "hive:diamond_dark_prismarine_brick": {
+      "textures": "textures/blocks/h_diamond_dark_prismarine_brick"
+    },
+    "hive:verticle_dark_prismarine_bricks": {
+      "textures": "textures/blocks/h_verticle_dark_prismarine_bricks"
+    },
+    "hive:dark_prismarine_bricks": {
+      "textures": "textures/blocks/h_dark_prismarine_bricks"
+    },
+    "hive:dark_prismarine_skirting_up_down": {
+      "textures": "textures/blocks/h_dark_prismarine_skirting_up_down"
+    },
+    "hive:dark_prismarine_skirting": {
+      "textures": "textures/blocks/h_dark_prismarine_skirting"
+    },
+    "hive:taupe_shale": {
+      "textures": "textures/blocks/h_taupe_shale"
+    },
+    "hive:fawn_shale": {
+      "textures": "textures/blocks/h_fawn_shale"
+    },
+    "hive:tan_shale": {
+      "textures": "textures/blocks/h_tan_shale"
+    },
+    "hive:umber_shale": {
+      "textures": "textures/blocks/h_umber_shale"
+    },
+    "hive:olive_shale": {
+      "textures": "textures/blocks/h_olive_shale"
+    },
+    "hive:red_mushroom": {
+      "textures": "textures/blocks/h_red_mushroom"
+    },
+    "hive:blue_mushroom": {
+      "textures": "textures/blocks/h_blue_mushroom"
+    },
+    "hive:purple_mushroom": {
+      "textures": "textures/blocks/h_purple_mushroom"
+    },
+    "hive:large_red_mushroom": {
+      "textures": "textures/blocks/h_large_red_mushroom"
+    },
+    "hive:large_blue_mushroom": {
+      "textures": "textures/blocks/h_large_blue_mushroom"
+    },
+    "hive:large_purple_mushroom": {
+      "textures": "textures/blocks/h_large_purple_mushroom"
+    },
+    "hive:small_red_mushroom": {
+      "textures": "textures/blocks/h_small_red_mushroom"
+    },
+    "hive:small_blue_mushroom": {
+      "textures": "textures/blocks/h_small_blue_mushroom"
+    },
+    "hive:small_purple_mushroom": {
+      "textures": "textures/blocks/h_small_purple_mushroom"
+    },
+    "hive:teal_glowshroom": {
+      "textures": "textures/blocks/h_teal_glowshroom"
+    },
+    "hive:pink_glowshroom": {
+      "textures": "textures/blocks/h_pink_glowshroom"
+    },
+    "hive:purple_glowshroom": {
+      "textures": "textures/blocks/h_purple_glowshroom"
+    },
+    "hive:red_glowshroom": {
+      "textures": "textures/blocks/h_red_glowshroom"
+    },
+    "hive:blue_glowshroom": {
+      "textures": "textures/blocks/h_blue_glowshroom"
+    },
+    "hive:large_teal_glowshroom": {
+      "textures": "textures/blocks/h_large_teal_glowshroom"
+    },
+    "hive:large_pink_glowshroom": {
+      "textures": "textures/blocks/h_large_pink_glowshroom"
+    },
+    "hive:large_purple_glowshroom": {
+      "textures": "textures/blocks/h_large_purple_glowshroom"
+    },
+    "hive:large_blue_glowshroom": {
+      "textures": "textures/blocks/h_large_blue_glowshroom"
+    },
+    "hive:large_red_glowshroom": {
+      "textures": "textures/blocks/h_large_red_glowshroom"
+    },
+    "hive:small_teal_glowshroom": {
+      "textures": "textures/blocks/h_small_teal_glowshroom"
+    },
+    "hive:small_pink_glowshroom": {
+      "textures": "textures/blocks/h_small_pink_glowshroom"
+    },
+    "hive:small_purple_glowshroom": {
+      "textures": "textures/blocks/h_small_purple_glowshroom"
+    },
+    "hive:small_red_glowshroom": {
+      "textures": "textures/blocks/h_small_red_glowshroom"
+    },
+    "hive:small_blue_glowshroom": {
+      "textures": "textures/blocks/h_small_blue_glowshroom"
+    },
+    "hive:brown_shelf_fungus": {
+      "textures": "textures/blocks/h_brown_shelf_fungus"
+    },
+    "hive:old_carpet": {
+      "textures": "textures/blocks/h_old_carpet"
+    },
+    "hive:old_wallpaper": {
+      "textures": "textures/blocks/h_old_wallpaper"
+    },
+    "hive:old_ceiling_tile": {
+      "textures": "textures/blocks/h_old_ceiling_tile"
+    },
+    "hive:ceiling_light": {
+      "textures": "textures/blocks/h_ceiling_light"
+    },
+    "hive:old_wallpaper_skirting_up": {
+      "textures": "textures/blocks/h_old_wallpaper_skirting_up"
+    },
+    "hive:old_wallpaper_skirting_down": {
+      "textures": "textures/blocks/h_old_wallpaper_skirting_down"
+    },
+    "hive:old_wallpaper_skirting": {
+      "textures": "textures/blocks/h_old_wallpaper_skirting"
+    },
+    "hive:unpowered_ceiling_light": {
+      "textures": "textures/blocks/h_unpowered_ceiling_light"
+    },
+    "hive:left_scrawled_arrows": {
+      "textures": "textures/blocks/h_left_scrawled_arrows"
+    },
+    "hive:right_scrawled_arrows": {
+      "textures": "textures/blocks/h_right_scrawled_arrows"
+    },
+    "hive:small_right_scrawled_arrows": {
+      "textures": "textures/blocks/h_small_right_scrawled_arrows"
+    },
+    "hive:small_left_scrawled_arrows": {
+      "textures": "textures/blocks/h_small_left_scrawled_arrows"
+    },
+    "hive:dirt_slab": {
+      "textures": "textures/blocks/h_dirt_slab"
+    },
+    "hive:rooftile_aqua_2_slab": {
+      "textures": "textures/blocks/h_rooftile_aqua_2_slab"
+    },
+    "hive:rooftile_sunset_6_slab": {
+      "textures": "textures/blocks/h_rooftile_sunset_6_slab"
+    },
+    "hive:dirt_path_slab": {
+      "textures": "textures/blocks/h_dirt_path_slab"
+    },
+    "hive:rope_hanging": {
+      "textures": "textures/blocks/h_rope_hanging"
+    },
+    "hive:rope_chain": {
+      "textures": "textures/blocks/h_rope_chain"
+    },
+    "hive:modern_glass_pane": {
+      "textures": "textures/blocks/h_modern_glass_pane"
+    },
+    "hive:white_modern_glass_pane": {
+      "textures": "textures/blocks/h_white_modern_glass_pane"
+    },
+    "hive:small_glass_panes": {
+      "textures": "textures/blocks/h_small_glass_panes"
+    },
+    "hive:white_small_glass_panes": {
+      "textures": "textures/blocks/h_white_small_glass_panes"
+    },
+    "hive:picket_post_base": {
+      "textures": "textures/blocks/h_picket_post_base"
+    },
+    "hive:picket_post": {
+      "textures": "textures/blocks/h_picket_post"
+    },
+    "hive:picket_post_base_corner": {
+      "textures": "textures/blocks/h_picket_post_base_corner"
+    },
+    "hive:picket_post_base_end": {
+      "textures": "textures/blocks/h_picket_post_base_end"
+    },
+    "hive:gas_lantern": {
+      "textures": "textures/blocks/h_gas_lantern"
+    },
+    "hive:hanging_gas_lantern": {
+      "textures": "textures/blocks/h_hanging_gas_lantern"
+    },
+    "hive:ochre_wood_siding": {
+      "textures": "textures/blocks/h_ochre_wood_siding"
+    },
+    "hive:white_wood_siding": {
+      "textures": "textures/blocks/h_white_wood_siding"
+    },
+    "hive:blue_wood_siding": {
+      "textures": "textures/blocks/h_blue_wood_siding"
+    },
+    "hive:sage_wood_siding": {
+      "textures": "textures/blocks/h_sage_wood_siding"
+    },
+    "hive:weathered_blue_wood_siding": {
+      "textures": "textures/blocks/h_weathered_blue_wood_siding"
+    },
+    "hive:weathered_white_wood_siding": {
+      "textures": "textures/blocks/h_weathered_white_wood_siding"
+    },
+    "hive:brown_wood_siding": {
+      "textures": "textures/blocks/h_brown_wood_siding"
+    },
+    "hive:tan_wood_siding": {
+      "textures": "textures/blocks/h_tan_wood_siding"
+    },
+    "hive:brown_wood_siding_joint": {
+      "textures": "textures/blocks/h_brown_wood_siding_joint"
+    },
+    "hive:red_wood_siding": {
+      "textures": "textures/blocks/h_red_wood_siding"
+    },
+    "hive:sage_wood_siding_corner_south": {
+      "textures": "textures/blocks/h_sage_wood_siding_corner_south"
+    },
+    "hive:sage_wood_siding_corner_east": {
+      "textures": "textures/blocks/h_sage_wood_siding_corner_east"
+    },
+    "hive:sage_wood_siding_corner": {
+      "textures": "textures/blocks/h_sage_wood_siding_corner"
+    },
+    "hive:blue_wood_siding_corner_south": {
+      "textures": "textures/blocks/h_blue_wood_siding_corner_south"
+    },
+    "hive:blue_wood_siding_corner_east": {
+      "textures": "textures/blocks/h_blue_wood_siding_corner_east"
+    },
+    "hive:blue_wood_siding_corner": {
+      "textures": "textures/blocks/h_blue_wood_siding_corner"
+    },
+    "hive:ochre_wood_siding_corner_south": {
+      "textures": "textures/blocks/h_ochre_wood_siding_corner_south"
+    },
+    "hive:ochre_wood_siding_corner_east": {
+      "textures": "textures/blocks/h_ochre_wood_siding_corner_east"
+    },
+    "hive:ochre_wood_siding_corner": {
+      "textures": "textures/blocks/h_ochre_wood_siding_corner"
+    },
+    "hive:white_wood_siding_corner_south": {
+      "textures": "textures/blocks/h_white_wood_siding_corner_south"
+    },
+    "hive:white_wood_siding_corner_east": {
+      "textures": "textures/blocks/h_white_wood_siding_corner_east"
+    },
+    "hive:white_wood_siding_corner": {
+      "textures": "textures/blocks/h_white_wood_siding_corner"
+    },
+    "hive:brown_wood_siding_corner_south": {
+      "textures": "textures/blocks/h_brown_wood_siding_corner_south"
+    },
+    "hive:brown_wood_siding_corner_east": {
+      "textures": "textures/blocks/h_brown_wood_siding_corner_east"
+    },
+    "hive:brown_wood_siding_corner": {
+      "textures": "textures/blocks/h_brown_wood_siding_corner"
+    },
+    "hive:tan_wood_siding_corner_south": {
+      "textures": "textures/blocks/h_tan_wood_siding_corner_south"
+    },
+    "hive:tan_wood_siding_corner_east": {
+      "textures": "textures/blocks/h_tan_wood_siding_corner_east"
+    },
+    "hive:tan_wood_siding_corner": {
+      "textures": "textures/blocks/h_tan_wood_siding_corner"
+    },
+    "hive:brown_siding_bar_corner_east": {
+      "textures": "textures/blocks/h_brown_siding_bar_corner_east"
+    },
+    "hive:brown_siding_bar_corner_south": {
+      "textures": "textures/blocks/h_brown_siding_bar_corner_south"
+    },
+    "hive:brown_siding_bar_corner_up_down": {
+      "textures": "textures/blocks/h_brown_siding_bar_corner_up_down"
+    },
+    "hive:brown_siding_bar_corner": {
+      "textures": "textures/blocks/h_brown_siding_bar_corner"
+    },
+    "hive:tan_siding_bar_corner_east": {
+      "textures": "textures/blocks/h_tan_siding_bar_corner_east"
+    },
+    "hive:tan_siding_bar_corner_south": {
+      "textures": "textures/blocks/h_tan_siding_bar_corner_south"
+    },
+    "hive:tan_siding_bar_corner_up_down": {
+      "textures": "textures/blocks/h_tan_siding_bar_corner_up_down"
+    },
+    "hive:tan_siding_bar_corner": {
+      "textures": "textures/blocks/h_tan_siding_bar_corner"
+    },
+    "hive:ochre_siding_bar_corner_east": {
+      "textures": "textures/blocks/h_ochre_siding_bar_corner_east"
+    },
+    "hive:ochre_siding_bar_corner_south": {
+      "textures": "textures/blocks/h_ochre_siding_bar_corner_south"
+    },
+    "hive:ochre_siding_bar_corner_up_down": {
+      "textures": "textures/blocks/h_ochre_siding_bar_corner_up_down"
+    },
+    "hive:ochre_siding_bar_corner": {
+      "textures": "textures/blocks/h_ochre_siding_bar_corner"
+    },
+    "hive:blue_siding_bar_corner_up_down": {
+      "textures": "textures/blocks/h_blue_siding_bar_corner_up_down"
+    },
+    "hive:blue_siding_bar_corner_east": {
+      "textures": "textures/blocks/h_blue_siding_bar_corner_east"
+    },
+    "hive:blue_siding_bar_corner_south": {
+      "textures": "textures/blocks/h_blue_siding_bar_corner_south"
+    },
+    "hive:blue_siding_bar_corner": {
+      "textures": "textures/blocks/h_blue_siding_bar_corner"
+    },
+    "hive:sage_siding_bar_corner_south": {
+      "textures": "textures/blocks/h_sage_siding_bar_corner_south"
+    },
+    "hive:sage_siding_bar_corner_up_down": {
+      "textures": "textures/blocks/h_sage_siding_bar_corner_up_down"
+    },
+    "hive:sage_siding_bar_corner_east": {
+      "textures": "textures/blocks/h_sage_siding_bar_corner_east"
+    },
+    "hive:sage_siding_bar_corner": {
+      "textures": "textures/blocks/h_sage_siding_bar_corner"
+    },
+    "hive:red_wood_siding_corner_east": {
+      "textures": "textures/blocks/h_red_wood_siding_corner_east"
+    },
+    "hive:red_wood_siding_corner_south": {
+      "textures": "textures/blocks/h_red_wood_siding_corner_south"
+    },
+    "hive:red_wood_siding_corner": {
+      "textures": "textures/blocks/h_red_wood_siding_corner"
+    },
+    "hive:red_siding_bar_corner_south": {
+      "textures": "textures/blocks/h_red_siding_bar_corner_south"
+    },
+    "hive:red_siding_bar_corner_east": {
+      "textures": "textures/blocks/h_red_siding_bar_corner_east"
+    },
+    "hive:red_siding_bar_corner_up_down": {
+      "textures": "textures/blocks/h_red_siding_bar_corner_up_down"
+    },
+    "hive:red_siding_bar_corner": {
+      "textures": "textures/blocks/h_red_siding_bar_corner"
+    },
+    "hive:swan_neck_light": {
+      "textures": "textures/blocks/h_swan_neck_light"
+    },
+    "hive:turquoise_cloth_awning": {
+      "textures": "textures/blocks/h_turquoise_cloth_awning"
+    },
+    "hive:navy_cloth_awning": {
+      "textures": "textures/blocks/h_navy_cloth_awning"
+    },
+    "hive:mustard_cloth_awning": {
+      "textures": "textures/blocks/h_mustard_cloth_awning"
+    },
+    "hive:brown_cloth_awning": {
+      "textures": "textures/blocks/h_brown_cloth_awning"
+    },
+    "hive:cactus_elbow": {
+      "textures": "textures/blocks/h_cactus_elbow"
+    },
+    "hive:horizontal_cactus": {
+      "textures": "textures/blocks/h_horizontal_cactus"
+    },
+    "hive:small_cactus": {
+      "textures": "textures/blocks/h_small_cactus"
+    },
+    "hive:faded_golden_lilypad_": {
+      "textures": "textures/blocks/h_faded_golden_lilypad_"
+    },
+    "hive:golden_lilypad": {
+      "textures": "textures/blocks/h_golden_lilypad"
+    },
+    "hive:faded_green_lilypad_": {
+      "textures": "textures/blocks/h_faded_green_lilypad_"
+    },
+    "hive:green_lilypad_": {
+      "textures": "textures/blocks/h_green_lilypad_"
+    },
+    "hive:left_fishing_net": {
+      "textures": "textures/blocks/h_left_fishing_net"
+    },
+    "hive:right_fishing_net": {
+      "textures": "textures/blocks/h_right_fishing_net"
+    },
+    "hive:left_green_bench": {
+      "textures": "textures/blocks/h_left_green_bench"
+    },
+    "hive:middle_green_bench": {
+      "textures": "textures/blocks/h_middle_green_bench"
+    },
+    "hive:right_green_bench": {
+      "textures": "textures/blocks/h_right_green_bench"
+    },
+    "hive:right_wooden_bench": {
+      "textures": "textures/blocks/h_right_wooden_bench"
+    },
+    "hive:middle_wooden_bench": {
+      "textures": "textures/blocks/h_middle_wooden_bench"
+    },
+    "hive:left_wooden_bench": {
+      "textures": "textures/blocks/h_left_wooden_bench"
+    },
+    "hive:mustard_brick": {
+      "textures": "textures/blocks/h_mustard_brick"
+    },
+    "hive:mixed_mustard_brick": {
+      "textures": "textures/blocks/h_mixed_mustard_brick"
+    },
+    "hive:polished_beige_concrete": {
+      "textures": "textures/blocks/h_polished_beige_concrete"
+    },
+    "hive:beige_concrete_brick": {
+      "textures": "textures/blocks/h_beige_concrete_brick"
+    },
+    "hive:beige_concrete_pillar_up_down": {
+      "textures": "textures/blocks/h_beige_concrete_pillar_up_down"
+    },
+    "hive:beige_concrete_pillar": {
+      "textures": "textures/blocks/h_beige_concrete_pillar"
+    },
+    "hive:dark_concrete_pillar_up_down": {
+      "textures": "textures/blocks/h_dark_concrete_pillar_up_down"
+    },
+    "hive:dark_concrete_pillar": {
+      "textures": "textures/blocks/h_dark_concrete_pillar"
+    },
+    "hive:concrete_pillar_up_down": {
+      "textures": "textures/blocks/h_concrete_pillar_up_down"
+    },
+    "hive:concrete_pillar": {
+      "textures": "textures/blocks/h_concrete_pillar"
+    },
+    "hive:beige_concrete_tiles": {
+      "textures": "textures/blocks/h_beige_concrete_tiles"
+    },
+    "hive:beige_concrete_block_east_west": {
+      "textures": "textures/blocks/h_beige_concrete_block_east_west"
+    },
+    "hive:beige_concrete_block_up_down": {
+      "textures": "textures/blocks/h_beige_concrete_block_up_down"
+    },
+    "hive:beige_concrete_block": {
+      "textures": "textures/blocks/h_beige_concrete_block"
+    },
+    "hive:concrete_block_east_west": {
+      "textures": "textures/blocks/h_concrete_block_east_west"
+    },
+    "hive:concrete_block_up_down": {
+      "textures": "textures/blocks/h_concrete_block_up_down"
+    },
+    "hive:concrete_block": {
+      "textures": "textures/blocks/h_concrete_block"
+    },
+    "hive:dark_concrete_block_east_west": {
+      "textures": "textures/blocks/h_dark_concrete_block_east_west"
+    },
+    "hive:dark_concrete_block_up_down": {
+      "textures": "textures/blocks/h_dark_concrete_block_up_down"
+    },
+    "hive:dark_concrete_block": {
+      "textures": "textures/blocks/h_dark_concrete_block"
+    },
+    "hive:polished_concrete": {
+      "textures": "textures/blocks/h_polished_concrete"
+    },
+    "hive:concrete_tiles": {
+      "textures": "textures/blocks/h_concrete_tiles"
+    },
+    "hive:concrete_brick": {
+      "textures": "textures/blocks/h_concrete_brick"
+    },
+    "hive:dark_concrete_brick": {
+      "textures": "textures/blocks/h_dark_concrete_brick"
+    },
+    "hive:dark_concrete_tiles": {
+      "textures": "textures/blocks/h_dark_concrete_tiles"
+    },
+    "hive:dark_polished_concrete": {
+      "textures": "textures/blocks/h_dark_polished_concrete"
+    },
+    "hive:concrete_cornice": {
+      "textures": "textures/blocks/h_concrete_cornice"
+    },
+    "hive:dark_concrete_cornice": {
+      "textures": "textures/blocks/h_dark_concrete_cornice"
+    },
+    "hive:beige_concrete_cornice": {
+      "textures": "textures/blocks/h_beige_concrete_cornice"
+    },
+    "hive:street_light_pole": {
+      "textures": "textures/blocks/h_street_light_pole"
+    },
+    "hive:asphalt_slab": {
+      "textures": "textures/blocks/h_asphalt_slab"
+    },
+    "hive:painted_asphalt_slab": {
+      "textures": "textures/blocks/h_painted_asphalt_slab"
+    },
+    "hive:painted_asphalt_up_down": {
+      "textures": "textures/blocks/h_painted_asphalt_up_down"
+    },
+    "hive:painted_asphalt": {
+      "textures": "textures/blocks/h_painted_asphalt"
+    },
+    "hive:asphalt": {
+      "textures": "textures/blocks/h_asphalt"
+    },
+    "hive:cracked_asphalt": {
+      "textures": "textures/blocks/h_cracked_asphalt"
+    },
+    "hive:cracked_asphalt_slab": {
+      "textures": "textures/blocks/h_cracked_asphalt_slab"
+    },
+    "hive:faded_asphalt": {
+      "textures": "textures/blocks/h_faded_asphalt"
+    },
+    "hive:cracked_light_asphalt": {
+      "textures": "textures/blocks/h_cracked_light_asphalt"
+    },
+    "hive:light_asphalt": {
+      "textures": "textures/blocks/h_light_asphalt"
+    },
+    "hive:cracked_faded_asphalt": {
+      "textures": "textures/blocks/h_cracked_faded_asphalt"
+    },
+    "hive:cracked_dark_asphalt": {
+      "textures": "textures/blocks/h_cracked_dark_asphalt"
+    },
+    "hive:dark_asphalt": {
+      "textures": "textures/blocks/h_dark_asphalt"
+    },
+    "hive:tire_marked_asphalt": {
+      "textures": "textures/blocks/h_tire_marked_asphalt"
+    },
+    "hive:fading_tire_marked_asphalt": {
+      "textures": "textures/blocks/h_fading_tire_marked_asphalt"
+    },
+    "hive:tiny_goldbar_stack": {
+      "textures": "textures/blocks/h_tiny_goldbar_stack"
+    },
+    "hive:small_goldbar_stack": {
+      "textures": "textures/blocks/h_small_goldbar_stack"
+    },
+    "hive:medium_goldbar_stack": {
+      "textures": "textures/blocks/h_medium_goldbar_stack"
+    },
+    "hive:large_goldbar_stack": {
+      "textures": "textures/blocks/h_large_goldbar_stack"
+    },
+    "hive:computer": {
+      "textures": "textures/blocks/h_computer"
+    },
+    "hive:active_computer": {
+      "textures": "textures/blocks/h_active_computer"
+    },
+    "hive:valuable_ruby": {
+      "textures": "textures/blocks/h_valuable_ruby"
+    },
+    "hive:valuable_diamond": {
+      "textures": "textures/blocks/h_valuable_diamond"
+    },
+    "hive:spike_trap": {
+      "textures": "textures/blocks/h_spike_trap"
+    },
+    "hive:filing_cabinet_south": {
+      "textures": "textures/blocks/h_filing_cabinet_south"
+    },
+    "hive:filing_cabinet": {
+      "textures": "textures/blocks/h_filing_cabinet"
+    },
+    "hive:open_filing_cabinet": {
+      "textures": "textures/blocks/h_open_filing_cabinet"
+    },
+    "hive:laser_emitter": {
+      "textures": "textures/blocks/h_laser_emitter"
+    },
+    "hive:unlocked_keypad": {
+      "textures": "textures/blocks/h_unlocked_keypad"
+    },
+    "hive:locked_keypad": {
+      "textures": "textures/blocks/h_locked_keypad"
+    },
+    "hive:big_cash_pile": {
+      "textures": "textures/blocks/h_big_cash_pile"
+    },
+    "hive:medium_cash_pile": {
+      "textures": "textures/blocks/h_medium_cash_pile"
+    },
+    "hive:small_cash_pile": {
+      "textures": "textures/blocks/h_small_cash_pile"
+    },
+    "hive:tiny_cash_pile": {
+      "textures": "textures/blocks/h_tiny_cash_pile"
+    },
+    "hive:briefcase": {
+      "textures": "textures/blocks/h_briefcase"
+    },
+    "hive:priceless_jewellery": {
+      "textures": "textures/blocks/h_priceless_jewellery"
+    },
+    "hive:treasured_jewellery": {
+      "textures": "textures/blocks/h_treasured_jewellery"
+    },
+    "hive:unlocked_cash_deposit_box": {
+      "textures": "textures/blocks/h_unlocked_cash_deposit_box"
+    },
+    "hive:deposit_box_south": {
+      "textures": "textures/blocks/h_deposit_box_south"
+    },
+    "hive:deposit_box": {
+      "textures": "textures/blocks/h_deposit_box"
+    },
+    "hive:unlocked_gold_deposit_box": {
+      "textures": "textures/blocks/h_unlocked_gold_deposit_box"
+    },
+    "hive:unlocked_deposit_box": {
+      "textures": "textures/blocks/h_unlocked_deposit_box"
+    },
+    "hive:fire_hydrant": {
+      "textures": "textures/blocks/h_fire_hydrant"
+    },
+    "hive:mail_box": {
+      "textures": "textures/blocks/h_mail_box"
+    },
+    "hive:parking_meter": {
+      "textures": "textures/blocks/h_parking_meter"
+    },
+    "hive:trash_can": {
+      "textures": "textures/blocks/h_trash_can"
+    },
+    "hive:boardwalk_up_down": {
+      "textures": "textures/blocks/h_boardwalk_up_down"
+    },
+    "hive:boardwalk": {
+      "textures": "textures/blocks/h_boardwalk"
+    },
+    "hive:weathered_boardwalk_up_down": {
+      "textures": "textures/blocks/h_weathered_boardwalk_up_down"
+    },
+    "hive:weathered_boardwalk": {
+      "textures": "textures/blocks/h_weathered_boardwalk"
+    },
+    "hive:upper_weathered_boardwalk": {
+      "textures": "textures/blocks/h_upper_weathered_boardwalk"
+    },
+    "hive:upper_boardwalk": {
+      "textures": "textures/blocks/h_upper_boardwalk"
+    },
+    "hive:navy_wood_shutter_joint": {
+      "textures": "textures/blocks/h_navy_wood_shutter_joint"
+    },
+    "hive:navy_wood_shutter": {
+      "textures": "textures/blocks/h_navy_wood_shutter"
+    },
+    "hive:sage_wood_shutter_joint": {
+      "textures": "textures/blocks/h_sage_wood_shutter_joint"
+    },
+    "hive:sage_wood_shutter": {
+      "textures": "textures/blocks/h_sage_wood_shutter"
+    },
+    "hive:white_shutters": {
+      "textures": "textures/blocks/h_white_shutters"
+    },
+    "hive:sage_shutters": {
+      "textures": "textures/blocks/h_sage_shutters"
+    },
+    "hive:white_wood_shutter_joint": {
+      "textures": "textures/blocks/h_white_wood_shutter_joint"
+    },
+    "hive:white_wood_shutter": {
+      "textures": "textures/blocks/h_white_wood_shutter"
+    },
+    "hive:red_oil_drum": {
+      "textures": "textures/blocks/h_red_oil_drum"
+    },
+    "hive:clean_red_oil_drum": {
+      "textures": "textures/blocks/h_clean_red_oil_drum"
+    },
+    "hive:yellow_oil_drum": {
+      "textures": "textures/blocks/h_yellow_oil_drum"
+    },
+    "hive:blue_oil_drum": {
+      "textures": "textures/blocks/h_blue_oil_drum"
+    },
+    "hive:green_oil_drum": {
+      "textures": "textures/blocks/h_green_oil_drum"
+    },
+    "hive:corrugated_iron_up_down": {
+      "textures": "textures/blocks/h_corrugated_iron_up_down"
+    },
+    "hive:corrugated_iron": {
+      "textures": "textures/blocks/h_corrugated_iron"
+    },
+    "hive:weathered_corrugated_iron_up_down": {
+      "textures": "textures/blocks/h_weathered_corrugated_iron_up_down"
+    },
+    "hive:weathered_corrugated_iron": {
+      "textures": "textures/blocks/h_weathered_corrugated_iron"
+    },
+    "hive:exposed_corrugated_iron_up_down": {
+      "textures": "textures/blocks/h_exposed_corrugated_iron_up_down"
+    },
+    "hive:exposed_corrugated_iron": {
+      "textures": "textures/blocks/h_exposed_corrugated_iron"
+    },
+    "hive:oxidised_corrugated_iron_up_down": {
+      "textures": "textures/blocks/h_oxidised_corrugated_iron_up_down"
+    },
+    "hive:oxidised_corrugated_iron": {
+      "textures": "textures/blocks/h_oxidised_corrugated_iron"
+    },
+    "hive:algae": {
+      "textures": "textures/blocks/h_algae"
+    },
+    "hive:decayed_algae": {
+      "textures": "textures/blocks/h_decayed_algae"
+    },
+    "hive:decaying_algae": {
+      "textures": "textures/blocks/h_decaying_algae"
+    },
+    "hive:trigger_generic_a": {
+      "textures": "textures/blocks/h_trigger_generic_a"
+    },
+    "hive:trigger_generic_b": {
+      "textures": "textures/blocks/h_trigger_generic_b"
+    },
+    "hive:trigger_generic_c": {
+      "textures": "textures/blocks/h_trigger_generic_c"
+    },
+    "hive:trigger_generic_d": {
+      "textures": "textures/blocks/h_trigger_generic_d"
+    },
+    "hive:trigger_generic_e": {
+      "textures": "textures/blocks/h_trigger_generic_e"
+    },
+    "hive:trigger_parkour_enter": {
+      "textures": "textures/blocks/h_trigger_parkour_enter"
+    },
+    "hive:trigger_parkour_exit": {
+      "textures": "textures/blocks/h_trigger_parkour_exit"
+    },
+    "hive:trigger_camera": {
+      "textures": "textures/blocks/h_trigger_camera"
+    },
+    "hive:azalea_hedge": {
+      "textures": "textures/blocks/h_azalea_hedge"
+    },
+    "hive:marine_sign": {
+      "textures": "textures/blocks/h_marine_sign"
+    },
+    "hive:for_rent_sign": {
+      "textures": "textures/blocks/h_for_rent_sign"
+    },
+    "hive:no_swimming_sign": {
+      "textures": "textures/blocks/h_no_swimming_sign"
+    },
+    "hive:for_sale_sign": {
+      "textures": "textures/blocks/h_for_sale_sign"
+    },
+    "hive:rope_fence_post": {
+      "textures": "textures/blocks/h_rope_fence_post"
+    },
+    "hive:rope_fence_corner": {
+      "textures": "textures/blocks/h_rope_fence_corner"
+    },
+    "hive:rope_fence": {
+      "textures": "textures/blocks/h_rope_fence"
+    },
+    "hive:rope_fence_end": {
+      "textures": "textures/blocks/h_rope_fence_end"
+    },
+    "hive:rope_fence_junction": {
+      "textures": "textures/blocks/h_rope_fence_junction"
+    },
+    "hive:fluorescent_light": {
+      "textures": "textures/blocks/h_fluorescent_light"
+    },
+    "hive:unpowered_fluorescent_light": {
+      "textures": "textures/blocks/h_unpowered_fluorescent_light"
+    },
+    "hive:yellow_light_diffuser": {
+      "textures": "textures/blocks/h_yellow_light_diffuser"
+    },
+    "hive:yellow_light_diffuser_middle": {
+      "textures": "textures/blocks/h_yellow_light_diffuser_middle"
+    },
+    "hive:lark_green_concrete": {
+      "textures": "textures/blocks/h_lark_green_concrete"
+    },
+    "hive:seafoam_green_concrete": {
+      "textures": "textures/blocks/h_seafoam_green_concrete"
+    },
+    "hive:dark_oak_plank_quab": {
+      "textures": "textures/blocks/h_dark_oak_plank_quab"
+    },
+    "hive:spruce_plank_quab": {
+      "textures": "textures/blocks/h_spruce_plank_quab"
+    },
+    "hive:polished_deepslate_quab": {
+      "textures": "textures/blocks/h_polished_deepslate_quab"
+    },
+    "hive:dark_terracotta_brick_quab": {
+      "textures": "textures/blocks/h_dark_terracotta_brick_quab"
+    },
+    "hive:smooth_sandstone_quab": {
+      "textures": "textures/blocks/h_smooth_sandstone_quab"
+    },
+    "hive:smooth_quarts_quab": {
+      "textures": "textures/blocks/h_smooth_quarts_quab"
+    },
+    "hive:concrete_quab": {
+      "textures": "textures/blocks/h_concrete_quab"
+    },
+    "hive:dark_concrete_quab": {
+      "textures": "textures/blocks/h_dark_concrete_quab"
+    },
+    "hive:beige_concrete_quab": {
+      "textures": "textures/blocks/h_beige_concrete_quab"
+    },
+    "hive:lower_spruce_plank_quab": {
+      "textures": "textures/blocks/h_lower_spruce_plank_quab"
+    },
+    "hive:lower_dark_terracotta_brick_quab": {
+      "textures": "textures/blocks/h_lower_dark_terracotta_brick_quab"
+    },
+    "hive:lower_smooth_quarts_quab": {
+      "textures": "textures/blocks/h_lower_smooth_quarts_quab"
+    },
+    "hive:lower_polished_deepslate_quab": {
+      "textures": "textures/blocks/h_lower_polished_deepslate_quab"
+    },
+    "hive:lower_dark_oak_plank_quab": {
+      "textures": "textures/blocks/h_lower_dark_oak_plank_quab"
+    },
+    "hive:lower_smooth_sandstone_quab": {
+      "textures": "textures/blocks/h_lower_smooth_sandstone_quab"
+    },
+    "hive:lower_beige_concrete_quab": {
+      "textures": "textures/blocks/h_lower_beige_concrete_quab"
+    },
+    "hive:lower_concrete_quab": {
+      "textures": "textures/blocks/h_lower_concrete_quab"
+    },
+    "hive:lower_dark_concrete_quab": {
+      "textures": "textures/blocks/h_lower_dark_concrete_quab"
+    },
+    "hive:fishing_frenzy_sign_1": {
+      "textures": "textures/blocks/h_fishing_frenzy_sign_1"
+    },
+    "hive:fishing_frenzy_sign_2": {
+      "textures": "textures/blocks/h_fishing_frenzy_sign_2"
+    },
+    "hive:fishing_frenzy_sign_3": {
+      "textures": "textures/blocks/h_fishing_frenzy_sign_3"
+    },
+    "hive:fishing_frenzy_sign_4": {
+      "textures": "textures/blocks/h_fishing_frenzy_sign_4"
+    },
+    "hive:fishing_frenzy_sign_5": {
+      "textures": "textures/blocks/h_fishing_frenzy_sign_5"
+    },
+    "hive:fishing_frenzy_sign_6": {
+      "textures": "textures/blocks/h_fishing_frenzy_sign_6"
+    },
+    "hive:fishing_frenzy_sign_7": {
+      "textures": "textures/blocks/h_fishing_frenzy_sign_7"
+    },
+    "hive:fishing_frenzy_sign_8": {
+      "textures": "textures/blocks/h_fishing_frenzy_sign_8"
+    },
+    "hive:fishing_frenzy_sign_9": {
+      "textures": "textures/blocks/h_fishing_frenzy_sign_9"
+    },
+    "hive:swamp_sign_bottom_3": {
+      "textures": "textures/blocks/h_swamp_sign_bottom_3"
+    },
+    "hive:swamp_sign_top_1": {
+      "textures": "textures/blocks/h_swamp_sign_top_1"
+    },
+    "hive:swamp_sign_top_5": {
+      "textures": "textures/blocks/h_swamp_sign_top_5"
+    },
+    "hive:swamp_sign_middle_1": {
+      "textures": "textures/blocks/h_swamp_sign_middle_1"
+    },
+    "hive:swamp_sign_middle_5": {
+      "textures": "textures/blocks/h_swamp_sign_middle_5"
+    },
+    "hive:swamp_sign_bottom_1": {
+      "textures": "textures/blocks/h_swamp_sign_bottom_1"
+    },
+    "hive:swamp_sign_bottom_5": {
+      "textures": "textures/blocks/h_swamp_sign_bottom_5"
+    },
+    "hive:swamp_sign_bottom_2": {
+      "textures": "textures/blocks/h_swamp_sign_bottom_2"
+    },
+    "hive:swamp_sign_middle_2": {
+      "textures": "textures/blocks/h_swamp_sign_middle_2"
+    },
+    "hive:swamp_sign_bottom_4": {
+      "textures": "textures/blocks/h_swamp_sign_bottom_4"
+    },
+    "hive:swamp_sign_middle_4": {
+      "textures": "textures/blocks/h_swamp_sign_middle_4"
+    },
+    "hive:swamp_sign_middle_3": {
+      "textures": "textures/blocks/h_swamp_sign_middle_3"
+    },
+    "hive:swamp_sign_top_2": {
+      "textures": "textures/blocks/h_swamp_sign_top_2"
+    },
+    "hive:swamp_sign_top_3": {
+      "textures": "textures/blocks/h_swamp_sign_top_3"
+    },
+    "hive:swamp_sign_top_4": {
+      "textures": "textures/blocks/h_swamp_sign_top_4"
+    },
+    "hive:target_practice_sign_1": {
+      "textures": "textures/blocks/h_target_practice_sign_1"
+    },
+    "hive:target_practice_sign_2": {
+      "textures": "textures/blocks/h_target_practice_sign_2"
+    },
+    "hive:target_practice_sign_3": {
+      "textures": "textures/blocks/h_target_practice_sign_3"
+    },
+    "hive:target_practice_sign_4": {
+      "textures": "textures/blocks/h_target_practice_sign_4"
+    },
+    "hive:director_sign_1": {
+      "textures": "textures/blocks/h_director_sign_1"
+    },
+    "hive:director_sign_2": {
+      "textures": "textures/blocks/h_director_sign_2"
+    },
+    "hive:director_sign_3": {
+      "textures": "textures/blocks/h_director_sign_3"
+    },
+    "hive:director_sign_6": {
+      "textures": "textures/blocks/h_director_sign_6"
+    },
+    "hive:director_sign_4": {
+      "textures": "textures/blocks/h_director_sign_4"
+    },
+    "hive:director_sign_5": {
+      "textures": "textures/blocks/h_director_sign_5"
+    },
+    "hive:tour_sign_1": {
+      "textures": "textures/blocks/h_tour_sign_1"
+    },
+    "hive:tour_sign_2": {
+      "textures": "textures/blocks/h_tour_sign_2"
+    },
+    "hive:tour_sign_3": {
+      "textures": "textures/blocks/h_tour_sign_3"
+    },
+    "hive:tour_sign_4": {
+      "textures": "textures/blocks/h_tour_sign_4"
+    },
+    "hive:tour_sign_5": {
+      "textures": "textures/blocks/h_tour_sign_5"
+    },
+    "hive:tour_sign_7": {
+      "textures": "textures/blocks/h_tour_sign_7"
+    },
+    "hive:tour_sign_6": {
+      "textures": "textures/blocks/h_tour_sign_6"
+    },
+    "hive:tour_sign_base_1": {
+      "textures": "textures/blocks/h_tour_sign_base_1"
+    },
+    "hive:tour_sign_base_2": {
+      "textures": "textures/blocks/h_tour_sign_base_2"
+    },
+    "hive:tour_sign_base_3": {
+      "textures": "textures/blocks/h_tour_sign_base_3"
+    },
+    "hive:tour_sign_base_4": {
+      "textures": "textures/blocks/h_tour_sign_base_4"
+    },
+    "hive:tour_sign_base_5": {
+      "textures": "textures/blocks/h_tour_sign_base_5"
+    },
+    "hive:tour_sign_base_6": {
+      "textures": "textures/blocks/h_tour_sign_base_6"
+    },
+    "hive:tour_sign_base_7": {
+      "textures": "textures/blocks/h_tour_sign_base_7"
+    },
+    "hive:tour_sign_base_8": {
+      "textures": "textures/blocks/h_tour_sign_base_8"
+    },
+    "hive:tour_sign_base_9": {
+      "textures": "textures/blocks/h_tour_sign_base_9"
+    },
+    "hive:toy_shop_sign": {
+      "textures": "textures/blocks/h_toy_shop_sign"
+    },
+    "hive:toy_shop_sign_left": {
+      "textures": "textures/blocks/h_toy_shop_sign_left"
+    },
+    "hive:toy_shop_sign_o": {
+      "textures": "textures/blocks/h_toy_shop_sign_o"
+    },
+    "hive:toy_shop_sign_t": {
+      "textures": "textures/blocks/h_toy_shop_sign_t"
+    },
+    "hive:toy_shop_sign_right": {
+      "textures": "textures/blocks/h_toy_shop_sign_right"
+    },
+    "hive:toy_shop_sign_sletter": {
+      "textures": "textures/blocks/h_toy_shop_sign_sletter"
+    },
+    "hive:toy_shop_sign_y": {
+      "textures": "textures/blocks/h_toy_shop_sign_y"
+    },
+    "hive:beware_ogre_sign": {
+      "textures": "textures/blocks/h_beware_ogre_sign"
+    },
+    "hive:universal_sign_1": {
+      "textures": "textures/blocks/h_universal_sign_1"
+    },
+    "hive:universal_sign_5": {
+      "textures": "textures/blocks/h_universal_sign_5"
+    },
+    "hive:universal_sign_2": {
+      "textures": "textures/blocks/h_universal_sign_2"
+    },
+    "hive:universal_sign_3": {
+      "textures": "textures/blocks/h_universal_sign_3"
+    },
+    "hive:universal_sign_4": {
+      "textures": "textures/blocks/h_universal_sign_4"
+    },
+    "hive:universal_sign_7": {
+      "textures": "textures/blocks/h_universal_sign_7"
+    },
+    "hive:universal_sign_6": {
+      "textures": "textures/blocks/h_universal_sign_6"
+    },
+    "hive:universal_sign_8": {
+      "textures": "textures/blocks/h_universal_sign_8"
+    },
+    "hive:universal_sign_10": {
+      "textures": "textures/blocks/h_universal_sign_10"
+    },
+    "hive:universal_sign_9": {
+      "textures": "textures/blocks/h_universal_sign_9"
+    },
+    "hive:city_hall_1": {
+      "textures": "textures/blocks/h_city_hall_1"
+    },
+    "hive:city_hall_2": {
+      "textures": "textures/blocks/h_city_hall_2"
+    },
+    "hive:city_hall_4": {
+      "textures": "textures/blocks/h_city_hall_4"
+    },
+    "hive:city_hall_3": {
+      "textures": "textures/blocks/h_city_hall_3"
+    },
+    "hive:city_hall_5": {
+      "textures": "textures/blocks/h_city_hall_5"
+    },
+    "hive:wooden_parkour_checkpoint_corner_up": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint_corner_up"
+    },
+    "hive:wooden_parkour_checkpoint_corner_down": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint_corner_down"
+    },
+    "hive:wooden_parkour_checkpoint_corner": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint_corner"
+    },
+    "hive:wooden_parkour_finish_corner_up": {
+      "textures": "textures/blocks/h_wooden_parkour_finish_corner_up"
+    },
+    "hive:wooden_parkour_finish_corner_down": {
+      "textures": "textures/blocks/h_wooden_parkour_finish_corner_down"
+    },
+    "hive:wooden_parkour_finish_corner": {
+      "textures": "textures/blocks/h_wooden_parkour_finish_corner"
+    },
+    "hive:wooden_parkour_start_corner_up": {
+      "textures": "textures/blocks/h_wooden_parkour_start_corner_up"
+    },
+    "hive:wooden_parkour_start_corner_down": {
+      "textures": "textures/blocks/h_wooden_parkour_start_corner_down"
+    },
+    "hive:wooden_parkour_start_corner": {
+      "textures": "textures/blocks/h_wooden_parkour_start_corner"
+    },
+    "hive:stone_parkour_checkpoint_up": {
+      "textures": "textures/blocks/h_stone_parkour_checkpoint_up"
+    },
+    "hive:stone_parkour_checkpoint_down": {
+      "textures": "textures/blocks/h_stone_parkour_checkpoint_down"
+    },
+    "hive:stone_parkour_checkpoint": {
+      "textures": "textures/blocks/h_stone_parkour_checkpoint"
+    },
+    "hive:stone_parkour_finish_up": {
+      "textures": "textures/blocks/h_stone_parkour_finish_up"
+    },
+    "hive:stone_parkour_finish_down": {
+      "textures": "textures/blocks/h_stone_parkour_finish_down"
+    },
+    "hive:stone_parkour_finish": {
+      "textures": "textures/blocks/h_stone_parkour_finish"
+    },
+    "hive:stone_parkour_start_up": {
+      "textures": "textures/blocks/h_stone_parkour_start_up"
+    },
+    "hive:stone_parkour_start_down": {
+      "textures": "textures/blocks/h_stone_parkour_start_down"
+    },
+    "hive:stone_parkour_start": {
+      "textures": "textures/blocks/h_stone_parkour_start"
+    },
+    "hive:wooden_parkour_finish_edge_up": {
+      "textures": "textures/blocks/h_wooden_parkour_finish_edge_up"
+    },
+    "hive:wooden_parkour_finish_edge_down": {
+      "textures": "textures/blocks/h_wooden_parkour_finish_edge_down"
+    },
+    "hive:wooden_parkour_finish_edge": {
+      "textures": "textures/blocks/h_wooden_parkour_finish_edge"
+    },
+    "hive:wooden_parkour_checkpoint_edge_up": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint_edge_up"
+    },
+    "hive:wooden_parkour_checkpoint_edge_down": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint_edge_down"
+    },
+    "hive:wooden_parkour_checkpoint_edge": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint_edge"
+    },
+    "hive:wooden_parkour_start_edge_up": {
+      "textures": "textures/blocks/h_wooden_parkour_start_edge_up"
+    },
+    "hive:wooden_parkour_start_edge_down": {
+      "textures": "textures/blocks/h_wooden_parkour_start_edge_down"
+    },
+    "hive:wooden_parkour_start_edge": {
+      "textures": "textures/blocks/h_wooden_parkour_start_edge"
+    },
+    "hive:wooden_parkour_checkpoint_center": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint_center"
+    },
+    "hive:wooden_parkour_finish_center": {
+      "textures": "textures/blocks/h_wooden_parkour_finish_center"
+    },
+    "hive:wooden_parkour_start_center": {
+      "textures": "textures/blocks/h_wooden_parkour_start_center"
+    },
+    "hive:wooden_parkour_checkpoint_up": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint_up"
+    },
+    "hive:wooden_parkour_checkpoint_down": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint_down"
+    },
+    "hive:wooden_parkour_checkpoint": {
+      "textures": "textures/blocks/h_wooden_parkour_checkpoint"
+    },
+    "hive:wooden_parkour_start_up": {
+      "textures": "textures/blocks/h_wooden_parkour_start_up"
+    },
+    "hive:wooden_parkour_start_down": {
+      "textures": "textures/blocks/h_wooden_parkour_start_down"
+    },
+    "hive:wooden_parkour_start": {
+      "textures": "textures/blocks/h_wooden_parkour_start"
+    },
+    "hive:wooden_parkour_finish_up": {
+      "textures": "textures/blocks/h_wooden_parkour_finish_up"
+    },
+    "hive:wooden_parkour_finish_down": {
+      "textures": "textures/blocks/h_wooden_parkour_finish_down"
+    },
+    "hive:wooden_parkour_finish": {
+      "textures": "textures/blocks/h_wooden_parkour_finish"
+    },
+    "hive:equipment_stand": {
+      "textures": "textures/blocks/h_equipment_stand"
+    },
+    "hive:movie_camera": {
+      "textures": "textures/blocks/h_movie_camera"
+    },
+    "hive:studio_light": {
+      "textures": "textures/blocks/h_studio_light"
+    },
+    "hive:equipment_stand_post": {
+      "textures": "textures/blocks/h_equipment_stand_post"
+    },
+    "hive:deactivated_studio_light": {
+      "textures": "textures/blocks/h_deactivated_studio_light"
+    },
+    "hive:stacked_timber": {
+      "textures": "textures/blocks/h_stacked_timber"
+    },
+    "hive:leaning_timber": {
+      "textures": "textures/blocks/h_leaning_timber"
+    },
+    "hive:universal_graffiti_3": {
+      "textures": "textures/blocks/h_universal_graffiti_3"
+    },
+    "hive:universal_graffiti_2": {
+      "textures": "textures/blocks/h_universal_graffiti_2"
+    },
+    "hive:universal_graffiti_1": {
+      "textures": "textures/blocks/h_universal_graffiti_1"
+    },
+    "hive:universal_graffiti_7": {
+      "textures": "textures/blocks/h_universal_graffiti_7"
+    },
+    "hive:universal_graffiti_6": {
+      "textures": "textures/blocks/h_universal_graffiti_6"
+    },
+    "hive:universal_graffiti_5": {
+      "textures": "textures/blocks/h_universal_graffiti_5"
+    },
+    "hive:universal_graffiti_4": {
+      "textures": "textures/blocks/h_universal_graffiti_4"
+    },
+    "hive:universal_graffiti_9": {
+      "textures": "textures/blocks/h_universal_graffiti_9"
+    },
+    "hive:universal_graffiti_8": {
+      "textures": "textures/blocks/h_universal_graffiti_8"
+    },
+    "hive:cubee_graffiti_3": {
+      "textures": "textures/blocks/h_cubee_graffiti_3"
+    },
+    "hive:cubee_graffiti_2": {
+      "textures": "textures/blocks/h_cubee_graffiti_2"
+    },
+    "hive:cubee_graffiti_1": {
+      "textures": "textures/blocks/h_cubee_graffiti_1"
+    },
+    "hive:cubee_graffiti_6": {
+      "textures": "textures/blocks/h_cubee_graffiti_6"
+    },
+    "hive:cubee_graffiti_5": {
+      "textures": "textures/blocks/h_cubee_graffiti_5"
+    },
+    "hive:cubee_graffiti_4": {
+      "textures": "textures/blocks/h_cubee_graffiti_4"
+    },
+    "hive:cubee_graffiti_9": {
+      "textures": "textures/blocks/h_cubee_graffiti_9"
+    },
+    "hive:cubee_graffiti_8": {
+      "textures": "textures/blocks/h_cubee_graffiti_8"
+    },
+    "hive:cubee_graffiti_7": {
+      "textures": "textures/blocks/h_cubee_graffiti_7"
+    },
+    "hive:shrek_graffiti_1": {
+      "textures": "textures/blocks/h_shrek_graffiti_1"
+    },
+    "hive:shrek_graffiti_3": {
+      "textures": "textures/blocks/h_shrek_graffiti_3"
+    },
+    "hive:shrek_graffiti_2": {
+      "textures": "textures/blocks/h_shrek_graffiti_2"
+    },
+    "hive:shrek_graffiti_5": {
+      "textures": "textures/blocks/h_shrek_graffiti_5"
+    },
+    "hive:shrek_graffiti_4": {
+      "textures": "textures/blocks/h_shrek_graffiti_4"
+    },
+    "hive:shrek_graffiti_7": {
+      "textures": "textures/blocks/h_shrek_graffiti_7"
+    },
+    "hive:shrek_graffiti_6": {
+      "textures": "textures/blocks/h_shrek_graffiti_6"
+    },
+    "hive:shrek_graffiti_9": {
+      "textures": "textures/blocks/h_shrek_graffiti_9"
+    },
+    "hive:shrek_graffiti_8": {
+      "textures": "textures/blocks/h_shrek_graffiti_8"
+    },
+    "hive:coffee_mug": {
+      "textures": "textures/blocks/h_coffee_mug"
+    },
+    "hive:coffee_cup": {
+      "textures": "textures/blocks/h_coffee_cup"
+    },
+    "hive:jaws_plushie": {
+      "textures": "textures/blocks/h_jaws_plushie"
+    },
+    "hive:fiona_plushie": {
+      "textures": "textures/blocks/h_fiona_plushie"
+    },
+    "hive:puss_in_boots_plushie": {
+      "textures": "textures/blocks/h_puss_in_boots_plushie"
+    },
+    "hive:shrek_plushie": {
+      "textures": "textures/blocks/h_shrek_plushie"
+    },
+    "hive:snow_gadget": {
+      "textures": "textures/blocks/h_snow_gadget"
+    },
+    "hive:confetti_gadget": {
+      "textures": "textures/blocks/h_confetti_gadget"
+    },
+    "hive:fire_gadget": {
+      "textures": "textures/blocks/h_fire_gadget"
+    },
+    "hive:tumbleweed_gadget": {
+      "textures": "textures/blocks/h_tumbleweed_gadget"
+    },
+    "hive:cash_register": {
+      "textures": "textures/blocks/h_cash_register"
+    },
+    "hive:equipment_crate_up_down": {
+      "textures": "textures/blocks/h_equipment_crate_up_down"
+    },
+    "hive:equipment_crate_east_west": {
+      "textures": "textures/blocks/h_equipment_crate_east_west"
+    },
+    "hive:equipment_crate": {
+      "textures": "textures/blocks/h_equipment_crate"
+    },
+    "hive:sidewalk_tile_up_down": {
+      "textures": "textures/blocks/h_sidewalk_tile_up_down"
+    },
+    "hive:sidewalk_tile": {
+      "textures": "textures/blocks/h_sidewalk_tile"
+    },
+    "hive:large_sidewalk_tile_3_up_down": {
+      "textures": "textures/blocks/h_large_sidewalk_tile_3_up_down"
+    },
+    "hive:large_sidewalk_tile_3": {
+      "textures": "textures/blocks/h_large_sidewalk_tile_3"
+    },
+    "hive:large_sidewalk_tile_2_up_down": {
+      "textures": "textures/blocks/h_large_sidewalk_tile_2_up_down"
+    },
+    "hive:large_sidewalk_tile_2": {
+      "textures": "textures/blocks/h_large_sidewalk_tile_2"
+    },
+    "hive:large_sidewalk_tile_4_up_down": {
+      "textures": "textures/blocks/h_large_sidewalk_tile_4_up_down"
+    },
+    "hive:large_sidewalk_tile_4": {
+      "textures": "textures/blocks/h_large_sidewalk_tile_4"
+    },
+    "hive:large_sidewalk_tile_1_up_down": {
+      "textures": "textures/blocks/h_large_sidewalk_tile_1_up_down"
+    },
+    "hive:large_sidewalk_tile_1": {
+      "textures": "textures/blocks/h_large_sidewalk_tile_1"
+    },
+    "hive:smooth_sidewalk_tile": {
+      "textures": "textures/blocks/h_smooth_sidewalk_tile"
+    },
+    "hive:scattered_paper": {
+      "textures": "textures/blocks/h_scattered_paper"
+    },
+    "hive:sparsely_scattered_paper": {
+      "textures": "textures/blocks/h_sparsely_scattered_paper"
+    },
+    "hive:spruce_wood_chair": {
+      "textures": "textures/blocks/h_spruce_wood_chair"
+    },
+    "hive:cowboy_hat_display": {
+      "textures": "textures/blocks/h_cowboy_hat_display"
+    },
+    "hive:mobster_hat_display": {
+      "textures": "textures/blocks/h_mobster_hat_display"
+    },
+    "hive:safari_hat_display": {
+      "textures": "textures/blocks/h_safari_hat_display"
+    },
+    "hive:soda_hat_display": {
+      "textures": "textures/blocks/h_soda_hat_display"
+    },
+    "hive:top_hat_display": {
+      "textures": "textures/blocks/h_top_hat_display"
+    },
+    "hive:unicorn_hat_display": {
+      "textures": "textures/blocks/h_unicorn_hat_display"
+    },
+    "hive:large_clock_1": {
+      "textures": "textures/blocks/h_large_clock_1"
+    },
+    "hive:large_clock_2": {
+      "textures": "textures/blocks/h_large_clock_2"
+    },
+    "hive:large_clock_3": {
+      "textures": "textures/blocks/h_large_clock_3"
+    },
+    "hive:large_clock_4": {
+      "textures": "textures/blocks/h_large_clock_4"
+    },
+    "hive:large_clock_5": {
+      "textures": "textures/blocks/h_large_clock_5"
+    },
+    "hive:large_clock_6": {
+      "textures": "textures/blocks/h_large_clock_6"
+    },
+    "hive:manhole_cover": {
+      "textures": "textures/blocks/h_manhole_cover"
+    }
+  }
+}

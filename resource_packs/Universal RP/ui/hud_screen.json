@@ -1,0 +1,122 @@
+{
+    "root_panel": {
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "insert_front",
+                "value": [
+                    {
+                        "hud_game_status@hive_hud.hud_game_status": {}
+                    },
+                    {
+                        "hud_game_bar@hive_hud.hud_game_bar": {}
+                    },
+                    {
+                        "text_fader@hive_hud.hud_text_fader_factory": {}
+                    },
+                    {
+                        "floating_action_panel@hive_hud.floating_action_panel": {}
+                    },
+                    {
+                        "progress_panel@hive_hud.progress_panel": {}
+                    }
+                ]
+            }
+        ]
+    },
+    // No bubbles
+    "bubbles_renderer": {
+        "ignored": true
+    },
+    // Modify action bar to have a wait animation for sub-titles
+    "anim_actionbar_text_alpha_wait": {
+        "anim_type": "wait",
+        "duration": 2,
+        "next": "@anim_actionbar_text_alpha_out"
+    },
+    "anim_actionbar_text_background_alpha_wait": {
+        "anim_type": "wait",
+        "duration": 2,
+        "from": 0.6,
+        "next": "@anim_actionbar_text_background_alpha_out"
+    },
+    // Modifying action bar to center text when multiple lines are
+    // present
+    "hud_actionbar_text": {
+        "$text": "$actionbar_text",
+        "visible": "(not (($text > '§h§i§r') and ($text < '§h§j§s')))",
+        "type": "image",
+        "size": ["100%c + 12px", "100%c + 5px"],
+        "offset": [0, "50%-68px"],
+        "texture": "textures/ui/hud_tip_text_background",
+        "alpha": "@hud.anim_actionbar_text_background_alpha_wait",
+        "controls": [
+            {
+                "actionbar_message": {
+                    "type": "label",
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "color": "$tool_tip_text",
+                    "layer": 31,
+                    "text": "$actionbar_text",
+                    "text_alignment": "center",
+                    "localize": false,
+                    "max_size": ["250px", "100%c"],
+                    "alpha": "@hud.anim_actionbar_text_alpha_wait"
+                }
+            }
+        ]
+    },
+    // Remove chat messages which are used as floating actions
+    "chat_grid_item": {
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "replace",
+                "control_name": "chat_background",
+                "value": [
+                    {
+                        "chat_background": {
+                            "type": "image",
+                            "texture": "textures/ui/Black",
+                            "alpha": 0.7,
+                            "size": ["100%", "100%c + 4px"], // Wee bit of padding to account for emoticons
+                            "anims": ["@hud.anim_chat_bg_wait"],
+                            "controls": [
+                                {
+                                    "chat_text@chat_label": {
+                                        "anchor_from": "top_left",
+                                        "anchor_to": "top_left",
+                                        "offset": [2, 2]
+                                    }
+                                }
+                            ],
+                            "$flag_floating_action": "§m§a",
+                            "bindings": [
+                                {
+                                    "binding_name": "#chat_text",
+                                    "binding_name_override": "#text",
+                                    "binding_type": "collection",
+                                    "binding_collection_name": "chat_text_grid",
+                                    "binding_condition": "once"
+                                },
+                                {
+                                    "binding_type": "view",
+                                    "source_property_name": "(((#text - $flag_floating_action) = #text) or (not ((#text - '§h§i§v§e') = #text)))",
+                                    "target_property_name": "#visible",
+                                    "binding_condition": "once"
+                                },
+                                {
+                                    "binding_type": "view",
+                                    "source_property_name": "(((#text - $flag_floating_action) = #text) or (not ((#text - '§h§i§v§e') = #text)))",
+                                    "target_property_name": "#enabled",
+                                    "binding_condition": "once"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

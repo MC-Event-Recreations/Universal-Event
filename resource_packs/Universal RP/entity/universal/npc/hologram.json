@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:hologram",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/npc/hologram"
+            },
+            "geometry": {
+                "default": "geometry.universal.npc.hologram"
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

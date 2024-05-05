@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:npc_swamp_stomp",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/npc/swamp_stomp"
+            },
+            "geometry": {
+                "default": "geometry.universal.npc.swamp_stomp"
+            },
+            "animations": {
+                "idle": "animation.universal.npc.swamp_stomp.idle",
+                "idle_head": "animation.universal.npc.swamp_stomp.idle.head",
+                "overhere": "animation.universal.npc.swamp_stomp.overhere"
+            },
+            "scripts": {
+                "animate": ["idle", "idle_head", "overhere"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

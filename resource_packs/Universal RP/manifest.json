@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "pack.name",
+        "description": "pack.description",
+        "uuid": "666ddda9-807f-4279-b443-dbfe75ab7c13",
+        "version": [
+            0,
+            0,
+            187
+        ],
+        "min_engine_version": [
+            1,
+            20,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Universal Event",
+            "type": "resources",
+            "uuid": "3a3c03c7-461a-475b-886f-365bd396c982",
+            "version": [
+                0,
+                0,
+                187
+            ]
+        }
+    ]
+}

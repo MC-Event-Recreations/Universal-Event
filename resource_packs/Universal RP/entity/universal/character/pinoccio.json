@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:character_pinocchio",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/character/pinocchio"
+            },
+            "geometry": {
+                "default": "geometry.universal.character.pinocchio"
+            },
+            "animations": {
+                "idle": "animation.universal.character.pinocchio.idle",
+                "pose": "animation.universal.character.pinocchio.pose",
+                "nose": "animation.universal.character.pinocchio.nose"
+            },
+            "scripts": {
+                "animate": ["idle", "pose", "nose"]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

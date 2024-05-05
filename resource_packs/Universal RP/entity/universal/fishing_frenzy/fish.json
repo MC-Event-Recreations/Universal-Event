@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "universal:fish",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "fish_red": "textures/entity/fishing_frenzy/fish_red",
+                "fish_blue": "textures/entity/fishing_frenzy/fish_blue",
+                "fish_green": "textures/entity/fishing_frenzy/fish_green",
+                "fish_yellow": "textures/entity/fishing_frenzy/fish_yellow"
+            },
+            "geometry": {
+                "default": "geometry.universal.fish"
+            },
+            "animations": {
+                "controller": "controller.animation.fish",
+                "scale": "animation.universal.fishing.toyfish.scale",
+                "idle": "animation.universal.fishing.toyfish.idle",
+                "despawn": "animation.universal.fishing.toyfish.despawn",
+                "spawn": "animation.universal.fishing.toyfish.spawn",
+                "biting": "animation.universal.fishing.toyfish.bite.loop",
+                "catch": "animation.universal.fishing.toyfish.catch"
+            },
+            "scripts": {
+                "animate": ["scale", "controller"]
+            },
+            "render_controllers": ["controller.render.universal.fishing_frenzy.fish"]
+        }
+    }
+}
